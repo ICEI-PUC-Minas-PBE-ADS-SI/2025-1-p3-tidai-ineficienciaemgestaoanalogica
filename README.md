@@ -1,4 +1,4 @@
-# Nome do projeto
+# Gestão Organizacional de Restaurantes
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
@@ -6,20 +6,21 @@
 
 `Xº semestre/ANO`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+<p style="text-align: justify">O objetivo deste projeto é desenvolver uma solução digital para modernizar a gestão de pedidos e comandas em restaurantes que ainda utilizam métodos analógicos para lidar com as questões organizacionais, eliminando os problemas causados por tais métodos. A aplicação visa agilizar o atendimento, reduzir erros humanos e melhorar a experiência do cliente, permitindo que pedidos sejam registrados, processados e rastreados de forma eficiente. Além disso, a solução integrará o controle de estoque, ajudando a evitar desperdícios e garantindo maior organização interna.<br><br>
+Com isso, o projeto busca não apenas aumentar a produtividade e a satisfação dos clientes, mas também proporcionar um ambiente de trabalho mais eficaz para os funcionários e uma gestão mais assertiva para os proprietários, alinhando-se às necessidades de um mercado cada vez mais digital e competitivo.
+</p>
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Caio Moreira Marques
+* Davi Telles Xavier
+* Marco Antonio Alves Moreira
+* Pedro César da Matta Silveira
+* Thiago Botelho Neves
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Jardell Fillipe da Silva
 
 ## Instruções de utilização
 
