@@ -20,10 +20,25 @@ A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-s
 
 O projeto segue a seguinte convenção para o nome de branches:
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `main`: versão estável já testada do software.
+- `dev`: versão de desenvolvimento do software.
+- `feature/*`: branches para desenvolvimento de novas funcionalidades.
+- `hotfix/*`: branches para correções críticas na versão estável.
+
+O fluxo de trabalho funciona da seguinte forma:
+
+- Todo o desenvolvimento ocorre na branch `dev`.
+- Funcionalidades prontas para teste são mescladas na branch `testing`.
+- Após testes, o código estável é mesclado na branch `unstable` para validação adicional.
+- Versões consideradas prontas para produção são mescladas na branch `main`.
+
+O projeto utiliza o seguinte padrão para as tags:
+
+As tags são utilizadas para marcar versões estáveis, seguirão o padrão semântico `MAJOR.MINOR.PATCH` (ex: `v1.0.0`).
+
+Os commits seguem o padrão Conventional Commits:
+
+- Exemplo: `feat(login): adiciona tela de autenticação #11`.
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
 
@@ -32,14 +47,8 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
-
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+As issues são vinculadas aos commits usando `#<número_da_issue>` (ex: `git commit -m "fix(login): corrige erro de autenticação #12`).
+Processo de Commits:
 
 ## Planejamento do projeto
 
