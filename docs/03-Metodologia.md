@@ -1,13 +1,18 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+A Metodologia de trabalho adotada pelo grupo para o desenvolvimento do software foi baseada no framework Scrum, que permite uma abordagem ágil e iterativa. O projeto está dividido em sprints, com entregas incrementais e reuniões diárias para acompanhamento do progresso. A equipe utiliza ferramentas modernas para gestão de código, documentação e colaboração.
 
 ## Relação de ambientes de trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+| Ambiente                     | Plataforma        | Link de Acesso |
+| :----                        | :----             | :----          |
+| Repositório de código fonte  | GitHub            | [Repositório](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica)  |
+| Projeto de Interface         | Figma             | [Figma](https://www.figma.com/)  |
+| Hospedagem                   | Docker            | [Docker Hub](https://hub.docker.com/)  |
+| Banco de Dados               | MySQL             | [MySQL WorkBench](https://www.mysql.com/products/workbench/)/[DBeaver](https://dbeaver.io/)  |
+| Desenvolvimento Front-end    | VS Code / Neovim  | [VS Code](https://code.visualstudio.com/)/[Neovim](https://neovim.io/)  |
+| Desenvolvimento Back-end     | VS Code / Neovim  | [VS Code](https://code.visualstudio.com/)/[Neovim](https://neovim.io/)  |
 
 ## Controle de versão
 
