@@ -1,46 +1,53 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A aplicação é uma ferramenta digital desenvolvida especialmente para otimizar o processo de anotações e gestão de pedidos em restaurantes de pequeno ou médio porte. Seu objetivo principal é melhorar a eficiência do atendimento e reduzir erros comuns associados ao uso de papel e caneta.
+
+Com isso, o restaurante ganha em eficiência, precisão e agilidade, proporcionando uma experiência mais fluida para os clientes e otimizando a operação para sua equipe. Tornando o atendimento mais rápido, organizado e livre de erros.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Em muitos restaurantes, especialmente aqueles com grande volume de clients, a gestão de pedidos pode se tornar uma tarefa difícil de ser realizada, pois o uso de anotações, cadernos ou até mesmo sistemas de pedidos antiquados pode resultar em diversos problemas que afetam diretaemnte a experiência do cliente e a eficiência do restaurante.
 
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
+- **Erros na Anotação dos Pedidos:** Anotações manuais podem resultar em erros de digitação ou escrita, confusão de pedidos e pedidos errados, afetando a satisfação do cliente.
+- **Falha na Comunicação Entre Equipes:** A comunicação ineficaz entre atendentes e cozinha pode levar a falhas na personalização dos pedidos, resultando em pratos errados e atrasos.
+- **Dificuldade em Gerenciar o Volume de Pedidos:** Durante horários de pico, é fácil se perder com o grande número de pedidos, o que pode gerar confusão e erros na entrega.
+- **Processamento Lento de Contas:** A contagem manual de pedidos pode atrasar o fechamento da conta, gerando desconforto para o cliente e aumentando o tempo de espera.
+- **Problemas de Estoque e Preço Desatualizado:** Mudanças no menu ou preços podem ser esquecidas, levando a pedidos de itens fora de estoque ou preços incorretos.
 
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
+### Matriz CSD
+| Certezas                                                                                                                    | Suposições                                                                                                                      | Dúvidas                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Anotações manuais de pedidos geram erros frequentes, como confusão de pedidos e digitação/anotação incorreta.               | A comunicação entre atendentes e cozinha é ineficiente, levando a personalizações erradas e atrasos.                            | Qual seria o custo total de implementação de um sistema digital para o restaurante?                     |
+| A comunicação entre atendentes e cozinha é ineficiente, levando a personalizações erradas e atrasos.                        | Um sistema integrado melhoraria a eficiência da cozinha e a experiência do cliente.                                             | como a equipe do restaurante reagiria à mudança de métodos analógicos para digitais?                    |
+| O gerenciamento de pedidos durante horários de pico é caótico, resultando em confusão e erros na entrega.                   | A automação do processamento de contas agilizaria o fechamento e melhoraria a satisfação do cliente.                            | Quais funcionalidades seriam essenciais em um sistema digitla para resolver os problemas identificados? |
+| O processamento manual de contas é lento, causando desconforto ao cliente e aumentando o tempo de espera.                   | A atualização em tempo real do estoque e dos preços evitaria problemas relacionados a itens indisponíveis ou preços incorretos. | Como garantir que a comunicação entre atendentes e cozinha seja eficiente em um sistema digital?        |
+| Mudanças no menu ou preços nem sempre são atualizadas, resultando em pedidos de itens fora de estoque ou preços incorretos. | A equipe do restaurante está disposta a adotar novas tecnologias para melhorar a operação.                                      | Qual seria o impacto da automação no tempo de espera dos clientes e na eficiência operacional?          |
+| Métodos analógicos dificultam a coleta de dados para análise de desempenho e tomada de decisões.                            | O custo de implementação de um sistema digital seria compensado pelo aumento da eficiência e satisfação do cliente.             | Como garantir a segurança dos dados dos clientes e do restaurante em um sistema digital                 |
+| A experiência do cliente é diretamente impactada por atrasos, erros e falta de eficiência.                                  | Um sistema digital poderia fornecer insights valiosos sobre o desempenho do restaurante e preferências dos clientes.            | Como o sistema poderia ser adaptado para diferentes tamanhos e tipos de restaurantes?                   |
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+### Objetivo Geral
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
- 
-> **Links úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+A aplicação tem como objetivo transformar a gestão de pedidos em restaurantes, oferecendo uma solução digital que elimina os erros comuns de anotações manuais, melhora a comunicação entre equipes e agiliza o atendimento ao cliente. A aplicação busca otimizar a experiência tanto para os clientes quanto para os funcionários, proporcionando maior eficiência, precisão e organização no processo de pedidos.
+
+### Objetivos Específicos
+
+- **Precisão e Agilidade:** Registrar pedidos rapidamente e sem erros, evitando confusões e garantindo que todos os detalhes dos pedidos sejam corretamente atendidos.
+- **Comunicação em Tempo Real:** Transmitir os pedidos automaticamente para a cozinha, assegurando que a equipe receba as informações corretas e sem atrasos.
+- **Gestão Simplificada de Pedidos:** Organizar e monitora os pedidos, permitindo que atendentes acompanhem o status de cada item e evitem esquecimentos ou erros.
+- **Fechamento de Contas Ágil:** Simplifica o processo de pagamento, com cálculos automáticos e informações sempre atualizadas, tornando o fechamento de contas mais rápido e sem erros.
+- **Cardápio Digital e Estoque Atualizado:** Mantém o cardápio sempre atualizado e integrado com o estoque, evitando vendas de itens fora de estoque ou com preços incorretos.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A gestão operacional de restaurantes que dependem de métodos analógicos, como anotações manuais e comandas físicas, enfrenta desafios significativos, como erros frequentes, comunicação ineficiente e dificuldades em gerenciar o volume de pedidos. Esses problemas impactam negativamente a experiência do cliente, as condições de trabalho dos funcionários e o crescimento sustentável dos negócios. Para resolver essas questões, a aplicação proposta visa modernizar a operação com uma solução digital integrada, oferecendo funcionalidades como registro automatizado de pedidos, comunicação em tempo real entre atendentes e cozinha, gestão de estoque e processamento ágil de contas.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Pequenos e médios restaurantes podem se beneficiar da ferramenta, que visa reduzir custos, aumentar a produtividade e melhorar a satisfação dos clientes. Além disso, os funcionários ganham um ambiente de trabalho mais organizado e eficiente, com menos tarefas manuais e repetitivas. Ao apoiar o crescimento sustentável dos negócios, a aplicação também contribui para a geração de empregos e o fortalecimento da economia local.
 
-> **Links úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Essa solução está alinhada ao ODS 8 (Objetivo de Desenvolvimento Sustentável 8) da ONU, que promove o crescimento econômico sustentável), o emprego pleno e o trabalho decente. Ao utilizar medidas que melhorem as condições de trabalho dos funcionários de restaurantes ao mesmo tempo que provê maior eficiência e, por consequência, maiores rendimentos aos restaurantes. 
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo da aplicação são restaurantes de pequeno e médio porte. A ferramenta é ideal para atendentes de mesa, gerentes de restaurantes, cozinheiros e proprietários de restaurantes que buscam agilizar o processo de anotações de pedidos, reduzir erros, melhorar a comunicação entre equipes e aumentar a eficiência do atendimento ao cliente.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+A aplicação também é voltada para negócios que buscam inovação, eficiência operacional e melhoria na gestão do cardápio e do estoque, além de restaurantes que desejam otimizar o tempo de atendimento, promover um serviço mais personalizado e aumentar a satisfação do cliente. Em resumo, qualquer restaurante que queria melhorar seu desempenho, reduzir custos e oferecer um atendimento mais ágil e preciso.
