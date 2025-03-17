@@ -1,4 +1,3 @@
-
 # Metodologia
 
 A Metodologia de trabalho adotada pelo grupo para o desenvolvimento do software foi baseada no framework Scrum, que permite uma abordagem ágil e iterativa. O projeto está dividido em sprints, com entregas incrementais e reuniões diárias para acompanhamento do progresso. A equipe utiliza ferramentas modernas para gestão de código, documentação e colaboração.
@@ -23,14 +22,17 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `main`: versão estável já testada do software.
 - `dev`: versão de desenvolvimento do software.
 - `feature/*`: branches para desenvolvimento de novas funcionalidades.
+- `release/*`: branches para a preparação de novas versòes de produção.
 - `hotfix/*`: branches para correções críticas na versão estável.
 
 O fluxo de trabalho funciona da seguinte forma:
 
 - Todo o desenvolvimento ocorre na branch `dev`.
-- Funcionalidades prontas para teste são mescladas na branch `testing`.
-- Após testes, o código estável é mesclado na branch `unstable` para validação adicional.
-- Versões consideradas prontas para produção são mescladas na branch `main`.
+- Novas funcionalidades são desenvolvidas em branches do tipo `feature/*`, que são criadas a partir da branch `dev`.
+- Quando uma funcionalidade está concluída, a branch `feature/*` é mesclada de volta na branch `dev`.
+- Quando uma nova versão está pronta para ser liberada, uma branch `release/*` é criada a partir da branch `dev`
+- A branch `release/*` é usada para testes finais e correções de bugs. Após a validação, ela é mesclada na branch `main` (para produção) e também na branch `dev` (para manter a sincronia).
+- Caso sejam identificados bugs críticos na produção, uma branch `hotfix/*` é criada a partir da branch `main`. Após a correção, a branch `hotfix/*` é mesclada na branch `main` e também na branch `dev`.
 
 O projeto utiliza o seguinte padrão para as tags:
 
@@ -47,14 +49,12 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-As issues são vinculadas aos commits usando `#<número_da_issue>` (ex: `git commit -m "fix(login): corrige erro de autenticação #12`).
+As issues são vinculadas aos commits usando `#<número_da_issue>` (ex: `git commit -m "fix(login): corrige erro de autenticação #12"`).
 Processo de Commits:
 
 ## Planejamento do projeto
 
 ###  Divisão de papéis
-
-> Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
 
 #### Sprint 1
 - _Scrum master_: Pedro César da Matta Silveira
