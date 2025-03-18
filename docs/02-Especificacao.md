@@ -91,3 +91,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | 007 | O sistema deve ser compatível com gateways de pagamento específicos (ex: Stripe, PayPal, etc.), podendo haver restrições quanto à escolha dos métodos de pagamento, dependendo de acordos com parceiros de pagamento. |
 | 008 | O sistema deve estar em conformidade com as regulamentações locais de proteção de dados (LGPD no Brasil, GDPR na União Europeia, etc.), especialmente em relação ao armazenamento e processamento de dados pessoais dos clientes. |
 | 009 | O sistema deve permitir atualizações periódicas no cardápio, mas essas mudanças devem ser controladas para não causar problemas operacionais, como alterações inesperadas em itens durante o processo de pedido. |
+
+### Diagrama de caso de uso
+
+[Diagrama de caso de uso](./images/diagrama-casos-de-uso)
