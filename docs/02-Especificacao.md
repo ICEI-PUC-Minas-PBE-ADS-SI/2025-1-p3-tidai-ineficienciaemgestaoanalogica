@@ -78,8 +78,16 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ---
 
-## Restrições
+### Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-O projeto está restrito aos itens apresentados na tabela a seguir.
+| ID  | Restrição                                                                               |
+|-----|-----------------------------------------------------------------------------------------|
+| 001 | O sistema precisa checar a disponibilidade dos produtos no menu em tempo real, levando em conta o inventário de ingredientes. Se um item não estiver à venda, deve ser eliminado ou marcado como indisponível. |
+| 002 | O sistema tem a capacidade de estabelecer um montante mínimo para o pedido, conforme a política do restaurante, que deve ser comunicado ao cliente antes de concluir a compra. |
+| 003 | O sistema deve aplicar automaticamente descontos ou promoções, se houver, conforme as condições estabelecidas (por exemplo, happy hour, combos de refeições, lealdade do cliente). |
+| 004 | O sistema deve calcular um tempo estimado de preparo do pedido com base no tipo de prato, e esse tempo deve ser comunicado ao cliente. |
+| 005 | Os pedidos devem ser priorizados com base na hora de chegada e no tipo de prato solicitado. Pedidos de entradas, por exemplo, devem ser processados antes dos principais. |
+| 006 | O sistema pode ter restrições quanto à área de entrega ou reserva, dependendo da localização do restaurante, como a distância máxima para entrega ou a necessidade de zonas específicas de serviço. |
+| 007 | O sistema deve ser compatível com gateways de pagamento específicos (ex: Stripe, PayPal, etc.), podendo haver restrições quanto à escolha dos métodos de pagamento, dependendo de acordos com parceiros de pagamento. |
+| 008 | O sistema deve estar em conformidade com as regulamentações locais de proteção de dados (LGPD no Brasil, GDPR na União Europeia, etc.), especialmente em relação ao armazenamento e processamento de dados pessoais dos clientes. |
+| 009 | O sistema deve permitir atualizações periódicas no cardápio, mas essas mudanças devem ser controladas para não causar problemas operacionais, como alterações inesperadas em itens durante o processo de pedido. |
