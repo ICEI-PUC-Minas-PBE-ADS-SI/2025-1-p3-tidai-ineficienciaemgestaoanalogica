@@ -76,11 +76,11 @@ Atualizado em: 13/03/2025
 | Marco Antonio Alves Moreira    | Objetivos                         | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
 | Marco Antonio Alves Moreira    | Justificativa                     | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
 | Marco Antonio Alves Moreira    | Público-Alvo                      | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
-| Davi Telles Xavier             | Personas                          | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Davi Telles Xavier             | Histórias de usuários             | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Thiago Botelho Neves           | Requisitos de Software            | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Thiago Botelho Neves           | Restrições da Solução             | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Caio Moreira Marques           | Diagramas de Casos de Uso         | 08/03/2025  | 17/03/2025 | 📝     |              |
+| Davi Telles Xavier             | Personas                          | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Davi Telles Xavier             | Histórias de usuários             | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Thiago Botelho Neves           | Requisitos de Software            | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Thiago Botelho Neves           | Restrições da Solução             | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Caio Moreira Marques           | Diagramas de Casos de Uso         | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
 | Pedro César da Matta Silveira  | Relação de ambientes de trabalho  | 08/03/2025  | 17/03/2025 | ✔️      | 13/03/2025   |
 | Pedro César da Matta Silveira  | Controle de versão                | 08/03/2025  | 17/03/2025 | ✔️      | 13/03/2025   |
 | Pedro César da Matta Silveira  | Planejamento do projeto           | 08/03/2025  | 17/03/2025 | ✔️      | 13/03/2025   |
