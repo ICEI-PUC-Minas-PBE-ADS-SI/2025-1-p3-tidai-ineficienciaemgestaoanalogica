@@ -94,4 +94,4 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ### Diagrama de caso de uso
 
-[Diagrama de caso de uso](./images/diagrama-casos-de-uso)
+[Diagrama de caso de uso](./images/diagrama-casos-de-uso.png)
