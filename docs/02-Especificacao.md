@@ -46,51 +46,40 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ## Requisitos
 
-As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade dos requisitos, aplique uma técnica de priorização e detalhe como essa técnica foi aplicada.
+---
 
-### Requisitos funcionais
+### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| ID     | Descrição do Requisito                                                                 | Prioridade |
+|--------|----------------------------------------------------------------------------------------|------------|
+| RF-001 | O sistema deve possibilitar o registro de clientes, fornecendo dados como nome, número de telefone, endereço eletrônico e preferências alimentares (se disponível). | ALTA       |
+| RF-002 | O sistema deve apresentar um menu dividido em categorias (entradas, pratos principais, sobremesas, bebidas, etc.), contendo descrições, preços e possibilidades de personalização. | ALTA       |
+| RF-003 | O cliente tem a opção de escolher itens do menu e fazer pedidos diretamente no sistema, com a possibilidade de alterar opções (como mudar o ponto da carne ou optar por acompanhamentos). | ALTA       |
+| RF-004 | O pedido deve ser encaminhado automaticamente para a cozinha, permitindo que os cozinheiros visualizem os itens e a personalização selecionada pelo consumidor. O sistema precisa habilitar a cozinha a sinalizar os pedidos como "em preparação" e "concluído". | ALTA       |
+| RF-005 | O cliente será capaz de visualizar em tempo real o estado do seu pedido (em preparação, pronto para ser servido, etc.) no sistema. | MÉDIA      |
+| RF-006 | O sistema precisa possibilitar a seleção de formas de pagamento (dinheiro, cartão de crédito, débito, e-wallet) e emitir o comprovante de pagamento. | ALTA       |
+| RF-007 | O consumidor terá a oportunidade de avaliar o serviço e a qualidade dos pratos, bem como apresentar sugestões para aprimoramentos no sistema. | BAIXA      |
+| RF-008 | O sistema deve informar ao cliente sobre o estado do pedido (por exemplo, pedido em elaboração, finalizado, ou quando ocorre algum atraso). | MÉDIA      |
+| RF-009 | O sistema deve produzir relatórios diários, semanais e mensais de vendas, facilitando o monitoramento das preferências dos consumidores e dos produtos mais comercializados. | MÉDIA      |
 
-### Requisitos não funcionais
+---
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| Deve processar as requisições do usuário em no máximo 3 segundos |  BAIXA | 
+### Requisitos Não Funcionais
 
-Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+| ID      | Descrição do Requisito                                                                 | Prioridade |
+|---------|----------------------------------------------------------------------------------------|------------|
+| RNF-001 | O sistema precisa ser capaz de lidar com um grande número de usuários ao mesmo tempo sem apresentar lentidão ou falhas, principalmente durante os períodos de maior demanda. | ALTA       |
+| RNF-002 | A interface do sistema deve ser simples e intuitiva para os usuários, com uma navegação intuitiva e transparente. | ALTA       |
+| RNF-003 | O sistema deve assegurar a salvaguarda de informações confidenciais dos clientes, tais como informações financeiras e pessoais, por meio de criptografia e autenticação confiável. | ALTA       |
+| RNF-004 | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. | ALTA       |
+| RNF-005 | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes. | MÉDIA      |
+| RNF-006 | O sistema deve funcionar ininterruptamente, todos os dias da semana, com um período de inatividade mínimo, assegurando uma elevada taxa de confiabilidade. | ALTA       |
+| RNF-007 | O sistema deve ser facilmente mantido e atualizado, com logs detalhados para facilitar a detecção de erros e a resolução de problemas. | MÉDIA      |
 
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
-
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+---
 
 ## Restrições
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 O projeto está restrito aos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
-|002| O custo total do projeto não deve exceder o orçamento definido       |
-
-## Diagrama de casos de uso
-
-[diagrama de caso de uso](./images/diagrama-casos-de-uso.png)
