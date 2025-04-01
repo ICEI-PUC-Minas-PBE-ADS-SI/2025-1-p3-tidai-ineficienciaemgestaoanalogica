@@ -64,6 +64,13 @@ Processo de Commits:
 - Casos de Uso: Caio Moreira Marques 
 - Metodologia: Pedro César da Matta Silveira 
 
+#### Sprint 2
+- _Scrum master_: Pedro César da Matta Silveira
+- Projeto de Interface: Pedro César da Matta Silveira
+- Template da Aplicação: Caio Moreira Marques e Marco Antonio Alvez Moreira
+- Arquitetura da Solução: Thiago Botelho Neves
+- Modelo de Dados: Davi Telles Xavier
+
 ###  Quadro de tarefas
 
 #### Sprint 1
@@ -94,7 +101,7 @@ Atualizado em: 31/03/2025
 | Pedro César da Matta Silveira  | Projeto de Interface              | 31/03/2025  | 14/04/2025 | 📝      |    |
 | Caio Moreira Marques           | Template da Aplicação             |             | 28/04/2025 | ❌      |    |
 | Marco Antonio Alves Moreira    | Template da Aplicação             |             | 28/04/2025 | ❌      |    |
-| Thiago Botelho                 | Arquitetura da Solução            | 31/03/2025  | 28/04/2025 | 📝      |    |
+| Thiago Botelho Neves           | Arquitetura da Solução            | 31/03/2025  | 28/04/2025 | 📝      |    |
 | Davi Telles Xavier             | Modelo de Dados                   | 31/03/2025  | 28/04/2025 | 📝      |    |
 
 Legenda:
