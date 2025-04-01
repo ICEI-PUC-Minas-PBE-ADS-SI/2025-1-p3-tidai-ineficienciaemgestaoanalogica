@@ -68,7 +68,7 @@ Processo de Commits:
 
 #### Sprint 1
 
-Atualizado em: 13/03/2025
+Atualizado em: 17/03/2025
 
 | Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status | Terminado em |
 | :----                          | :----                             | :----:      | :----:     | :----: | :----:       |
@@ -76,14 +76,26 @@ Atualizado em: 13/03/2025
 | Marco Antonio Alves Moreira    | Objetivos                         | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
 | Marco Antonio Alves Moreira    | Justificativa                     | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
 | Marco Antonio Alves Moreira    | Público-Alvo                      | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
-| Davi Telles Xavier             | Personas                          | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Davi Telles Xavier             | Histórias de usuários             | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Thiago Botelho Neves           | Requisitos de Software            | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Thiago Botelho Neves           | Restrições da Solução             | 08/03/2025  | 17/03/2025 | 📝     |              |
-| Caio Moreira Marques           | Diagramas de Casos de Uso         | 08/03/2025  | 17/03/2025 | 📝     |              |
+| Davi Telles Xavier             | Personas                          | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Davi Telles Xavier             | Histórias de usuários             | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Thiago Botelho Neves           | Requisitos de Software            | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Thiago Botelho Neves           | Restrições da Solução             | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
+| Caio Moreira Marques           | Diagramas de Casos de Uso         | 08/03/2025  | 17/03/2025 | ✔️      | 17/03/2025   |
 | Pedro César da Matta Silveira  | Relação de ambientes de trabalho  | 08/03/2025  | 17/03/2025 | ✔️      | 13/03/2025   |
 | Pedro César da Matta Silveira  | Controle de versão                | 08/03/2025  | 17/03/2025 | ✔️      | 13/03/2025   |
 | Pedro César da Matta Silveira  | Planejamento do projeto           | 08/03/2025  | 17/03/2025 | ✔️      | 13/03/2025   |
+
+#### Sprint 2
+
+Atualizado em: 31/03/2025
+
+| Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status | Terminado em |
+| :----                          | :----                             | :----:      | :----:     | :----: | :----:       |
+| Pedro César da Matta Silveira  | Projeto de Interface              | 31/03/2025  | 14/04/2025 | 📝      |    |
+| Caio Moreira Marques           | Template da Aplicação             |             | 28/04/2025 | ❌      |    |
+| Marco Antonio Alves Moreira    | Template da Aplicação             |             | 28/04/2025 | ❌      |    |
+| Thiago Botelho                 | Arquitetura da Solução            | 31/03/2025  | 28/04/2025 | 📝      |    |
+| Davi Telles Xavier             | Modelo de Dados                   | 31/03/2025  | 28/04/2025 | 📝      |    |
 
 Legenda:
 - ✔️ : terminado
