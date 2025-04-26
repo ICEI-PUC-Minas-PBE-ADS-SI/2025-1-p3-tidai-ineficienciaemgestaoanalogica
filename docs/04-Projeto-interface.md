@@ -1,51 +1,19 @@
-
 # Projeto de interface
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
+O design da plataforma foi pensado para que ela fosse acessada de forma prática em um dispositivo mobile, o desenvolvimento foi estruturado com o mobile first em mente. O Garçom só precisa navegar entre a aba "Ver Pedidos", para atualizar o pedido de uma mesa, e a aba "Fazer Pedido", enquanto o funcionário da cozinha pode ficar apenas com a aba "Ver Pedidos" sempre aberta, acompanhando os itens necessários para cada pedido. O gerente é o único que precisará se preocupar com as abas "Relatórios" e "Gerenciar", que também têm navegações e funcionalidades simples, para diminuir a barreira de utilização para donos de pequenos estabelecimentos que nunca tiveram contato com softwares de gerenciamento.
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+## Protótipo Interativo
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados na <a href="02-Especificacao.md"> Especificação do projeto</a></span>.
+Foi desenvolvido um protótipo interativo no Figma, que simula a navegação entre as páginas do sistema, representando o fluxo dos usuários e as funcionalidades disponíveis no software. O protótipo pode ser acessado pelo link:
 
- ## User flow
+[Protótipo no Figma](https://www.figma.com/proto/nH6rQi0QrZbK4ZekkkOqRM/YourRestaurantManager?node-id=0-1&t=AHT5DP8cQSB2HPH7-1)
 
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
+Essas são algumas imagens do protótipo para ilustrar os possíveis fluxos:
 
-![Exemplo de user flow](images/user_flow.jpg)
-
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
-### Diagrama de fluxo
-
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo, muitas vezes sem a necessidade de desenhar o design das telas da interface. Isso permite que o design das interações seja bem planejado e tenha impacto na qualidade do design do wireframe interativo que será desenvolvido logo em seguida.
-
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem, internamente, a indicação dos principais elementos de interface — tais como menus e acessos — e funcionalidades, como editar, pesquisar, filtrar e configurar, além da conexão entre esses boxes a partir do processo de interação.
-
-![Exemplo de diagrama de fluxo](images/diagrama_fluxo.jpg)
-
-> **Links úteis**:
-> - [Como criar um diagrama de fluxo de usuário](https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram)
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
-
-## Wireframes
-
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
-
-![Exemplo de wireframe](images/wireframe.png)
- 
-> **Links úteis**:
-> - [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135)
-> - [Protótipos vs wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
-
+![Ver pedidos](./images/Fluxo\ 1\ -\ Ver\ Pedidos.png)
+![Fazer pedido](./images/Fluxo\ 2\ -\ Fazer\ Pedidos.png)
+![Relatorios](./images/Fluxo\ 3\ -\ Relatorios.png)
+![Gerenciar](./images/Fluxo\ 4\ -\ Gerenciar.png)
 
 ## Interface do sistema
 
