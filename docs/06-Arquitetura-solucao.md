@@ -39,51 +39,65 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ### Modelo físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
+Script de criação das tabelas do sistema:
 
 ```sql
--- Criação da tabela Medico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+
+-- criando a tabela de categorias de produtos
+CREATE TABLE Categoria (
+  IdCategoria INT PRIMARY KEY AUTO_INCREMENT,
+  NomeCategoria VARCHAR(100) NOT NULL,
 );
 
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+-- criando tabela de produtos
+CREATE TABLE Produto (
+  IdProduto INT PRIMARY KEY AUTO_INCREMENT,
+  NomeProduto VARCHAR(100) NOT NULL,
+  DescricaoProduto VARCHAR(255),
+  PrecoProduto DECIMAL(10,2) NOT NULL,
+  FotoProduto VARCHAR(255),
+  IdCategoria INT,
+  FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria)
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+-- criando tabela de funcionários
+CREATE TABLE Funcionario (
+    IdFuncionario INT PRIMARY KEY AUTO_INCREMENT,
+    NomeFuncionario VARCHAR(100) NOT NULL,
+    UsuarioFuncionario VARCHAR(50) UNIQUE NOT NULL,
+    SenhaFuncionario VARCHAR(60) NOT NULL
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+-- criando tabela de mesas do restaurante
+CREATE TABLE Mesa (
+    IdMesa INT PRIMARY KEY AUTO_INCREMENT,
+    NomeMesa VARCHAR(50) NOT NULL
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+-- criando tabela dos pedidos realizados
+CREATE TABLE Pedido (
+    IdPedido INT PRIMARY KEY AUTO_INCREMENT,
+    IdMesa INT NOT NULL,
+    IdFuncionario INT NOT NULL,
+    DataHoraInicio DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    DataHoraFim DATETIME,
+    StatusPedido ENUM('Aberto', 'Fechado', 'Cancelado') DEFAULT 'Aberto',
+    FOREIGN KEY (IdMesa) REFERENCES Mesa(IdMesa),
+    FOREIGN KEY (IdFuncionario) REFERENCES Funcionário(IdFuncionario)
 );
+
+-- criando tabela da relação entre pedidos e produtos
+CREATE TABLE Pedido_Produto (
+  IdPedido_Produto INT PRIMARY KEY AUTO_INCREMENT,
+  IdPedido INT NOT NULL,
+  IdProduto INT NOT NULL,
+  Quantidade INT NOT NULL DEFAULT 1,
+  PrecoUnitario DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (IdPedido) REFERENCES Pedido(IdPedido),
+  FOREIGN KEY (IdProduto) REFERENCES Produto(IdProduto)
+);
+
 ```
-Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
-
 
 ## Tecnlogias utilizadas
 
