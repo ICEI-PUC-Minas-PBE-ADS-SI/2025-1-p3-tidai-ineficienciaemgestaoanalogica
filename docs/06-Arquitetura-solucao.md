@@ -1,6 +1,6 @@
 # Arquitetura da solução
 
-[Fluxograma da infraestrutura](./images/fluxograma-funcionamento.png)
+![Fluxograma da infraestrutura](./images/fluxograma-funcionamento.png)
 
 ## Fluxo de Atendimento
 
