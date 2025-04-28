@@ -48,42 +48,42 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                                                                 | Prioridade |
-|--------|----------------------------------------------------------------------------------------|------------|
-| RF-001 | O gerente deve ser capaz de gerenciar os produtos. | ALTA       |
-| RF-002 | O gerente deve ser capaz de gerenciar as categorias de produtos. | ALTA       |
-| RF-003 | O funcionário deve ser capaz de gerenciar os pedidos. | ALTA       |
-| RF-004 | O gerente deve ser capaz de visualizar relatórios de pedidos por data ou períodos personalizados. | MÉDIA       |
-| RF-005 | O gerente deve ser capaz de gerenciar o acesso dos funcionários no sistema. | ALTA      |
-| RF-006 | O gerente deve ser capaz de gerenciar as mesas do restaurante | ALTA       |
-| RF-007 | O sistema deve permitir a impressão de contas e relatórios. | MÉDIA      |
+| ID      | Descrição do Requisito                                                                 | Prioridade |
+|---------|----------------------------------------------------------------------------------------|------------|
+| RF-001  | O gerente deve ser capaz de gerenciar os produtos.                                     | ALTA       |
+| RF-002  | O gerente deve ser capaz de gerenciar as categorias de produtos.                       | ALTA       |
+| RF-003  | O funcionário deve ser capaz de gerenciar os pedidos.                                  | ALTA       |
+| RF-004  | O gerente deve ser capaz de visualizar relatórios de pedidos por data ou períodos personalizados. | MÉDIA       |
+| RF-005  | O gerente deve ser capaz de gerenciar o acesso dos funcionários no sistema.            | ALTA      |
+| RF-006  | O gerente deve ser capaz de gerenciar as mesas do restaurante                          | ALTA      |
+| RF-007  | O sistema deve permitir a impressão de contas e relatórios.                            | MÉDIA     |
 
 ---
 
 ### Requisitos Não Funcionais
 
-| ID      | Descrição do Requisito                                                                 | Prioridade |
-|---------|----------------------------------------------------------------------------------------|------------|
-| RNF-001 | O sistema deve suportar múltiplos acessos simultâneos sem degradação perceptível de desempenho | ALTA       |
-| RNF-002 | O sistema deve possuir uma interface gráfica simples, intuitiva e adequada ao ambiente de uso. | ALTA       |
-| RNF-003 | O sistema deve proteger os dados sensíveis do sistema utilizando criptografia segura. | ALTA       |
-| RNF-004 | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. | ALTA       |
-| RNF-005 | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes. | ALTA      |
-| RNF-006 | O sistema deve manter registros de operações administrativas para auditoria e resolução de problemas. | MÉDIA       |
-| RNF-007 | O sistema deve ser otimizado para rodar em servidores com recursos limitados, garantindo boa performance em ambientes com hardwares modestos. | ALTA      |
+| ID        | Descrição do Requisito                                                               | Prioridade |
+|-----------|--------------------------------------------------------------------------------------|------------|
+| RNF-001   | O sistema deve suportar múltiplos acessos simultâneos sem degradação perceptível de desempenho | ALTA       |
+| RNF-002   | O sistema deve possuir uma interface gráfica simples, intuitiva e adequada ao ambiente de uso. | ALTA       |
+| RNF-003   | O sistema deve proteger os dados sensíveis do sistema utilizando criptografia segura. | ALTA       |
+| RNF-004   | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. | ALTA       |
+| RNF-005   | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes. | ALTA      |
+| RNF-006   | O sistema deve manter registros de operações administrativas para auditoria e resolução de problemas. | MÉDIA       |
+| RNF-007   | O sistema deve ser otimizado para rodar em servidores com recursos limitados, garantindo boa performance em ambientes com hardwares modestos. | ALTA      |
 
 ---
 
 ### Restrições
 
-| ID  | Restrição                                                                               |
-|-----|-----------------------------------------------------------------------------------------|
-| 001 | O sistema deve permitir a edição do menu apenas fora do fluxo ativo de criação/atualização de pedidos para evitar inconsistências. |
-| 002 | O  sistema deve assegurar que a remoção de categorias exclua todos os produtos associados, mediante confirmação explícita do usuário. |
-| 003 | O sistema deve aplicar restrições de acesso conforme permissões configuradas nos usuários. |
-| 004 | O sistema deve permitir apenas criação de pedidos que tenham pelo menos um item registrado. |
-| 005 | A impressão de contas e relatórios deve estar nitegrada diretamente oa sistema, com formato padronizado. |
-| 006 | Atualizações no menu devem ser refletidas imediatamente em todas as telas do sistema. |
+| ID      | Restrição                                                                               |
+|---------|-----------------------------------------------------------------------------------------|
+| 001     | O sistema deve permitir a edição do menu apenas fora do fluxo ativo de criação/atualização de pedidos para evitar inconsistências. |
+| 002     | O  sistema deve assegurar que a remoção de categorias exclua todos os produtos associados, mediante confirmação explícita do usuário. |
+| 003     | O sistema deve aplicar restrições de acesso conforme permissões configuradas nos usuários. |
+| 004     | O sistema deve permitir apenas criação de pedidos que tenham pelo menos um item registrado. |
+| 005     | A impressão de contas e relatórios deve estar nitegrada diretamente oa sistema, com formato padronizado. |
+| 006     | Atualizações no menu devem ser refletidas imediatamente em todas as telas do sistema. |
 
 ### Diagrama de caso de uso
 
