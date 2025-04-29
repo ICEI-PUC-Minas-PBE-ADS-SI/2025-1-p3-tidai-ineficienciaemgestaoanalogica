@@ -93,24 +93,20 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 #### RF-002
 
-![Gerenciar Categorias](./images/caso-de-uso-gerenciar-categorias.png)
+![Gerenciar Categorias](./images/caso-de-uso-gerenciar-categoria.png)
 
 #### RF-003
 
-![Gerenciar Pedidos](./images/caso-de-uso-gerenciar-pedidos.png)
+![Gerenciar Pedidos](./images/caso-de-uso-gerenciar-pedido.png)
 
 #### RF-004
 
-![Visualizar Relatórios](./images/caso-de-uso-visualizar-relatórios.png)
+![Visualizar Relatórios](./images/caso-de-uso-visualizar-relatorio.png)
 
 #### RF-005
 
-![Gerenciar Funcionários](./images/caso-de-uso-gerenciar-funcionários.png)
+![Gerenciar Funcionários](./images/caso-de-uso-gerenciar-funcionarios.png)
 
 #### RF-006
 
 ![Gerenciar Mesas](./images/caso-de-uso-gerenciar-mesas.png)
-
-#### RF-007
-
-![Imprimir Documentos](./images/caso-de-uso-imprimir-documentos.png) 
