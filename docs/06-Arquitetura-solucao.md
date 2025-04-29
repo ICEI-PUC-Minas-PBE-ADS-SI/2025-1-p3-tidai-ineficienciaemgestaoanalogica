@@ -21,21 +21,13 @@ Apresente o modelo de dados por meio de um modelo relacional que contemple todos
 
 ### Modelo ER
 
-O Modelo ER representa, por meio de um diagrama, como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
-
-> **Links úteis**:
-> - [Como fazer um diagrama entidade relacionamento](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+![Modelo ER](./images/MODELO-ER.jpg)
 
 ### Esquema relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
+![Esquema Realacional](./images/ESQUEMA-RELACIONAL.jpg)
 
-![Exemplo de um modelo relacional](images/modelo_relacional.png "Exemplo de modelo relacional.")
 ---
-
-> **Links úteis**:
-> - [Criando um modelo relacional - documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/12.0.0?topic=designer-creating-relational-model)
 
 ### Modelo físico
 
