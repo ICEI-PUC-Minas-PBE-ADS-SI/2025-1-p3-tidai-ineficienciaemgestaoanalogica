@@ -17,4 +17,4 @@ Essas são algumas imagens do protótipo para ilustrar os possíveis fluxos:
 
 ## Interface do sistema
 
-![Interface do Sistema](../images/interface-sistema.png)
+![Interface do Sistema](./images/interface-sistema.png)
