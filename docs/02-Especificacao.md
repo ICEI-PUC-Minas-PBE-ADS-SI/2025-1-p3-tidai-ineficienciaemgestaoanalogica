@@ -93,7 +93,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 #### RF-002
 
-![Gerenciar Categorias](./images/caso-de-uso-gerenciar-categoria.png)
+![Gerenciar Categorias](./images/caso-de-uso-gereciar-categoria.png)
 
 #### RF-003
 
