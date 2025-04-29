@@ -99,10 +99,10 @@ Atualizado em: 31/03/2025
 | Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status | Terminado em |
 | :----                          | :----                             | :----:      | :----:     | :----: | :----:       |
 | Pedro César da Matta Silveira  | Projeto de Interface              | 31/03/2025  | 14/04/2025 | ✔️      | 09/04/2025   |
-| Caio Moreira Marques           | Template da Aplicação             |             | 28/04/2025 | 📝      |    |
-| Marco Antonio Alves Moreira    | Template da Aplicação             |             | 28/04/2025 | 📝      |    |
+| Caio Moreira Marques           | Template da Aplicação             | 14/04/2025  | 28/04/2025 | ✔️      | 27/04/2025   |
+| Marco Antonio Alves Moreira    | Template da Aplicação             | 31/03/2025  | 28/04/2025 | ✔️      | 27/04/2025   |
 | Thiago Botelho Neves           | Arquitetura da Solução            | 31/03/2025  | 28/04/2025 | ✔️      | 26/04/2025   |
-| Davi Telles Xavier             | Modelo de Dados                   | 31/03/2025  | 28/04/2025 | 📝      |    |
+| Davi Telles Xavier             | Modelo de Dados                   | 31/03/2025  | 28/04/2025 | ✔️      | 28/04/2025   |
 
 Legenda:
 - ✔️ : terminado
