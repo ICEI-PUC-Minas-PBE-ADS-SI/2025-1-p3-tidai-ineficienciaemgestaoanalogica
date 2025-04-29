@@ -17,6 +17,4 @@ Essas são algumas imagens do protótipo para ilustrar os possíveis fluxos:
 
 ## Interface do sistema
 
-Visão geral da interação do usuário por meio das telas do sistema. 
-
-> Apresente as principais interfaces da plataforma em sua versão final.
+![Interface do Sistema](../images/interface-sistema.png)
