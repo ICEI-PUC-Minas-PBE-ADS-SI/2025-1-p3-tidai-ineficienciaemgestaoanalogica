@@ -10,13 +10,11 @@ Foi desenvolvido um protótipo interativo no Figma, que simula a navegação ent
 
 Essas são algumas imagens do protótipo para ilustrar os possíveis fluxos:
 
-![Ver pedidos](./images/Fluxo\ 1\ -\ Ver\ Pedidos.png)
-![Fazer pedido](./images/Fluxo\ 2\ -\ Fazer\ Pedidos.png)
-![Relatorios](./images/Fluxo\ 3\ -\ Relatorios.png)
-![Gerenciar](./images/Fluxo\ 4\ -\ Gerenciar.png)
+![Ver pedidos](./images/fluxo1-ver-pedidos.png)
+![Fazer pedido](./images/fluxo2-fazer-pedidos.png)
+![Relatorios](./images/fluxo3-relatorios.png)
+![Gerenciar](./images/fluxo4-gerenciar.png)
 
 ## Interface do sistema
 
-Visão geral da interação do usuário por meio das telas do sistema. 
-
-> Apresente as principais interfaces da plataforma em sua versão final.
+![Interface do Sistema](./images/interface-sistema.png)

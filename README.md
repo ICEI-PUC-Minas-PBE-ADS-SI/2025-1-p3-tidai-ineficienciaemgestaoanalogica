@@ -4,7 +4,7 @@
 
 `DISCIPLINA: Trabalho Interdisciplinar Desenvolvimento de Aplicação Interativa`
 
-`Xº semestre/ANO`
+`1º semestre/2025`
 
 <p style="text-align: justify">O objetivo deste projeto é desenvolver uma solução digital para modernizar a gestão de pedidos e comandas em restaurantes que ainda utilizam métodos analógicos para lidar com as questões organizacionais, eliminando os problemas causados por tais métodos. A aplicação visa agilizar o atendimento, reduzir erros humanos e melhorar a experiência do cliente, permitindo que pedidos sejam registrados, processados e rastreados de forma eficiente. Além disso, a solução integrará o controle de estoque, ajudando a evitar desperdícios e garantindo maior organização interna.<br><br>
 Com isso, o projeto busca não apenas aumentar a produtividade e a satisfação dos clientes, mas também proporcionar um ambiente de trabalho mais eficaz para os funcionários e uma gestão mais assertiva para os proprietários, alinhando-se às necessidades de um mercado cada vez mais digital e competitivo.

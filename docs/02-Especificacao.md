@@ -1,7 +1,5 @@
 # Especificação do projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
-
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
@@ -50,48 +48,65 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                                                                 | Prioridade |
-|--------|----------------------------------------------------------------------------------------|------------|
-| RF-001 | O sistema deve possibilitar o registro de clientes, fornecendo dados como nome, número de telefone, endereço eletrônico e preferências alimentares (se disponível). | ALTA       |
-| RF-002 | O sistema deve apresentar um menu dividido em categorias (entradas, pratos principais, sobremesas, bebidas, etc.), contendo descrições, preços e possibilidades de personalização. | ALTA       |
-| RF-003 | O cliente tem a opção de escolher itens do menu e fazer pedidos diretamente no sistema, com a possibilidade de alterar opções (como mudar o ponto da carne ou optar por acompanhamentos). | ALTA       |
-| RF-004 | O pedido deve ser encaminhado automaticamente para a cozinha, permitindo que os cozinheiros visualizem os itens e a personalização selecionada pelo consumidor. O sistema precisa habilitar a cozinha a sinalizar os pedidos como "em preparação" e "concluído". | ALTA       |
-| RF-005 | O cliente será capaz de visualizar em tempo real o estado do seu pedido (em preparação, pronto para ser servido, etc.) no sistema. | MÉDIA      |
-| RF-006 | O sistema precisa possibilitar a seleção de formas de pagamento (dinheiro, cartão de crédito, débito, e-wallet) e emitir o comprovante de pagamento. | ALTA       |
-| RF-007 | O consumidor terá a oportunidade de avaliar o serviço e a qualidade dos pratos, bem como apresentar sugestões para aprimoramentos no sistema. | BAIXA      |
-| RF-008 | O sistema deve informar ao cliente sobre o estado do pedido (por exemplo, pedido em elaboração, finalizado, ou quando ocorre algum atraso). | MÉDIA      |
-| RF-009 | O sistema deve produzir relatórios diários, semanais e mensais de vendas, facilitando o monitoramento das preferências dos consumidores e dos produtos mais comercializados. | MÉDIA      |
+| ID      | Descrição do Requisito                                                                 | Prioridade |
+|---------|----------------------------------------------------------------------------------------|------------|
+| RF-001  | O gerente deve ser capaz de gerenciar os produtos.                                     | ALTA       |
+| RF-002  | O gerente deve ser capaz de gerenciar as categorias de produtos.                       | ALTA       |
+| RF-003  | O funcionário deve ser capaz de gerenciar os pedidos.                                  | ALTA       |
+| RF-004  | O gerente deve ser capaz de visualizar relatórios de pedidos por data ou períodos personalizados. | MÉDIA       |
+| RF-005  | O gerente deve ser capaz de gerenciar o acesso dos funcionários no sistema.            | ALTA      |
+| RF-006  | O gerente deve ser capaz de gerenciar as mesas do restaurante                          | ALTA      |
+| RF-007  | O sistema deve permitir a impressão de contas e relatórios.                            | MÉDIA     |
 
 ---
 
 ### Requisitos Não Funcionais
 
-| ID      | Descrição do Requisito                                                                 | Prioridade |
-|---------|----------------------------------------------------------------------------------------|------------|
-| RNF-001 | O sistema precisa ser capaz de lidar com um grande número de usuários ao mesmo tempo sem apresentar lentidão ou falhas, principalmente durante os períodos de maior demanda. | ALTA       |
-| RNF-002 | A interface do sistema deve ser simples e intuitiva para os usuários, com uma navegação intuitiva e transparente. | ALTA       |
-| RNF-003 | O sistema deve assegurar a salvaguarda de informações confidenciais dos clientes, tais como informações financeiras e pessoais, por meio de criptografia e autenticação confiável. | ALTA       |
-| RNF-004 | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. | ALTA       |
-| RNF-005 | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes. | MÉDIA      |
-| RNF-006 | O sistema deve funcionar ininterruptamente, todos os dias da semana, com um período de inatividade mínimo, assegurando uma elevada taxa de confiabilidade. | ALTA       |
-| RNF-007 | O sistema deve ser facilmente mantido e atualizado, com logs detalhados para facilitar a detecção de erros e a resolução de problemas. | MÉDIA      |
+| ID        | Descrição do Requisito                                                               | Prioridade |
+|-----------|--------------------------------------------------------------------------------------|------------|
+| RNF-001   | O sistema deve suportar múltiplos acessos simultâneos sem degradação perceptível de desempenho | ALTA       |
+| RNF-002   | O sistema deve possuir uma interface gráfica simples, intuitiva e adequada ao ambiente de uso. | ALTA       |
+| RNF-003   | O sistema deve proteger os dados sensíveis do sistema utilizando criptografia segura. | ALTA       |
+| RNF-004   | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. | ALTA       |
+| RNF-005   | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes. | ALTA      |
+| RNF-006   | O sistema deve manter registros de operações administrativas para auditoria e resolução de problemas. | MÉDIA       |
+| RNF-007   | O sistema deve ser otimizado para rodar em servidores com recursos limitados, garantindo boa performance em ambientes com hardwares modestos. | ALTA      |
 
 ---
 
 ### Restrições
 
-| ID  | Restrição                                                                               |
-|-----|-----------------------------------------------------------------------------------------|
-| 001 | O sistema precisa checar a disponibilidade dos produtos no menu em tempo real, levando em conta o inventário de ingredientes. Se um item não estiver à venda, deve ser eliminado ou marcado como indisponível. |
-| 002 | O sistema tem a capacidade de estabelecer um montante mínimo para o pedido, conforme a política do restaurante, que deve ser comunicado ao cliente antes de concluir a compra. |
-| 003 | O sistema deve aplicar automaticamente descontos ou promoções, se houver, conforme as condições estabelecidas (por exemplo, happy hour, combos de refeições, lealdade do cliente). |
-| 004 | O sistema deve calcular um tempo estimado de preparo do pedido com base no tipo de prato, e esse tempo deve ser comunicado ao cliente. |
-| 005 | Os pedidos devem ser priorizados com base na hora de chegada e no tipo de prato solicitado. Pedidos de entradas, por exemplo, devem ser processados antes dos principais. |
-| 006 | O sistema pode ter restrições quanto à área de entrega ou reserva, dependendo da localização do restaurante, como a distância máxima para entrega ou a necessidade de zonas específicas de serviço. |
-| 007 | O sistema deve ser compatível com gateways de pagamento específicos (ex: Stripe, PayPal, etc.), podendo haver restrições quanto à escolha dos métodos de pagamento, dependendo de acordos com parceiros de pagamento. |
-| 008 | O sistema deve estar em conformidade com as regulamentações locais de proteção de dados (LGPD no Brasil, GDPR na União Europeia, etc.), especialmente em relação ao armazenamento e processamento de dados pessoais dos clientes. |
-| 009 | O sistema deve permitir atualizações periódicas no cardápio, mas essas mudanças devem ser controladas para não causar problemas operacionais, como alterações inesperadas em itens durante o processo de pedido. |
+| ID      | Restrição                                                                               |
+|---------|-----------------------------------------------------------------------------------------|
+| 001     | O sistema deve permitir a edição do menu apenas fora do fluxo ativo de criação/atualização de pedidos para evitar inconsistências. |
+| 002     | O  sistema deve assegurar que a remoção de categorias exclua todos os produtos associados, mediante confirmação explícita do usuário. |
+| 003     | O sistema deve aplicar restrições de acesso conforme permissões configuradas nos usuários. |
+| 004     | O sistema deve permitir apenas criação de pedidos que tenham pelo menos um item registrado. |
+| 005     | A impressão de contas e relatórios deve estar nitegrada diretamente oa sistema, com formato padronizado. |
+| 006     | Atualizações no menu devem ser refletidas imediatamente em todas as telas do sistema. |
 
 ### Diagrama de caso de uso
 
-![Diagrama de caso de uso](./images/diagrama-casos-de-uso.png)
+#### RF-001
+
+![Gerenciar Produtos](./images/caso-de-uso-gerenciar-produtos.png)
+
+#### RF-002
+
+![Gerenciar Categorias](./images/caso-de-uso-gereciar-categoria.png)
+
+#### RF-003
+
+![Gerenciar Pedidos](./images/caso-de-uso-gerenciar-pedido.png)
+
+#### RF-004
+
+![Visualizar Relatórios](./images/caso-de-uso-visualizar-relatorio.png)
+
+#### RF-005
+
+![Gerenciar Funcionários](./images/caso-de-uso-gerenciar-funcionarios.png)
+
+#### RF-006
+
+![Gerenciar Mesas](./images/caso-de-uso-gerenciar-mesas.png)
