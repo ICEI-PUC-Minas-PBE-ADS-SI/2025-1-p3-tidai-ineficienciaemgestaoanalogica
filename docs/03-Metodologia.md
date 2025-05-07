@@ -71,6 +71,13 @@ Processo de Commits:
 - Arquitetura da Solução: Thiago Botelho Neves
 - Modelo de Dados: Davi Telles Xavier
 
+#### Sprint 3
+- _Scrum master_: Pedro César da Matta Silveira
+- CSS e HTML: Marco Antonio Alves Moreira
+- Versão inicial do código: Pedro César da Matta Silveira
+- Plano de Testes de Software: Thiago Botelho Neves e Davi Telles Xavier 
+- Registro de Testes de Software: Caio Moreira Marques
+
 ###  Quadro de tarefas
 
 #### Sprint 1
@@ -94,7 +101,7 @@ Atualizado em: 17/03/2025
 
 #### Sprint 2
 
-Atualizado em: 31/03/2025
+Atualizado em: 28/04/2025
 
 | Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status | Terminado em |
 | :----                          | :----                             | :----:      | :----:     | :----: | :----:       |
@@ -103,6 +110,18 @@ Atualizado em: 31/03/2025
 | Marco Antonio Alves Moreira    | Template da Aplicação             | 31/03/2025  | 28/04/2025 | ✔️      | 27/04/2025   |
 | Thiago Botelho Neves           | Arquitetura da Solução            | 31/03/2025  | 28/04/2025 | ✔️      | 26/04/2025   |
 | Davi Telles Xavier             | Modelo de Dados                   | 31/03/2025  | 28/04/2025 | ✔️      | 28/04/2025   |
+
+#### Sprint 4
+
+Atualizado em: 07/05/2025
+
+| Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status   | Terminado em |
+| :----                          | :----                             | :----:      | :----:     | :----:   | :----:       |
+| Marco Antonio Alves Moreira    | HTML e CSS                        | 29/04/2025  | 14/05/2025 | 📝      |              |
+| Thiago Botelho Neves           | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | 📝      |              |
+| Davi Telles Xavier             | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | 📝      |              |
+| Caio Moreira Marques           | Registro de Testes de Software    | 29/04/2025  | 26/05/2025 | 📝      |              |
+| Pedro César da Matta Silveira  | Versão inicial do código          | 29/04/2025  | 26/05/2025 | 📝      |              |
 
 Legenda:
 - ✔️ : terminado
