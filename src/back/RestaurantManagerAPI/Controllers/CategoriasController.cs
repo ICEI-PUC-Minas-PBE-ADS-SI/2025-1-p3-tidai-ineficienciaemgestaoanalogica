@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
 public class CategoriasController : Controller<Categoria>

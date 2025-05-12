@@ -17,9 +17,14 @@ public class Pedido
     public Funcionario? Funcionario { get; set; }
 
     [Required]
-    public DateTime DataHoraInicio { get; set; } = DateTime.Now;
-
+    public DateTime DataHoraInicio { get; set; }
     public DateTime? DataHoraFim { get; set; }
+
+    [Column(TypeName = "decimal(10,2)")]
+    public decimal PrecoFinal { get; set; }
+
+    [StringLength(255)]
+    public string Observacao { get; set; } = "";
 
     public ICollection<ItemPedido>? ItensPedido { get; set; }
 }

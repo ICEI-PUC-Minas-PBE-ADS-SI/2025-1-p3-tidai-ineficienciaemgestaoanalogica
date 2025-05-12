@@ -229,3 +229,4 @@ C:\Users\pedro\Documents\tidai-dev\src\back\RestaurantManagerAPI\obj\Debug\net8.
 C:\Users\pedro\Documents\tidai-dev\src\back\RestaurantManagerAPI\obj\Debug\net8.0\RestaurantManagerAPI.pdb
 C:\Users\pedro\Documents\tidai-dev\src\back\RestaurantManagerAPI\obj\Debug\net8.0\RestaurantManagerAPI.genruntimeconfig.cache
 C:\Users\pedro\Documents\tidai-dev\src\back\RestaurantManagerAPI\obj\Debug\net8.0\ref\RestaurantManagerAPI.dll
+C:\Users\pedro\documents\tidai-dev\src\back\RestaurantManagerAPI\bin\Debug\net8.0\RestaurantManagerAPI.staticwebassets.runtime.json

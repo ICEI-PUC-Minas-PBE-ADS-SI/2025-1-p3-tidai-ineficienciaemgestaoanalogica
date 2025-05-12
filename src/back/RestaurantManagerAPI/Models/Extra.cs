@@ -10,9 +10,6 @@ public class Extra
     [MaxLength(100)]
     public string Nome { get; set; } = string.Empty;
 
-    [MaxLength(255)]
-    public string? Descricao { get; set;}
-
     [Required]
     [Column(TypeName = "decimal(10,2)")]
     public decimal PrecoAdicional { get; set; }
@@ -22,4 +19,5 @@ public class Extra
 
     [ForeignKey("ProdutoId")]
     public Produto? Produto { get; set; }
+    public ICollection<ExtraSelecionado>? ExtrasSelecionados { get; set; }
 }

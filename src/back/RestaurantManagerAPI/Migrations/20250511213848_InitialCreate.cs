@@ -69,6 +69,26 @@ namespace RestaurantManagerAPI.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
+                name: "RelatorioPedidos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    DataHoraInicio = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    DataHoraFim = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    NomeMesa = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    NomeFuncionario = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    PrecoFinal = table.Column<decimal>(type: "decimal(10,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RelatorioPedidos", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
                 name: "Produtos",
                 columns: table => new
                 {
@@ -104,7 +124,8 @@ namespace RestaurantManagerAPI.Migrations
                     MesaId = table.Column<int>(type: "int", nullable: false),
                     FuncionarioId = table.Column<int>(type: "int", nullable: false),
                     DataHoraInicio = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    DataHoraFim = table.Column<DateTime>(type: "datetime(6)", nullable: true)
+                    DataHoraFim = table.Column<DateTime>(type: "datetime(6)", nullable: true),
+                    PrecoFinal = table.Column<decimal>(type: "decimal(10,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -125,14 +146,38 @@ namespace RestaurantManagerAPI.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
+                name: "ItensRelatorioPedidos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    RelatorioPedidoId = table.Column<int>(type: "int", nullable: false),
+                    NomeProduto = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Quantidade = table.Column<int>(type: "int", nullable: false),
+                    PrecoUnitario = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
+                    ExtrasSelecionados = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ItensRelatorioPedidos", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ItensRelatorioPedidos_RelatorioPedidos_RelatorioPedidoId",
+                        column: x => x.RelatorioPedidoId,
+                        principalTable: "RelatorioPedidos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
                 name: "Extras",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Descricao = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     PrecoAdicional = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
                     ProdutoId = table.Column<int>(type: "int", nullable: false)
@@ -176,6 +221,32 @@ namespace RestaurantManagerAPI.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
+            migrationBuilder.CreateTable(
+                name: "ExtrasSelecionados",
+                columns: table => new
+                {
+                    ProdutoId = table.Column<int>(type: "int", nullable: false),
+                    PedidoId = table.Column<int>(type: "int", nullable: false),
+                    ExtraId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ExtrasSelecionados", x => new { x.ProdutoId, x.PedidoId, x.ExtraId });
+                    table.ForeignKey(
+                        name: "FK_ExtrasSelecionados_Extras_ExtraId",
+                        column: x => x.ExtraId,
+                        principalTable: "Extras",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ExtrasSelecionados_ItensPedido_ProdutoId_PedidoId",
+                        columns: x => new { x.ProdutoId, x.PedidoId },
+                        principalTable: "ItensPedido",
+                        principalColumns: new[] { "ProdutoId", "PedidoId" },
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "Id", "Nome" },
@@ -195,7 +266,7 @@ namespace RestaurantManagerAPI.Migrations
             migrationBuilder.InsertData(
                 table: "Funcionarios",
                 columns: new[] { "Id", "Nome", "Senha", "Tipo", "Usuario" },
-                values: new object[] { 1, "Gerente", "admin", "Gerente", "admin" });
+                values: new object[] { 1, "Gerente", "$2a$11$Qxg7/LeL.JCSZ4aZDD2mD.7RzYRT20XieewGpmPjcPtigtpzdX8ye", "Gerente", "admin" });
 
             migrationBuilder.InsertData(
                 table: "Mesas",
@@ -216,25 +287,25 @@ namespace RestaurantManagerAPI.Migrations
                 columns: new[] { "Id", "CategoriaId", "Descricao", "Foto", "Nome", "Preco" },
                 values: new object[,]
                 {
-                    { 1, 1, "Molho de tomate, mussarela, rodelas de calabresa de primeira qualidade e cebola fatiada", "./imgs/pizza_calabresa.jpg", "Calabresa", 30.00m },
-                    { 2, 1, "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão", "./imgs/pizza-marguerita.jpg", "Marguerita", 32.00m },
-                    { 3, 1, "Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas pretas e orégano", "./imgs/pizza-portuguesa.jpg", "Portuguesa", 35.00m },
-                    { 4, 2, "Delicioso chocolate ao leite derretido", "./imgs/pizza-chocolate.jpg", "Chocolate Preto", 30.00m },
-                    { 5, 2, "Chocolate branco derretido com morangos frescos fatiados", "./imgs/pizza-choco-morango.jpg", "Chocolate Branco com Morango", 35.00m },
-                    { 6, 3, "Pão baguete com pasta de alho caseira, gratinado com queijo (Unidade)", "./imgs/pao-alho.jpg", "Pão de Alho Tradicional", 8.00m },
-                    { 7, 3, "Porção de calabresa fatiada e salteada com cebola. Acompanha pão.", "./imgs/calabresa-acebolada.jpg", "Calabresa Acebolada", 38.00m },
-                    { 8, 4, "Lata 350ml", "./imgs/coca-cola-lata.jpg", "Coca-Cola", 6.00m },
-                    { 9, 4, "Lata 350ml", "./imgs/guarana-lata.jpg", "Guaraná Antarctica", 6.00m },
-                    { 10, 5, "Natural - Copo 400ml", "./imgs/suco-laranja.jpg", "Suco de Laranja", 9.00m },
-                    { 11, 5, "Polpa/Natural - Copo 400ml", "./imgs/suco-abacaxi.jpg", "Suco de Abacaxi", 9.00m },
-                    { 12, 6, "Garrafa 500ml", "./imgs/agua-sem-gas.jpg", "Água Mineral Sem Gás", 4.00m },
-                    { 13, 6, "Garrafa 500ml", "./imgs/agua-com-gas.jpg", "Água Mineral Com Gás", 4.50m },
-                    { 14, 7, "Lata 350ml", "./imgs/cerveja-skol.jpg", "Skol", 7.00m },
-                    { 15, 7, "Lata 350ml", "./imgs/cerveja-brahma.jpg", "Brahma", 7.00m },
-                    { 16, 8, "Taça - Cabernet Sauvignon ou Merlot", "./imgs/vinho-tinto-taca.jpg", "Vinho Tinto da Casa", 20.00m },
-                    { 17, 8, "Taça - Sauvignon Blanc", "./imgs/vinho-branco-taca.jpg", "Vinho Branco da Casa", 20.00m },
-                    { 18, 9, "Mousse de maracujá com açúcar", "./imgs/mousse-maracuja.jpg", "Mousse de Maracujá", 12.00m },
-                    { 19, 9, "300ml - Açaí com granola e banana", "./imgs/acai-tigela.jpg", "Açaí na Tigela", 22.00m }
+                    { 1, 1, "Molho de tomate, mussarela, rodelas de calabresa de primeira qualidade e cebola fatiada", "/uploads/produtos/pizza_calabresa.jpg", "Calabresa", 30.00m },
+                    { 2, 1, "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão", "./uploads/produtos/pizza-marguerita.jpg", "Marguerita", 32.00m },
+                    { 3, 1, "Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas pretas e orégano", "/uploads/produtos/pizza-portuguesa.jpg", "Portuguesa", 35.00m },
+                    { 4, 2, "Delicioso chocolate ao leite derretido", "/uploads/produtos/pizza-chocolate.jpg", "Chocolate Preto", 30.00m },
+                    { 5, 2, "Chocolate branco derretido com morangos frescos fatiados", "/uploads/produtos/pizza-choco-morango.jpg", "Chocolate Branco com Morango", 35.00m },
+                    { 6, 3, "Pão baguete com pasta de alho caseira, gratinado com queijo (Unidade)", "/uploads/produtos/pao-alho.jpg", "Pão de Alho Tradicional", 8.00m },
+                    { 7, 3, "Porção de calabresa fatiada e salteada com cebola. Acompanha pão.", "/uploads/produtos/calabresa-acebolada.jpg", "Calabresa Acebolada", 38.00m },
+                    { 8, 4, "Lata 350ml", "/uploads/produtos/coca-cola-lata.jpg", "Coca-Cola", 6.00m },
+                    { 9, 4, "Lata 350ml", "/uploads/produtos/guarana-lata.jpg", "Guaraná Antarctica", 6.00m },
+                    { 10, 5, "Natural - Copo 400ml", "/uploads/produtos/suco-laranja.jpg", "Suco de Laranja", 9.00m },
+                    { 11, 5, "Polpa/Natural - Copo 400ml", "/uploads/produtos/suco-abacaxi.jpg", "Suco de Abacaxi", 9.00m },
+                    { 12, 6, "Garrafa 500ml", "/uploads/produtos/agua-sem-gas.jpg", "Água Mineral Sem Gás", 4.00m },
+                    { 13, 6, "Garrafa 500ml", "/uploads/produtos/agua-com-gas.jpg", "Água Mineral Com Gás", 4.50m },
+                    { 14, 7, "Lata 350ml", "/uploads/produtos/cerveja-skol.jpg", "Skol", 7.00m },
+                    { 15, 7, "Lata 350ml", "/uploads/produtos/cerveja-brahma.jpg", "Brahma", 7.00m },
+                    { 16, 8, "Taça - Cabernet Sauvignon ou Merlot", "/uploads/produtos/vinho-tinto-taca.jpg", "Vinho Tinto da Casa", 20.00m },
+                    { 17, 8, "Taça - Sauvignon Blanc", "/uploads/produtos/vinho-branco-taca.jpg", "Vinho Branco da Casa", 20.00m },
+                    { 18, 9, "Mousse de maracujá com açúcar", "/uploads/produtos/mousse-maracuja.jpg", "Mousse de Maracujá", 12.00m },
+                    { 19, 9, "300ml - Açaí com granola e banana", "/uploads/produtos/acai-tigela.jpg", "Açaí na Tigela", 22.00m }
                 });
 
             migrationBuilder.CreateIndex(
@@ -243,9 +314,19 @@ namespace RestaurantManagerAPI.Migrations
                 column: "ProdutoId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_ExtrasSelecionados_ExtraId",
+                table: "ExtrasSelecionados",
+                column: "ExtraId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ItensPedido_PedidoId",
                 table: "ItensPedido",
                 column: "PedidoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ItensRelatorioPedidos_RelatorioPedidoId",
+                table: "ItensRelatorioPedidos",
+                column: "RelatorioPedidoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Pedidos_FuncionarioId",
@@ -267,10 +348,19 @@ namespace RestaurantManagerAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "ExtrasSelecionados");
+
+            migrationBuilder.DropTable(
+                name: "ItensRelatorioPedidos");
+
+            migrationBuilder.DropTable(
                 name: "Extras");
 
             migrationBuilder.DropTable(
                 name: "ItensPedido");
+
+            migrationBuilder.DropTable(
+                name: "RelatorioPedidos");
 
             migrationBuilder.DropTable(
                 name: "Pedidos");

@@ -10,8 +10,11 @@ public class ItemPedido
 
     [Required]
     public int ProdutoId { get; set; }
+
     [ForeignKey("ProdutoId")]
     public Produto? Produto { get; set; }
+
+    public ICollection<ExtraSelecionado>? ExtrasSelecionados { get; set; }
 
     [Required]
     public int Quantidade { get; set; } = 1;

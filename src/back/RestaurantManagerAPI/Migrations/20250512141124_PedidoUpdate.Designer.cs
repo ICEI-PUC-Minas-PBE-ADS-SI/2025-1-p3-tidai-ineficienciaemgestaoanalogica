@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace RestaurantManagerAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250506155555_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250512141124_PedidoUpdate")]
+    partial class PedidoUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -97,10 +97,6 @@ namespace RestaurantManagerAPI.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Descricao")
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -117,6 +113,82 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasIndex("ProdutoId");
 
                     b.ToTable("Extras");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nome = "Média",
+                            PrecoAdicional = 8m,
+                            ProdutoId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "Grande",
+                            PrecoAdicional = 16m,
+                            ProdutoId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nome = "Média",
+                            PrecoAdicional = 8m,
+                            ProdutoId = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nome = "Grande",
+                            PrecoAdicional = 16m,
+                            ProdutoId = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Nome = "Média",
+                            PrecoAdicional = 8m,
+                            ProdutoId = 3
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Nome = "Grande",
+                            PrecoAdicional = 16m,
+                            ProdutoId = 3
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Nome = "Jarra 1l",
+                            PrecoAdicional = 18m,
+                            ProdutoId = 10
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Nome = "Jarra 1l",
+                            PrecoAdicional = 18m,
+                            ProdutoId = 11
+                        });
+                });
+
+            modelBuilder.Entity("ExtraSelecionado", b =>
+                {
+                    b.Property<int>("ProdutoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PedidoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ExtraId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProdutoId", "PedidoId", "ExtraId");
+
+                    b.HasIndex("ExtraId");
+
+                    b.ToTable("ExtrasSelecionados");
                 });
 
             modelBuilder.Entity("Funcionario", b =>
@@ -156,7 +228,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 1,
                             Nome = "Gerente",
-                            Senha = "admin",
+                            Senha = "$2a$11$k2lnzbDMq6xZMx08/GQAm.Nnr3K4K1Tetv1P7eeuKRv2y9/1cQYB2",
                             Tipo = "Gerente",
                             Usuario = "admin"
                         });
@@ -181,6 +253,39 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasIndex("PedidoId");
 
                     b.ToTable("ItensPedido");
+                });
+
+            modelBuilder.Entity("ItemRelatorioPedido", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ExtrasSelecionados")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NomeProduto")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<decimal>("PrecoUnitario")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RelatorioPedidoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RelatorioPedidoId");
+
+                    b.ToTable("ItensRelatorioPedidos");
                 });
 
             modelBuilder.Entity("Mesa", b =>
@@ -258,6 +363,14 @@ namespace RestaurantManagerAPI.Migrations
                     b.Property<int>("MesaId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Observacao")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<decimal>("PrecoFinal")
+                        .HasColumnType("decimal(10,2)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("FuncionarioId");
@@ -308,7 +421,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 1,
                             CategoriaId = 1,
                             Descricao = "Molho de tomate, mussarela, rodelas de calabresa de primeira qualidade e cebola fatiada",
-                            Foto = "./imgs/pizza_calabresa.jpg",
+                            Foto = "/uploads/produtos/pizza_calabresa.jpg",
                             Nome = "Calabresa",
                             Preco = 30.00m
                         },
@@ -317,7 +430,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 2,
                             CategoriaId = 1,
                             Descricao = "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão",
-                            Foto = "./imgs/pizza-marguerita.jpg",
+                            Foto = "./uploads/produtos/pizza-marguerita.jpg",
                             Nome = "Marguerita",
                             Preco = 32.00m
                         },
@@ -326,7 +439,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 3,
                             CategoriaId = 1,
                             Descricao = "Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas pretas e orégano",
-                            Foto = "./imgs/pizza-portuguesa.jpg",
+                            Foto = "/uploads/produtos/pizza-portuguesa.jpg",
                             Nome = "Portuguesa",
                             Preco = 35.00m
                         },
@@ -335,7 +448,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 4,
                             CategoriaId = 2,
                             Descricao = "Delicioso chocolate ao leite derretido",
-                            Foto = "./imgs/pizza-chocolate.jpg",
+                            Foto = "/uploads/produtos/pizza-chocolate.jpg",
                             Nome = "Chocolate Preto",
                             Preco = 30.00m
                         },
@@ -344,7 +457,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 5,
                             CategoriaId = 2,
                             Descricao = "Chocolate branco derretido com morangos frescos fatiados",
-                            Foto = "./imgs/pizza-choco-morango.jpg",
+                            Foto = "/uploads/produtos/pizza-choco-morango.jpg",
                             Nome = "Chocolate Branco com Morango",
                             Preco = 35.00m
                         },
@@ -353,7 +466,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 6,
                             CategoriaId = 3,
                             Descricao = "Pão baguete com pasta de alho caseira, gratinado com queijo (Unidade)",
-                            Foto = "./imgs/pao-alho.jpg",
+                            Foto = "/uploads/produtos/pao-alho.jpg",
                             Nome = "Pão de Alho Tradicional",
                             Preco = 8.00m
                         },
@@ -362,7 +475,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 7,
                             CategoriaId = 3,
                             Descricao = "Porção de calabresa fatiada e salteada com cebola. Acompanha pão.",
-                            Foto = "./imgs/calabresa-acebolada.jpg",
+                            Foto = "/uploads/produtos/calabresa-acebolada.jpg",
                             Nome = "Calabresa Acebolada",
                             Preco = 38.00m
                         },
@@ -371,7 +484,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 8,
                             CategoriaId = 4,
                             Descricao = "Lata 350ml",
-                            Foto = "./imgs/coca-cola-lata.jpg",
+                            Foto = "/uploads/produtos/coca-cola-lata.jpg",
                             Nome = "Coca-Cola",
                             Preco = 6.00m
                         },
@@ -380,7 +493,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 9,
                             CategoriaId = 4,
                             Descricao = "Lata 350ml",
-                            Foto = "./imgs/guarana-lata.jpg",
+                            Foto = "/uploads/produtos/guarana-lata.jpg",
                             Nome = "Guaraná Antarctica",
                             Preco = 6.00m
                         },
@@ -389,7 +502,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 10,
                             CategoriaId = 5,
                             Descricao = "Natural - Copo 400ml",
-                            Foto = "./imgs/suco-laranja.jpg",
+                            Foto = "/uploads/produtos/suco-laranja.jpg",
                             Nome = "Suco de Laranja",
                             Preco = 9.00m
                         },
@@ -398,7 +511,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 11,
                             CategoriaId = 5,
                             Descricao = "Polpa/Natural - Copo 400ml",
-                            Foto = "./imgs/suco-abacaxi.jpg",
+                            Foto = "/uploads/produtos/suco-abacaxi.jpg",
                             Nome = "Suco de Abacaxi",
                             Preco = 9.00m
                         },
@@ -407,7 +520,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 12,
                             CategoriaId = 6,
                             Descricao = "Garrafa 500ml",
-                            Foto = "./imgs/agua-sem-gas.jpg",
+                            Foto = "/uploads/produtos/agua-sem-gas.jpg",
                             Nome = "Água Mineral Sem Gás",
                             Preco = 4.00m
                         },
@@ -416,7 +529,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 13,
                             CategoriaId = 6,
                             Descricao = "Garrafa 500ml",
-                            Foto = "./imgs/agua-com-gas.jpg",
+                            Foto = "/uploads/produtos/agua-com-gas.jpg",
                             Nome = "Água Mineral Com Gás",
                             Preco = 4.50m
                         },
@@ -425,7 +538,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 14,
                             CategoriaId = 7,
                             Descricao = "Lata 350ml",
-                            Foto = "./imgs/cerveja-skol.jpg",
+                            Foto = "/uploads/produtos/cerveja-skol.jpg",
                             Nome = "Skol",
                             Preco = 7.00m
                         },
@@ -434,7 +547,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 15,
                             CategoriaId = 7,
                             Descricao = "Lata 350ml",
-                            Foto = "./imgs/cerveja-brahma.jpg",
+                            Foto = "/uploads/produtos/cerveja-brahma.jpg",
                             Nome = "Brahma",
                             Preco = 7.00m
                         },
@@ -443,7 +556,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 16,
                             CategoriaId = 8,
                             Descricao = "Taça - Cabernet Sauvignon ou Merlot",
-                            Foto = "./imgs/vinho-tinto-taca.jpg",
+                            Foto = "/uploads/produtos/vinho-tinto-taca.jpg",
                             Nome = "Vinho Tinto da Casa",
                             Preco = 20.00m
                         },
@@ -452,7 +565,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 17,
                             CategoriaId = 8,
                             Descricao = "Taça - Sauvignon Blanc",
-                            Foto = "./imgs/vinho-branco-taca.jpg",
+                            Foto = "/uploads/produtos/vinho-branco-taca.jpg",
                             Nome = "Vinho Branco da Casa",
                             Preco = 20.00m
                         },
@@ -461,7 +574,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 18,
                             CategoriaId = 9,
                             Descricao = "Mousse de maracujá com açúcar",
-                            Foto = "./imgs/mousse-maracuja.jpg",
+                            Foto = "/uploads/produtos/mousse-maracuja.jpg",
                             Nome = "Mousse de Maracujá",
                             Preco = 12.00m
                         },
@@ -470,10 +583,40 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 19,
                             CategoriaId = 9,
                             Descricao = "300ml - Açaí com granola e banana",
-                            Foto = "./imgs/acai-tigela.jpg",
+                            Foto = "/uploads/produtos/acai-tigela.jpg",
                             Nome = "Açaí na Tigela",
                             Preco = 22.00m
                         });
+                });
+
+            modelBuilder.Entity("RelatorioPedido", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DataHoraFim")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DataHoraInicio")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("NomeFuncionario")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("NomeMesa")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<decimal>("PrecoFinal")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RelatorioPedidos");
                 });
 
             modelBuilder.Entity("Extra", b =>
@@ -485,6 +628,25 @@ namespace RestaurantManagerAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("Produto");
+                });
+
+            modelBuilder.Entity("ExtraSelecionado", b =>
+                {
+                    b.HasOne("Extra", "Extra")
+                        .WithMany("ExtrasSelecionados")
+                        .HasForeignKey("ExtraId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ItemPedido", "ItemPedido")
+                        .WithMany("ExtrasSelecionados")
+                        .HasForeignKey("ProdutoId", "PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Extra");
+
+                    b.Navigation("ItemPedido");
                 });
 
             modelBuilder.Entity("ItemPedido", b =>
@@ -504,6 +666,17 @@ namespace RestaurantManagerAPI.Migrations
                     b.Navigation("Pedido");
 
                     b.Navigation("Produto");
+                });
+
+            modelBuilder.Entity("ItemRelatorioPedido", b =>
+                {
+                    b.HasOne("RelatorioPedido", "RelatorioPedido")
+                        .WithMany("Itens")
+                        .HasForeignKey("RelatorioPedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RelatorioPedido");
                 });
 
             modelBuilder.Entity("Pedido", b =>
@@ -541,9 +714,19 @@ namespace RestaurantManagerAPI.Migrations
                     b.Navigation("Produtos");
                 });
 
+            modelBuilder.Entity("Extra", b =>
+                {
+                    b.Navigation("ExtrasSelecionados");
+                });
+
             modelBuilder.Entity("Funcionario", b =>
                 {
                     b.Navigation("Pedidos");
+                });
+
+            modelBuilder.Entity("ItemPedido", b =>
+                {
+                    b.Navigation("ExtrasSelecionados");
                 });
 
             modelBuilder.Entity("Mesa", b =>
@@ -561,6 +744,11 @@ namespace RestaurantManagerAPI.Migrations
                     b.Navigation("Extras");
 
                     b.Navigation("ItensPedido");
+                });
+
+            modelBuilder.Entity("RelatorioPedido", b =>
+                {
+                    b.Navigation("Itens");
                 });
 #pragma warning restore 612, 618
         }
