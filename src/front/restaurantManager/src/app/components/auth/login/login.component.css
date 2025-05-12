@@ -1,0 +1,41 @@
+.login-wrapper {
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background-color: var(--main-color);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-title {
+  color: white;
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.login-form .form-control {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.text-white {
+  color: white;
+}
+
+.btn-font {
+    color: var(--main-color);
+    background-color: var(--background);
+    font-weight: 700px;
+    font-size: 14px;
+}
