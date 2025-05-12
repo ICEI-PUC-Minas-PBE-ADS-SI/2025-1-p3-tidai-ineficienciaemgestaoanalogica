@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 [Route("api/[controller]")]
 public class Controller<TEntity> : ControllerBase where TEntity : class
 {
-    private readonly AppDbContext _context;
+    protected readonly AppDbContext _context;
     private readonly DbSet<TEntity> _dbSet;
     private object GetEntityId(TEntity entity)
     {
@@ -20,7 +20,7 @@ public class Controller<TEntity> : ControllerBase where TEntity : class
         _dbSet = context.Set<TEntity>();
     }
 
-    [Authorize(Policy = "Gerente")]
+    //[Authorize(Policy = "Gerente")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<TEntity>>> GetAll() 
     {
@@ -29,7 +29,7 @@ public class Controller<TEntity> : ControllerBase where TEntity : class
         return Ok(entities);
     }
 
-    [Authorize(Policy = "Gerente")]
+    //[Authorize(Policy = "Gerente")]
     [HttpGet("{id}")]
     public async Task<ActionResult<TEntity>> Get(int id)
     {
@@ -38,7 +38,7 @@ public class Controller<TEntity> : ControllerBase where TEntity : class
         return Ok(entity);
     }
 
-    [Authorize(Policy = "Gerente")]
+    //[Authorize(Policy = "Gerente")]
     [HttpPost]
     public async Task<ActionResult<TEntity>> Post(TEntity entity)
     {
@@ -47,7 +47,7 @@ public class Controller<TEntity> : ControllerBase where TEntity : class
         return CreatedAtAction(nameof(Get), new { id = GetEntityId(entity)}, entity);
     }
 
-    [Authorize(Policy = "Gerente")]
+    //[Authorize(Policy = "Gerente")]
     [HttpPut("{id}")]
     public async Task<IActionResult> Put(int id, TEntity entity)
     {
@@ -59,7 +59,7 @@ public class Controller<TEntity> : ControllerBase where TEntity : class
         return NoContent();
     }
 
-    [Authorize(Policy = "Gerente")]
+    //[Authorize(Policy = "Gerente")]
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

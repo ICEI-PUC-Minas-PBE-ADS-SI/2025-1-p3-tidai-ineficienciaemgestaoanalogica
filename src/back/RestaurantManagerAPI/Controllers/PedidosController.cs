@@ -8,63 +8,72 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 public class PedidosController : ControllerBase
 {
     private readonly AppDbContext _context;
+    private readonly PedidoService _pedidoService;
 
-    public PedidosController(AppDbContext context)
+    public PedidosController(AppDbContext context, PedidoService pedidoService)
     {
         _context = context;
+        _pedidoService = pedidoService;
     }
 
-    [Authorize(Policy = "Funcionario")]
-    [HttpPost]
-    public async Task<IActionResult> CriarPedido(Pedido pedido)
-    {
-        pedido.DataHoraInicio = DateTime.Now;
-        _context.Pedidos.Add(pedido);
-        await _context.SaveChangesAsync();
-        return NoContent();
-    }
-
-    [Authorize(Policy = "Funcionario")]
-    [HttpGet]
-    public async Task<IActionResult> GetPedidosAbertos()
-    {
-        var pedidos = await _context.Pedidos
-            .Where(p => p.DataHoraFim == null)
-            .ToListAsync();
-        return Ok(pedidos);
-    }
-
-
-    [Authorize(Policy = "Funcionario")]
+    //[Authorize(Policy = "Funcionario")]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetPedido(int id)
     {
-        var pedido = await _context.Pedidos.FirstOrDefaultAsync(p => p.Id == id);
+        var response = await _pedidoService.MapearPedidoResponse(id); 
+        return response == null ? NotFound() : Ok(response);
+    }
 
-        if(pedido == null)
-            return NotFound();      
-        if(pedido.DataHoraFim != null)
-            return BadRequest();
+    [HttpGet("pedidos-da-mesa/{mesaId}")]
+    public async Task<ActionResult<PedidoDTO>> GetPedidoDaMesa(int mesaId)
+    {
+        var pedidoId = await _context.Pedidos
+            .Where(p => p.MesaId == mesaId && p.DataHoraFim == null)
+            .Select(p => p.Id)
+            .FirstOrDefaultAsync();
+        
+        if(pedidoId == 0) return NotFound("Nenhum pedido aberto encontrado para a mesa");
 
+        var pedido = await _pedidoService.MapearPedidoResponse(pedidoId);
         return Ok(pedido);
     }
 
-    [Authorize(Policy = "Funcionario")]
-    [HttpPut("{id}")]
-    public async Task<IActionResult> AtualizarPedido(int id, Pedido pedidoAtualizado)
+    //[Authorize(Policy = "Funcionario")]
+    [HttpPost]
+    public async Task<IActionResult> CriarPedido(CriarPedidoDTO dto)
     {
-        if(!id.Equals(pedidoAtualizado.Id) || pedidoAtualizado.DataHoraFim != null)
-            return BadRequest();
-
-        if(pedidoAtualizado == null || pedidoAtualizado.DataHoraFim != null)
-            return NotFound("Pedido não encontrado.");
-
-        _context.Entry(pedidoAtualizado).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
-        return NoContent();
+        var pedido = await _pedidoService.CriarPedidoAsync(dto);
+        var response = await _pedidoService.MapearPedidoResponse(pedido.Id);
+        return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, response);
     }
 
-    [Authorize(Policy = "Funcionario")]
+    [HttpPut("{id}")]
+    public async Task<IActionResult> AtualizarPedido(int id, AtualizarPedidoDTO dto)
+    {
+        if (id != dto.Id)
+            return BadRequest("ID do pedido não confere com o ID da URL.");
+
+        var pedidoAtualizado = await _pedidoService.AtualizarPedidoAsync(dto);
+        if (pedidoAtualizado == null)
+            return NotFound("Pedido não encontrado.");
+
+        var response = await _pedidoService.MapearPedidoResponse(id);
+        return Ok(response);
+    }
+
+
+    //[Authorize(Policy = "Funcionario")]
+    [HttpPost("fechar/{id}")]
+    public async Task<ActionResult<RelatorioPedidoDTO>> FecharPedido(int id)
+    {
+        var relatorio = await _pedidoService.FecharPedidoAsync(id);
+        if(relatorio == null)
+            return NotFound(new { mensagem = "Pedido nào encontrado" });
+
+        return Ok(relatorio);
+    }
+
+    //[Authorize(Policy = "Funcionario")]
     [HttpDelete("{id}")]
     public async Task<IActionResult> CancelarPedido(int id)
     {
@@ -77,43 +86,5 @@ public class PedidosController : ControllerBase
         _context.Remove(pedido);
         await _context.SaveChangesAsync();
         return NoContent();
-    }
-
-
-    [Authorize(Policy = "Funcionario")]
-    [HttpPut("{id}/fechar")]
-    public async Task<IActionResult> FecharPedido(int id)
-    {
-        var pedido = await _context.Pedidos.FindAsync(id);
-        if(pedido == null)
-            return NotFound();      
-        if(pedido.DataHoraFim != null)
-            return BadRequest();
-
-        pedido.DataHoraFim = DateTime.Now;
-
-        _context.Entry(pedido).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
-        return NoContent();
-    }
-
-    [Authorize(Policy = "Gerente")]
-    [HttpGet("relatorio/periodo")]
-    public async Task<IActionResult> RelatorioPorPeriodo(DateTime inicio, DateTime fim)
-    {
-        var pedidos = await _context.Pedidos
-            .Where(p => p.DataHoraFim != null && p.DataHoraFim >= inicio && p.DataHoraFim <= fim)
-            .ToListAsync();
-        return Ok(pedidos);
-    }
-
-    [Authorize(Policy = "Gerente")]
-    [HttpGet("relatorio/dia")]
-    public async Task<IActionResult> RelatorioPorDia(DateTime dia)
-    {
-        var pedidos = await _context.Pedidos
-            .Where(p => p.DataHoraFim != null && p.DataHoraFim.Value.Date == dia.Date)
-            .ToListAsync();
-        return Ok(pedidos);
     }
 }

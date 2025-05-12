@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -26,32 +27,48 @@ public class FuncionariosController : ControllerBase
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> LoginFuncionario([FromBody] Funcionario login)
+    public async Task<ActionResult<FuncionarioLogadoDTO>> LoginFuncionario([FromBody] LoginDTO dto)
     {
-        var funcionario = await _context.Funcionarios.FirstOrDefaultAsync(f => f.Usuario == login.Usuario);
+        var funcionario = await _context.Funcionarios.FirstOrDefaultAsync(f => f.Usuario == dto.Usuario);
 
-        if(funcionario == null || !BCrypt.Net.BCrypt.Verify(login.Senha, funcionario.Senha))
+        if(funcionario == null || !BCrypt.Net.BCrypt.Verify(dto.Senha, funcionario.Senha))
             return Unauthorized("Usuário ou senha inválidos.");
 
         var claims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, funcionario.Nome),
+            new Claim(ClaimTypes.NameIdentifier, funcionario.Usuario),
             new Claim(ClaimTypes.Role, funcionario.Tipo)
         };
 
-        var identity = new ClaimsIdentity(claims, "CookieAuth");
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
         var principal = new ClaimsPrincipal(identity);
 
-        await HttpContext.SignInAsync("CookieAuth", principal);
-        return Ok("Login ralizado");
+        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+        var funcionarioLogado = new FuncionarioLogadoDTO
+        {
+            Nome = funcionario.Nome,
+            Usuario = funcionario.Usuario,
+            Tipo = funcionario.Tipo
+        };
+
+        return Ok();
     }
 
-    [Authorize]
-    [HttpGet("dados-logado")]
+    [HttpGet("logado")]
     public IActionResult GetFuncionarioLogado()
     {
-        var nome = User.FindFirstValue(ClaimTypes.Name);
+        if (User?.Identity?.IsAuthenticated != true)
+            return Unauthorized();
 
-        return Ok(nome);
+        var funcionario = new FuncionarioLogadoDTO
+        {
+            Nome = User.Identity.Name!,
+            Usuario = User.FindFirst(ClaimTypes.NameIdentifier)!.Value,
+            Tipo = User.FindFirst(ClaimTypes.Role)!.Value
+        };
+
+        return Ok(funcionario);
     }
 }

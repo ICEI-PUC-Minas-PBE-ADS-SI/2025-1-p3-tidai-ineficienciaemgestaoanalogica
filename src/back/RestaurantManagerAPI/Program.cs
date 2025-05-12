@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -8,25 +9,35 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-builder.Services.AddAuthentication("CookieAuth")
-    .AddCookie("CookieAuth", options =>
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
     {
         options.LoginPath = "/api/funcionarios/login";
+        options.AccessDeniedPath = "/api/funcionarios/nao-autorizado";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SameSite = SameSiteMode.Lax;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.None;
     });
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("Funcionario", policy => policy.RequireRole("Funcionario", "Gerente"));
     options.AddPolicy("Gerente", policy => policy.RequireRole("Gerente"));
 });
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowCredentials() 
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+    options.AddPolicy("AllowAny", policy =>
     {
         policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 
@@ -38,6 +49,9 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
 });
 
+builder.Services.AddScoped<PedidoService>();
+builder.Services.AddScoped<ProdutoService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -46,12 +60,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
+app.UseCors("AllowAngular");
 app.UseCors("AllowAll");
-
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
