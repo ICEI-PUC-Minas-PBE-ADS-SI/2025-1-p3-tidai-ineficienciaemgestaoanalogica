@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CommonModule } from '@angular/common';
 
@@ -15,4 +15,10 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'restaurantManager';
+
+  constructor(private router: Router) {}
+
+  get exibirNavbar(): boolean {
+    return this.router.url !== '/login';
+  }
 }
