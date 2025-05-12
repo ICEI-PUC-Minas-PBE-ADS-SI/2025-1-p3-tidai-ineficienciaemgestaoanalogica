@@ -1,0 +1,11 @@
+<form (ngSubmit)="login()" #formLogin="ngForm">
+    <label for="inputUser" class="form-label">Usuario</label>
+    <input type="text" id="inputUser" class="form-control" name="usuario" [(ngModel)]="usuario">
+
+    <label for="inputPassword" class="form-label">Senha</label>
+    <input type="password" id="inputPassword" class="form-control" name="senha" [(ngModel)]="senha">
+    <div *ngIf="erroLogin" class="alert alert-danger mt-2">
+        {{ erroLogin }}
+    </div>
+    <button class="btn btn-primary" type="submit">Confirmar</button>
+</form>
