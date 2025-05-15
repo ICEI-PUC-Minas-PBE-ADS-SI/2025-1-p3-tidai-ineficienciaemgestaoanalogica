@@ -37,7 +37,7 @@ public class FuncionariosController : ControllerBase
         var claims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, funcionario.Nome),
-            new Claim(ClaimTypes.NameIdentifier, funcionario.Usuario),
+            new Claim(ClaimTypes.NameIdentifier, funcionario.Id.ToString()),
             new Claim(ClaimTypes.Role, funcionario.Tipo)
         };
 
@@ -48,8 +48,8 @@ public class FuncionariosController : ControllerBase
 
         var funcionarioLogado = new FuncionarioLogadoDTO
         {
+            Id = funcionario.Id,
             Nome = funcionario.Nome,
-            Usuario = funcionario.Usuario,
             Tipo = funcionario.Tipo
         };
 
@@ -64,8 +64,8 @@ public class FuncionariosController : ControllerBase
 
         var funcionario = new FuncionarioLogadoDTO
         {
+            Id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value),
             Nome = User.Identity.Name!,
-            Usuario = User.FindFirst(ClaimTypes.NameIdentifier)!.Value,
             Tipo = User.FindFirst(ClaimTypes.Role)!.Value
         };
 

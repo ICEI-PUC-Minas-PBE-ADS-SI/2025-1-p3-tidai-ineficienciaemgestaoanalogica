@@ -1,42 +1,44 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ListaCategoriasComponent } from "./lista-categorias/lista-categorias.component";
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ActivatedRoute} from '@angular/router';
-import { PedidoService } from 'src/app/services/pedido.service';
+import { Component } from '@angular/core';
+import { ModalAvisoComponent } from "../../modal-aviso/modal-aviso.component";
+import { ListaCategoriasComponent } from "../../ver-pedidos/atualizar-pedido/lista-categorias/lista-categorias.component";
+import { environment } from 'src/app/environments/environment';
+import { filter, map, Observable, take } from 'rxjs';
 import { Pedido } from 'src/app/interfaces/pedido';
-import { environment } from "src/app/environments/environment";
-import { map, filter, Observable, take } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { PedidoService } from 'src/app/services/pedido.service';
 import { MesaService } from 'src/app/services/mesa.service';
 import { ItemPedido } from 'src/app/interfaces/item-pedido';
-import { ModalAvisoComponent } from "../../modal-aviso/modal-aviso.component";
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from 'src/app/services/auth.service';
+import { PedidoOutput } from 'src/app/interfaces/pedido-output';
 
 @Component({
-  selector: 'app-atualizar-pedido',
-  templateUrl: './atualizar-pedido.component.html',
-  styleUrl: './atualizar-pedido.component.css',
-  imports: [ListaCategoriasComponent, CommonModule, FormsModule, ModalAvisoComponent],
+  selector: 'app-pedido-criacao',
+  imports: [ModalAvisoComponent, ListaCategoriasComponent, FormsModule, CommonModule],
+  templateUrl: './pedido-criacao.component.html',
+  styleUrl: './pedido-criacao.component.css'
 })
-export class AtualizarPedidoComponent {
+export class PedidoCriacaoComponent {
   environment = environment;
   nomeMesa: string = "";
   pedido$!:  Observable<Pedido | null>;
   isHovered = false;
 
-  constructor(private route: ActivatedRoute, private pedidoService: PedidoService, private mesaService: MesaService) {}
-
+  constructor(private route: ActivatedRoute, private pedidoService: PedidoService, private mesaService: MesaService, private authService: AuthService) {}
   ngOnInit(): void{
     const mesaId = Number(this.route.snapshot.paramMap.get('mesaId'))
+    const funcionarioId = Number(this.authService.getFuncionario()?.id)
 
-    this.pedidoService.getPedidoPelaMesa(mesaId).subscribe(
-      (data) => {
-        this.pedidoService.setPedido(data);
-      },
-      (error) =>
-      {
-        console.error('Erro ao carregar pedidos: ', error)
-      }
-    )
+    const novoPedido: Pedido = {
+      id: 0,
+      mesaId: mesaId,
+      funcionarioId:  funcionarioId,
+      observacao: '',
+      itensPedido: [],
+    };
+    this.pedidoService.setPedido(novoPedido);
+
     this.pedido$ = this.pedidoService.pedido$;
 
     this.mesaService.getMesa(mesaId).subscribe(
@@ -45,7 +47,6 @@ export class AtualizarPedidoComponent {
       }
     )
   }
-
   onToggleExtra(item: ItemPedido, extraId: number, checked:boolean) {
     if(!item.extrasSelecionados) {
       item.extrasSelecionados = [];
@@ -77,13 +78,12 @@ export class AtualizarPedidoComponent {
   }
  
 
-  atualizarPedido() {
+  criarPedido() {
     this.pedidoService.pedido$.pipe(
       filter((pedido): pedido is Pedido => pedido !== null),
       take(1)
     ).subscribe(pedido => {
       const body = {
-        id: pedido.id,
         mesaId: pedido.mesaId,
         funcionarioId: pedido.funcionarioId,
         observacao: pedido.observacao,
@@ -94,8 +94,8 @@ export class AtualizarPedidoComponent {
           extrasSelecionados: item.extrasSelecionados
         }))
       };
-      this.pedidoService.updatePedido(pedido.id, body).subscribe(() =>{
-        console.log('Pedido atualizado.');
+      this.pedidoService.createPedido(body).subscribe(() =>{
+        console.log('Pedido criado com sucesso.');
       });
     });
   }

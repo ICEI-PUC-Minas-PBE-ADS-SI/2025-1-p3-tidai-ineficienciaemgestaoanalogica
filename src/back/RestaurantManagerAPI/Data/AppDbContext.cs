@@ -53,7 +53,7 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Produto>().HasData(
 
             new Produto { Id = 1, Nome = "Calabresa", Descricao = "Molho de tomate, mussarela, rodelas de calabresa de primeira qualidade e cebola fatiada", Preco = 30.00m, Foto = "/uploads/produtos/pizza_calabresa.jpg", CategoriaId = 1 },
-            new Produto { Id = 2, Nome = "Marguerita", Descricao = "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão", Preco = 32.00m, Foto = "./uploads/produtos/pizza-marguerita.jpg", CategoriaId = 1 },
+            new Produto { Id = 2, Nome = "Marguerita", Descricao = "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão", Preco = 32.00m, Foto = "/uploads/produtos/pizza-marguerita.jpg", CategoriaId = 1 },
             new Produto { Id = 3, Nome = "Portuguesa", Descricao = "Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas pretas e orégano", Preco = 35.00m, Foto = "/uploads/produtos/pizza-portuguesa.jpg", CategoriaId = 1 },
 
             new Produto { Id = 4, Nome = "Chocolate Preto", Descricao = "Delicioso chocolate ao leite derretido", Preco = 30.00m, Foto = "/uploads/produtos/pizza-chocolate.jpg", CategoriaId = 2 },

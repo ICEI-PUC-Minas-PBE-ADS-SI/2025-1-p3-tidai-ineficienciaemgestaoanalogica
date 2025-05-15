@@ -8,8 +8,8 @@
             <div *ngIf="mesa.observacao != undefined" class="mt-1" style="color: #3d3d3d;">Observação: {{mesa.observacao}}</div>
         </div>
         <div class="d-flex  justify-content-evenly ">
-            <a class="bg-main-color btn-font background btn m-3 p-2 px-4 flex-fill" [routerLink]="['/atualizar-pedidos', mesa.id]">Atualizar</a>
-            <a class="bg-main-color btn-font background btn m-3 p-2 px-4 flex-fill" href="conta.html">Fechar</a>
+            <a class="bg-main-color btn-font background btn m-3 p-2 px-4 flex-fill" [routerLink]="['atualizar', mesa.id]">Atualizar</a>
+            <a class="bg-main-color btn-font background btn m-3 p-2 px-4 flex-fill" [routerLink]="['fechar', mesa.id]">Fechar</a>
         </div>
     </div>
 </div>

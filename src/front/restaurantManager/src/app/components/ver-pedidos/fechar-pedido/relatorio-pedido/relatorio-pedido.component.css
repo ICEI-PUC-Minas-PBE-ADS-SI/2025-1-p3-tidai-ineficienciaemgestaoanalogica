@@ -1,0 +1,18 @@
+.card {
+    border-radius: 0;
+    border: none;
+}
+
+.card-body {
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-font {
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.data-font {
+    font-weight: 500;
+}

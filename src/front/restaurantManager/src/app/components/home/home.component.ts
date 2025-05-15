@@ -9,9 +9,9 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
   images = {
-    verPedidos: "imgs/ver_pedidos.svg",
-    fazerPedidos: "imgs/fazer_pedidos.svg",
-    relatorios: "imgs/relatorio.svg",
-    gerenciar: "imgs/gerenciar.svg",
+    verPedidos: "assets/images/ver_pedidos.svg",
+    fazerPedidos: "assets/images/fazer_pedidos.svg",
+    relatorios: "assets/images/relatorio.svg",
+    gerenciar: "assets/images/gerenciar.svg",
   }
 }

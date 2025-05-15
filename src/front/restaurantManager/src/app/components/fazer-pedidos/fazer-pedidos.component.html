@@ -1,1 +1,10 @@
-<p>fazer-pedidos works!</p>
+<div class="container">
+    <div class="dropdown mt-4 text-center">
+        <button class="btn text-start btn-selecionar dropdown-toggle py-3 main-color w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Selecionar mesa
+        </button>
+        <ul class="dropdown-menu w-100">
+            <li class="h-100" *ngFor="let mesa of mesas"><a class="dropdown-item main-color py-3" [routerLink]="`${mesa.id}`">{{mesa.nome}}</a></li>
+        </ul>
+    </div>
+</div>

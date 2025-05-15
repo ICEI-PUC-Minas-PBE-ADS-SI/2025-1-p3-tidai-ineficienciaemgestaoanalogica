@@ -5,6 +5,7 @@ import { BehaviorSubject, Observable } from "rxjs";
 import { Pedido } from "../interfaces/pedido";
 import { ItemPedido } from "../interfaces/item-pedido";
 import { PedidoOutput } from "../interfaces/pedido-output";
+import { Relatorio } from "../interfaces/relatorio";
 
 @Injectable({
     providedIn: 'root'
@@ -21,8 +22,16 @@ export class PedidoService {
         return this.http.get<Pedido>(`${this.apiUrl}/pedidos-da-mesa/${mesaId}`)
     }
 
+    createPedido(pedido: PedidoOutput): Observable<void> {
+        return this.http.post<void>(`${this.apiUrl}`, pedido)
+    }
+
     updatePedido(id: number, pedido: PedidoOutput): Observable<void> {
         return this.http.put<void>(`${this.apiUrl}/${id}`, pedido)
+    }
+
+    fecharPedido(id: number): Observable<Relatorio> {
+        return this.http.post<Relatorio>(`${this.apiUrl}/fechar/${id}`, id);
     }
 
     setPedido(pedido: Pedido) {
@@ -37,12 +46,7 @@ export class PedidoService {
         const pedido = this.getPedido()
         if(!pedido) return;
 
-        const existente = pedido.itensPedido.find(i => i.produto.id === item.produto.id)
-        if(existente) {
-            existente.quantidade += item.quantidade;
-        } else {
-            pedido.itensPedido.push(item);
-        }
+        pedido.itensPedido.push(item);
 
         this.pedidoSubject.next(pedido);
     }

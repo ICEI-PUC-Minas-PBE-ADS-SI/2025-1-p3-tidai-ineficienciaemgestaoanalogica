@@ -11,14 +11,67 @@ import { authGuard } from './guards/auth.guard';
 import { roleGuard } from './guards/role.guard';
 import { NaoAutorizadoComponent } from './components/auth/nao-autorizado/nao-autorizado.component';
 import { LoginComponent } from './components/auth/login/login.component';
+import { FecharPedidoComponent } from './components/ver-pedidos/fechar-pedido/fechar-pedido.component';
+import { ModalAvisoComponent } from './components/modal-aviso/modal-aviso.component';
+import { RelatorioPedidoComponent } from './components/ver-pedidos/fechar-pedido/relatorio-pedido/relatorio-pedido.component';
+import { PedidoCriacaoComponent } from './components/fazer-pedidos/pedido-criacao/pedido-criacao.component';
 
 export const routes: Routes = [
-    { path: "", component: HomeComponent, canActivate: [authGuard] },
-    { path: "login", component: LoginComponent },
-    { path: "ver-pedidos", component: VerPedidosComponent, canActivate: [authGuard]},
-    { path: "atualizar-pedidos/:mesaId", component: AtualizarPedidoComponent, canActivate: [authGuard]},
-    { path: "fazer-pedidos", component: FazerPedidosComponent, canActivate: [authGuard] },
-    { path: "relatorios", component: RelatoriosComponent, canActivate: [authGuard, roleGuard], data: {roles: ['Gerente']} },
-    { path: "gerenciar", component: GerenciarComponent, canActivate: [authGuard, roleGuard], data: {roles: ['Gerente']} },
-    { path: "nao-autorizado", component: NaoAutorizadoComponent }
+    { 
+        path: "", 
+        component: HomeComponent, 
+        canActivate: [authGuard] 
+    },
+    { 
+        path: "login", 
+        component: LoginComponent 
+    },
+    { 
+        path: "ver-pedidos", 
+        component: VerPedidosComponent, 
+        canActivate: [authGuard]
+    },
+    { 
+        path: "ver-pedidos/atualizar/:mesaId", 
+        component: AtualizarPedidoComponent, 
+        canActivate: [authGuard]
+    },
+    { 
+        path: "ver-pedidos/fechar/:mesaId", 
+        component: FecharPedidoComponent, 
+        canActivate: [authGuard]
+    },
+    {
+        path: "ver-pedidos/fechar/:mesaId/relatorio",
+        component: RelatorioPedidoComponent,
+        canActivate: [authGuard]
+    },
+    { 
+        path: "fazer-pedidos", 
+        component: FazerPedidosComponent, 
+        canActivate: [authGuard] 
+    },
+    {
+        path: "fazer-pedidos/:mesaId",
+        component: PedidoCriacaoComponent,
+        canActivate: [authGuard]
+    },
+    { 
+        path: "relatorios", component: 
+        RelatoriosComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {
+            roles: ['Gerente']
+        } 
+    },
+    { 
+        path: "gerenciar", 
+        component: GerenciarComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "nao-autorizado", 
+        component: NaoAutorizadoComponent 
+    }
 ];

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
@@ -108,6 +109,7 @@ public class PedidoService
             NomeFuncionario = pedido.Funcionario?.Nome ?? "Desconhecido",
             PrecoFinal = pedido.PrecoFinal,
             Itens = pedido.ItensPedido?.Select(i => new ItemRelatorioPedido{
+                PrecoUnitario = i.PrecoUnitario,
                 NomeProduto = i.Produto?.Nome ?? "Produto Removido",
                 Quantidade = i.Quantidade,
                 ExtrasSelecionados = i.ExtrasSelecionados?
@@ -133,7 +135,7 @@ public class PedidoService
             .Include(p => p.ItensPedido)
                 .ThenInclude(ip => ip.ExtrasSelecionados)
             .FirstOrDefaultAsync(p => p.Id == id);
-        
+
         if (pedido == null)
             return null;
 
@@ -159,7 +161,8 @@ public class PedidoService
                     Preco = ip.Produto.Preco,
                     Foto = ip.Produto.Foto,
                     CategoriaId = ip.Produto.CategoriaId,
-                    Extras = ip.Produto.Extras.Select(e => new ExtraDTO {
+                    Extras = ip.Produto.Extras.Select(e => new ExtraDTO
+                    {
                         Id = e.Id,
                         Nome = e.Nome,
                         PrecoAdicional = e.PrecoAdicional
