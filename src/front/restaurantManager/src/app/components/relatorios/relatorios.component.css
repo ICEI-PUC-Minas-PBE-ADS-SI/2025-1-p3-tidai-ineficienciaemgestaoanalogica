@@ -1,0 +1,25 @@
+.btn-selecionar {
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border: none;
+}
+
+.dropdown-item {
+    margin: 0;
+    border-bottom: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown-toggle:focus {
+    background-color: var(--main-color);
+    color: var(--background);
+}

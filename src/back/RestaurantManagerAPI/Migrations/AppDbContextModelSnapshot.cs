@@ -225,7 +225,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 1,
                             Nome = "Gerente",
-                            Senha = "$2a$11$k2lnzbDMq6xZMx08/GQAm.Nnr3K4K1Tetv1P7eeuKRv2y9/1cQYB2",
+                            Senha = "$2a$11$PGMyoYsa2h/mqlN7u7YTBuf.S7WD2fqmMe57ZVXzVVYSe3T1unG0i",
                             Tipo = "Gerente",
                             Usuario = "admin"
                         });
@@ -427,7 +427,7 @@ namespace RestaurantManagerAPI.Migrations
                             Id = 2,
                             CategoriaId = 1,
                             Descricao = "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão",
-                            Foto = "./uploads/produtos/pizza-marguerita.jpg",
+                            Foto = "/uploads/produtos/pizza-marguerita.jpg",
                             Nome = "Marguerita",
                             Preco = 32.00m
                         },

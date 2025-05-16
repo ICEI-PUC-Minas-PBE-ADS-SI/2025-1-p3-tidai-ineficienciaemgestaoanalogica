@@ -1,0 +1,9 @@
+<div class="container mt-4 d-block">
+    <mat-form-field class="d-flex">
+        <mat-label>Data:</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="dataSelecionada" name="dataSelecionada" [value]="dataSelecionada">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button type="submit" class="btn btn-font bg-main-color background mt-3" (click)="enviar()">Confirmar</button>
+</div>

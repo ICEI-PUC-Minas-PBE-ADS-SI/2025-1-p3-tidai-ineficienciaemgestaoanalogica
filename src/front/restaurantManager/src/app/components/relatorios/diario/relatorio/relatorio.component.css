@@ -1,0 +1,12 @@
+.card-header {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.btn-font {
+    font-family: var(--main-font);
+    font-size: 10px;
+    font-weight: 600;
+}

@@ -16,24 +16,55 @@ public class RelatoriosController : ControllerBase
         _pedidoService = pedidoService;
     }
     //[Authorize(Policy = "Gerente")]
-    [HttpGet("relatorio/periodo")]
+    [HttpGet("periodo")]
     public async Task<IActionResult> RelatorioPorPeriodo(DateTime inicio, DateTime fim)
     {
         var relatorios = await _context.RelatorioPedidos
-            .Where(r => r.DataHoraFim >= inicio && r.DataHoraFim <= fim)
+            .Where(r => r.DataHoraFim.Date >= inicio && r.DataHoraFim.Date <= fim)
+            .Include(r => r.Itens)
             .Select(r => _pedidoService.MapearRelatorioPedido(r))
             .ToListAsync();
-        return Ok(relatorios);
+
+        var agrupadosPorDia = relatorios
+            .GroupBy(r => r.DataHoraFim.Date)
+            .Select(g => new RelatorioPeriodo
+            {
+                Dia = g.Key,
+                PrecoFinal = g.Sum(r => r.PrecoFinal)
+            })
+            .OrderBy(r => r.Dia)
+            .ToList();
+        
+        return Ok(agrupadosPorDia);
     }
 
     //[Authorize(Policy = "Gerente")]
-    [HttpGet("relatorio/dia")]
+    [HttpGet("dia")]
     public async Task<IActionResult> RelatorioPorDia(DateTime dia)
     {
         var relatorio = await _context.RelatorioPedidos
             .Where(r => r.DataHoraFim.Date == dia.Date)
+            .Include(r => r.Itens)
             .Select(r => _pedidoService.MapearRelatorioPedido(r))
             .ToListAsync();
+        
         return Ok(relatorio);
+    }
+     //[Authorize(Policy = "Gerente")]
+    [HttpGet("{id}")]
+    public async Task<IActionResult> RelatorioPorId(int id)
+    {
+        var relatorio = await _context.RelatorioPedidos
+            .Where(r => r.Id == id)
+            .Include(r => r.Itens)
+            .FirstOrDefaultAsync();
+
+        if (relatorio == null)
+        {
+            return NotFound();
+        }
+        var relatorioDTO = _pedidoService.MapearRelatorioPedido(relatorio);
+        
+        return Ok(relatorioDTO);
     }
 }
