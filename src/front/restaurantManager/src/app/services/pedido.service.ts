@@ -1,17 +1,19 @@
 import { Injectable } from "@angular/core";
 import { environment } from "../environments/environment";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpParams } from "@angular/common/http";
 import { BehaviorSubject, Observable } from "rxjs";
 import { Pedido } from "../interfaces/pedido";
 import { ItemPedido } from "../interfaces/item-pedido";
 import { PedidoOutput } from "../interfaces/pedido-output";
 import { Relatorio } from "../interfaces/relatorio";
+import { RelatorioPeriodo } from "../interfaces/relatorio-periodo";
 
 @Injectable({
     providedIn: 'root'
 })
 export class PedidoService {
     private apiUrl = `${environment.apiUrl}/api/Pedidos`;
+    private apiUrlRelatorios = `${environment.apiUrl}/api/Relatorios`
 
     private pedidoSubject = new BehaviorSubject<Pedido | null>(null);
     public pedido$ = this.pedidoSubject.asObservable();
@@ -33,7 +35,19 @@ export class PedidoService {
     fecharPedido(id: number): Observable<Relatorio> {
         return this.http.post<Relatorio>(`${this.apiUrl}/fechar/${id}`, id);
     }
+    getRelatorioDia(dia: string): Observable<Relatorio[]> {
+        const params = new HttpParams().set('dia', dia);
+        return this.http.get<Relatorio[]>(`${this.apiUrlRelatorios}/dia`, {params});
+    }
 
+    getRelatorioPeriodo(diaInicio: string, diaFim: string): Observable<RelatorioPeriodo[]> {
+        const params = new HttpParams().set('inicio', diaInicio).set('fim', diaFim);
+        return this.http.get<RelatorioPeriodo[]>(`${this.apiUrlRelatorios}/periodo`, {params});
+    }
+
+    getRelatorioId(id: number): Observable<Relatorio> {
+        return this.http.get<Relatorio>(`${this.apiUrlRelatorios}/${id}`)
+    }
     setPedido(pedido: Pedido) {
         this.pedidoSubject.next(pedido);
     }
@@ -41,6 +55,7 @@ export class PedidoService {
     getPedido(): Pedido | null {
         return this.pedidoSubject.getValue();
     }
+
 
     adicionarItem(item: ItemPedido) {
         const pedido = this.getPedido()

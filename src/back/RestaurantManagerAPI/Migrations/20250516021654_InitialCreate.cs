@@ -125,7 +125,9 @@ namespace RestaurantManagerAPI.Migrations
                     FuncionarioId = table.Column<int>(type: "int", nullable: false),
                     DataHoraInicio = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     DataHoraFim = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    PrecoFinal = table.Column<decimal>(type: "decimal(10,2)", nullable: false)
+                    PrecoFinal = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
+                    Observacao = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
@@ -266,7 +268,7 @@ namespace RestaurantManagerAPI.Migrations
             migrationBuilder.InsertData(
                 table: "Funcionarios",
                 columns: new[] { "Id", "Nome", "Senha", "Tipo", "Usuario" },
-                values: new object[] { 1, "Gerente", "$2a$11$Qxg7/LeL.JCSZ4aZDD2mD.7RzYRT20XieewGpmPjcPtigtpzdX8ye", "Gerente", "admin" });
+                values: new object[] { 1, "Gerente", "$2a$11$PGMyoYsa2h/mqlN7u7YTBuf.S7WD2fqmMe57ZVXzVVYSe3T1unG0i", "Gerente", "admin" });
 
             migrationBuilder.InsertData(
                 table: "Mesas",
@@ -288,7 +290,7 @@ namespace RestaurantManagerAPI.Migrations
                 values: new object[,]
                 {
                     { 1, 1, "Molho de tomate, mussarela, rodelas de calabresa de primeira qualidade e cebola fatiada", "/uploads/produtos/pizza_calabresa.jpg", "Calabresa", 30.00m },
-                    { 2, 1, "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão", "./uploads/produtos/pizza-marguerita.jpg", "Marguerita", 32.00m },
+                    { 2, 1, "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão", "/uploads/produtos/pizza-marguerita.jpg", "Marguerita", 32.00m },
                     { 3, 1, "Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas pretas e orégano", "/uploads/produtos/pizza-portuguesa.jpg", "Portuguesa", 35.00m },
                     { 4, 2, "Delicioso chocolate ao leite derretido", "/uploads/produtos/pizza-chocolate.jpg", "Chocolate Preto", 30.00m },
                     { 5, 2, "Chocolate branco derretido com morangos frescos fatiados", "/uploads/produtos/pizza-choco-morango.jpg", "Chocolate Branco com Morango", 35.00m },
@@ -306,6 +308,21 @@ namespace RestaurantManagerAPI.Migrations
                     { 17, 8, "Taça - Sauvignon Blanc", "/uploads/produtos/vinho-branco-taca.jpg", "Vinho Branco da Casa", 20.00m },
                     { 18, 9, "Mousse de maracujá com açúcar", "/uploads/produtos/mousse-maracuja.jpg", "Mousse de Maracujá", 12.00m },
                     { 19, 9, "300ml - Açaí com granola e banana", "/uploads/produtos/acai-tigela.jpg", "Açaí na Tigela", 22.00m }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Extras",
+                columns: new[] { "Id", "Nome", "PrecoAdicional", "ProdutoId" },
+                values: new object[,]
+                {
+                    { 1, "Média", 8m, 1 },
+                    { 2, "Grande", 16m, 1 },
+                    { 3, "Média", 8m, 2 },
+                    { 4, "Grande", 16m, 2 },
+                    { 5, "Média", 8m, 3 },
+                    { 6, "Grande", 16m, 3 },
+                    { 7, "Jarra 1l", 18m, 10 },
+                    { 8, "Jarra 1l", 18m, 11 }
                 });
 
             migrationBuilder.CreateIndex(

@@ -101,6 +101,14 @@ public class PedidoService
         if(pedido == null)
             return null;
 
+        foreach (var i in pedido.ItensPedido)
+        {
+            Console.WriteLine(i.PrecoUnitario);
+            Console.WriteLine(i.Produto.Nome);
+            Console.WriteLine(i.Quantidade);
+            Console.WriteLine(i.ExtrasSelecionados);
+        }
+
         var relatorio = new RelatorioPedido
         {
             DataHoraInicio = pedido.DataHoraInicio,
@@ -115,7 +123,7 @@ public class PedidoService
                 ExtrasSelecionados = i.ExtrasSelecionados?
                     .Select(e => e.Extra?.Nome ?? "Extra removido")
                     .ToList() ?? new List<string>()
-            }).ToList() ?? null
+            }).ToList() ?? new List<ItemRelatorioPedido>()
         };
 
         _context.RelatorioPedidos.Add(relatorio);
@@ -176,18 +184,19 @@ public class PedidoService
     {
         return new RelatorioPedidoDTO
         {
+            Id = relatorio.Id,
             NomeMesa = relatorio.NomeMesa,
             NomeFuncionario = relatorio.NomeFuncionario,
             DataHoraInicio = relatorio.DataHoraInicio,
             DataHoraFim = relatorio.DataHoraFim,
             PrecoFinal = relatorio.PrecoFinal,
-            Itens = relatorio.Itens.Select(i => new ItemRelatorioPedidoDTO 
+            Itens = relatorio.Itens?.Select(i => new ItemRelatorioPedidoDTO 
             {
                 NomeProduto = i.NomeProduto,
                 Quantidade = i.Quantidade,
                 PrecoUnitario = i.PrecoUnitario,
                 Extras = i.ExtrasSelecionados
-            }).ToList()
+            }).ToList() ?? new List<ItemRelatorioPedidoDTO>()
         };
     }
 }

@@ -1,5 +1,4 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-/* You can add global styles to this file, and also import other style files */
 :root {
   --main-color: #D94040;
   --secondary-color: #E8DBDB;
@@ -203,10 +202,3 @@ footer {
   font-weight: 600;
   font-size: 14pt;
 }
-
-
-/*==========================
-====== Cards Produtos ======
-==========================*/
-
-

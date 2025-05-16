@@ -15,6 +15,11 @@ import { FecharPedidoComponent } from './components/ver-pedidos/fechar-pedido/fe
 import { ModalAvisoComponent } from './components/modal-aviso/modal-aviso.component';
 import { RelatorioPedidoComponent } from './components/ver-pedidos/fechar-pedido/relatorio-pedido/relatorio-pedido.component';
 import { PedidoCriacaoComponent } from './components/fazer-pedidos/pedido-criacao/pedido-criacao.component';
+import { DiarioComponent } from './components/relatorios/diario/diario.component';
+import { PeriodoComponent } from './components/relatorios/periodo/periodo.component';
+import { RelatorioComponent } from './components/relatorios/diario/relatorio/relatorio.component';
+import { RelatorioPeriodoComponent } from './components/relatorios/periodo/relatorio-periodo/relatorio-periodo.component';
+import { IndividualComponent } from './components/relatorios/individual/individual.component';
 
 export const routes: Routes = [
     { 
@@ -57,12 +62,43 @@ export const routes: Routes = [
         canActivate: [authGuard]
     },
     { 
-        path: "relatorios", component: 
+        path: "relatorios", 
+        component: 
         RelatoriosComponent, 
         canActivate: [authGuard, roleGuard], 
         data: {
             roles: ['Gerente']
         } 
+    },
+    {
+        path: "relatorios/diario",
+        component: DiarioComponent,
+        canActivate: [authGuard, roleGuard],
+        data: {roles: ['Gerente']}
+    },
+    {
+        path: "relatorios/diario/:dia",
+        component: RelatorioComponent, 
+        canActivate: [authGuard, roleGuard],
+        data: {roles: ['Gerente']}
+    },
+    {
+        path: "relatorios/periodo",
+        component: PeriodoComponent,
+        canActivate: [authGuard, roleGuard],
+        data: {roles: ['Gerente']}
+    },
+    {
+        path: "relatorios/periodo/:diaInicio/:diaFim",
+        component: RelatorioPeriodoComponent, 
+        canActivate: [authGuard, roleGuard],
+        data: {roles: ['Gerente']}
+    },
+    {
+        path: "relatorios/individual/:id",
+        component: IndividualComponent,
+        canActivate: [authGuard, roleGuard],
+        data: {roles: ['Gerente']}
     },
     { 
         path: "gerenciar", 
