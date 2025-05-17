@@ -20,6 +20,11 @@ import { PeriodoComponent } from './components/relatorios/periodo/periodo.compon
 import { RelatorioComponent } from './components/relatorios/diario/relatorio/relatorio.component';
 import { RelatorioPeriodoComponent } from './components/relatorios/periodo/relatorio-periodo/relatorio-periodo.component';
 import { IndividualComponent } from './components/relatorios/individual/individual.component';
+import { GerenciarProdutosComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-produtos.component';
+import { GerenciarFuncionariosComponent } from './components/gerenciar/gerenciar-funcionarios/gerenciar-funcionarios.component';
+import { GerenciarMesasComponent } from './components/gerenciar/gerenciar-mesas/gerenciar-mesas.component';
+import { GerenciarListaCategoriasComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-lista-categorias/gerenciar-lista-categorias.component';
+import { GerenciarListaCategoriaComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-lista-categorias/gerenciar-lista-categoria/gerenciar-lista-categoria.component';
 
 export const routes: Routes = [
     { 
@@ -103,6 +108,30 @@ export const routes: Routes = [
     { 
         path: "gerenciar", 
         component: GerenciarComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/produtos", 
+        component: GerenciarProdutosComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/produtos/lista-categoria", 
+        component: GerenciarListaCategoriaComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/funcionarios", 
+        component: GerenciarFuncionariosComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/mesas", 
+        component: GerenciarMesasComponent, 
         canActivate: [authGuard, roleGuard], 
         data: {roles: ['Gerente']} 
     },

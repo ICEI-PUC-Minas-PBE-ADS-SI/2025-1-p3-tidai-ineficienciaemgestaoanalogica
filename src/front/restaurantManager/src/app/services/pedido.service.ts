@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { environment } from "../environments/environment";
+import { environment } from "../../environments/environment";
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { BehaviorSubject, Observable } from "rxjs";
 import { Pedido } from "../interfaces/pedido";

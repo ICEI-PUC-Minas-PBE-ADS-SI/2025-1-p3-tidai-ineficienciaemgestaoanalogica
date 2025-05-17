@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute} from '@angular/router';
 import { PedidoService } from 'src/app/services/pedido.service';
 import { Pedido } from 'src/app/interfaces/pedido';
-import { environment } from "src/app/environments/environment";
+import { environment } from "src/environments/environment";
 import { map, filter, Observable, take } from 'rxjs';
 import { MesaService } from 'src/app/services/mesa.service';
 import { ItemPedido } from 'src/app/interfaces/item-pedido';

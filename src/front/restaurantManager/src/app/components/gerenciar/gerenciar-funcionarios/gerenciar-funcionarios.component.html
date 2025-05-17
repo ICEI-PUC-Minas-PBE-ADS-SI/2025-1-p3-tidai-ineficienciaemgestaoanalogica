@@ -1,0 +1,43 @@
+<div class="container" style="margin-bottom: 70px;">
+    <div class="row mt-4 mx-2 btn-selecionar text-start py-3 px-1 main-color justify-content-between" *ngFor="let funcionario of funcionarios">
+        <div class="col" style="transform: translateY(4px);">
+            {{funcionario.nome}}
+        </div>
+        <div class="col text-end">
+            <img class="mx-3" [src]="images.remover" alt="Ícone remover">
+            <img [src]="images.editar" alt="Ícone editar" data-bs-toggle="modal" [attr.data-bs-target]="'#modalEditar-' + funcionario.id" style="cursor: pointer;">
+        </div>
+        <div class="modal" tabindex="-2" [id]="'modalEditar-' + funcionario.id">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center main-color">
+                        <textarea class="w-100 p-2" type="text" [attr.value]="funcionario.nome" [(ngModel)]="funcionario.nome"></textarea>
+                    </div>
+                    <div class="row g-0">
+                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Confirmar</button>
+                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-adicionar bg-main-color strong-font background fixed-bottom justify-content-center p-4 d-flex" type="button" data-bs-toggle="modal" data-bs-target="#modalAdicionar">
+        Adicionar Funcionario
+</button>
+
+
+<div class="modal" tabindex="-2" id="modalAdicionar">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center main-color">
+                <textarea class="w-100 p-2" placeholder="Insira o nome do funcionário" type="text"></textarea>
+            </div>
+            <div class="row g-0">
+                <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Confirmar</button>
+                <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

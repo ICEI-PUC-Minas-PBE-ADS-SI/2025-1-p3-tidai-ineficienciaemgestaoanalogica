@@ -1,0 +1,6 @@
+.btn-selecionar {
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+}

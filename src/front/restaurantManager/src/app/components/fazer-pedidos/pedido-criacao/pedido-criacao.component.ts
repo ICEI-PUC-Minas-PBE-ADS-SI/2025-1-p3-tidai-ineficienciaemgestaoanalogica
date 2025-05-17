@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalAvisoComponent } from "../../modal-aviso/modal-aviso.component";
 import { ListaCategoriasComponent } from "../../ver-pedidos/atualizar-pedido/lista-categorias/lista-categorias.component";
-import { environment } from 'src/app/environments/environment';
+import { environment } from 'src/environments/environment';
 import { filter, map, Observable, take } from 'rxjs';
 import { Pedido } from 'src/app/interfaces/pedido';
 import { ActivatedRoute } from '@angular/router';

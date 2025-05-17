@@ -17,6 +17,21 @@ public class FuncionariosController : ControllerBase
         _context = context;
     }
 
+    [HttpGet]
+    public async Task<ActionResult<List<FuncionarioDTO>>> GetFuncionarios()
+    {
+        var funcionarios = await _context.Funcionarios
+            .Select(f => new FuncionarioDTO
+            {
+                Id = f.Id,
+                Nome = f.Nome,
+                Usuario = f.Usuario,
+                Tipo = f.Tipo
+            }).ToListAsync();
+
+        return Ok(funcionarios);
+    }
+
     [HttpPost("registrar")]
     public async Task<IActionResult> RegistrarFuncionario([FromBody] Funcionario funcionario)
     {

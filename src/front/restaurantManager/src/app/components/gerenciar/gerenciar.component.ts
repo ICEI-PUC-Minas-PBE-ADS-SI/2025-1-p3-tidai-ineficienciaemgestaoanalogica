@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-gerenciar',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './gerenciar.component.html',
   styleUrl: './gerenciar.component.css'
 })

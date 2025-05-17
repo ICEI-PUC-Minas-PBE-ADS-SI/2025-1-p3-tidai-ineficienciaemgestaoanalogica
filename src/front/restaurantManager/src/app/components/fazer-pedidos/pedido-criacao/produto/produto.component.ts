@@ -1,7 +1,7 @@
 import { Component, Input, input } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 import { Produto } from 'src/app/interfaces/produto';
-import { environment } from "src/app/environments/environment";
+import { environment } from "src/environments/environment";
 import { ItemPedido } from 'src/app/interfaces/item-pedido';
 import { PedidoService } from 'src/app/services/pedido.service';
 

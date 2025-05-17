@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MesaService } from 'src/app/services/mesa.service';
 import { PedidoService } from 'src/app/services/pedido.service';
-import { environment } from 'src/app/environments/environment';
+import { environment } from 'src/environments/environment';
 import { filter, map, Observable, take } from 'rxjs';
 import { Pedido } from 'src/app/interfaces/pedido';
 import { CommonModule } from '@angular/common';

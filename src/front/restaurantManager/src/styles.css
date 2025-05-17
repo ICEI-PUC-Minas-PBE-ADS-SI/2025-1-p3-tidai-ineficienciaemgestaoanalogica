@@ -202,3 +202,7 @@ footer {
   font-weight: 600;
   font-size: 14pt;
 }
+.botao-editar {
+    padding: 9.5px 11px;
+    border: 1px solid var(--secondary-color);
+}

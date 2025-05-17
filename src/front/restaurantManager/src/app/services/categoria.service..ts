@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
-import { environment } from "../environments/environment";
-import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { environment } from "../../environments/environment";
+import { HttpClient, HttpParams } from "@angular/common/http";
+import { BehaviorSubject, Observable } from "rxjs";
 import { Categoria } from "../interfaces/categoria";
 
 @Injectable({
@@ -9,6 +9,8 @@ import { Categoria } from "../interfaces/categoria";
 })
 export class CategoriaService {
     private apiUrl = `${environment.apiUrl}/api/Categorias`;
+    private categoriaSubject = new BehaviorSubject<Categoria[] | null>(null);
+    public categoria$ = this.categoriaSubject.asObservable();
 
     constructor(private http: HttpClient) {}
 
@@ -20,8 +22,8 @@ export class CategoriaService {
         return this.http.get<Categoria>(`${this.apiUrl}/${id}`)
     }
 
-    criarCategoria(categoria: Categoria): Observable<Categoria> {
-        return this.http.post<Categoria>(this.apiUrl, categoria);
+    criarCategoria(nomeCategoria: string): Observable<void> {
+        return this.http.post<void>(`${this.apiUrl}`, {nome: nomeCategoria});
     }
 
     atualizarCategoria(categoria: Categoria): Observable<void> {
@@ -30,5 +32,9 @@ export class CategoriaService {
 
     deletarCategoria(id: number): Observable<void> {
         return this.http.delete<void>(`${this.apiUrl}/${id}`)
+    }
+
+    setCategoria(categoria: Categoria[]) {
+        this.categoriaSubject.next(categoria);
     }
 }
