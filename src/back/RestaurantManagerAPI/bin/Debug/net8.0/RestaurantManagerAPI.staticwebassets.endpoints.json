@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.fmazqb6h8p.jpg",
+      "AssetFile": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 02:11:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fmazqb6h8p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "AssetFile": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 02:11:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/calabresa-acebolada.jpg",
       "AssetFile": "uploads/produtos/calabresa-acebolada.jpg",
       "Selectors": [],

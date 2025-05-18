@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { Extra } from 'src/app/interfaces/extra';
 import { ItemPedido } from 'src/app/interfaces/item-pedido';
 import { Relatorio } from 'src/app/interfaces/relatorio';
+import { Mesa } from 'src/app/interfaces/mesa';
 
 @Component({
   selector: 'app-fechar-pedido',
@@ -18,7 +19,7 @@ import { Relatorio } from 'src/app/interfaces/relatorio';
 })
 export class FecharPedidoComponent {
   environment = environment;
-  nomeMesa: string = "";
+  mesa!: Mesa | undefined;
   extras: Extra[] | null = null;
   taxaGarcom: number = 0;
   precoFinal: number = 0;
@@ -49,9 +50,13 @@ export class FecharPedidoComponent {
       }
     });
 
-    this.mesaService.getMesa(mesaId).subscribe(
+    this.mesaService.getMesas().subscribe(
       (data) => {
-        this.nomeMesa = data.nome;
+        this.mesa = data.find(m => m.id == mesaId);
+      },
+      (error) =>
+      {
+        console.error('Erro ao carregar o nome da mesa:', error)
       }
     )
   }

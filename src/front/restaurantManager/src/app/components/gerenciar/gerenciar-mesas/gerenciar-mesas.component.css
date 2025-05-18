@@ -8,6 +8,10 @@
     border-radius: 0;
     cursor: ponter;
 }
+.btn-adicionar:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
 .strong-font {
     font-weight: 700;
     font-size: 16px;
@@ -16,13 +20,11 @@
     border: none;
     border-radius: 0;
 }
-
 .modal-body {
     font-size: 14px;
     font-weight: 700;
     transform: translateY(8px);
 }
-
 button.btn-modal {
     border-radius: 0;
     font-size: 13px;

@@ -1,10 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+[ApiController]
 [Route("api/[controller]")]
-public class MesasController : Controller<Mesa>
+public class MesasController : ControllerBase
 {
-    public MesasController(AppDbContext context) : base(context) {}
+    private readonly AppDbContext _context;
+    public MesasController(AppDbContext context)
+    {
+        _context = context;
+    }
 
     [HttpGet("com-pedidos-abertos")]
     public async Task<ActionResult<IEnumerable<Mesa>>> GetMesasComPedidosAbertos()
@@ -47,5 +52,77 @@ public class MesasController : Controller<Mesa>
             })
             .ToListAsync();
         return Ok(mesas);
+    }
+
+    //[Authorize(Policy = "Gerente")]
+    [HttpGet]
+    public async Task<ActionResult<List<MesaDTO>>> GetMesas() 
+    {
+        var mesas = await _context.Mesas
+            .Select(m => new MesaDTO
+            {
+                Id = m.Id,
+                Nome = m.Nome
+            })
+            .ToListAsync();
+        if(mesas == null) return NotFound();
+        return Ok(mesas);
+    }
+
+    //[Authorize(Policy = "Gerente")]
+    [HttpGet("{id}")]
+    public async Task<ActionResult<MesaDTO>> Get(int id)
+    {
+        var mesa = await _context.Mesas
+                        .Where(m => m.Id == id)
+                        .Select(m => new MesaDTO
+                        {
+                            Id = m.Id,
+                            Nome = m.Nome,
+                        })
+                        .ToListAsync();
+        if (mesa == null) return NotFound();
+        return Ok(mesa);
+    }
+
+    //[Authorize(Policy = "Gerente")]
+    [HttpPost]
+    public async Task<IActionResult> Post(MesaDTOInput mesa)
+    {
+        _context.Mesas.Add(new Mesa
+        {
+            Nome = mesa.Nome
+        });
+        await _context.SaveChangesAsync();
+        return Ok();
+    }
+
+    //[Authorize(Policy = "Gerente")]
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, MesaDTO mesa)
+    {
+        if(!id.Equals(mesa.Id))
+            return BadRequest();
+
+        var mesaOriginal = await _context.Mesas.Where(m => m.Id == mesa.Id).FirstOrDefaultAsync();
+        if (mesaOriginal == null)
+            return NotFound();
+
+        mesaOriginal.Nome = mesa.Nome;
+        _context.Mesas.Update(mesaOriginal);
+        await _context.SaveChangesAsync();
+        return Ok();
+    }
+
+    //[Authorize(Policy = "Gerente")]
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var mesa = await _context.Mesas.Where(m => m.Id == id).FirstOrDefaultAsync();
+        if (mesa == null) return NotFound();
+
+        _context.Mesas.Remove(mesa);
+        await _context.SaveChangesAsync();
+        return NoContent();
     }
 }

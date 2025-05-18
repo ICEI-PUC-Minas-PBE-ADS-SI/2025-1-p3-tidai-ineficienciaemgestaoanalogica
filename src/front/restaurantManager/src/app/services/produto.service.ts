@@ -14,8 +14,12 @@ export class ProdutoService {
     getProdutosPorCategoria(categoriaId: number): Observable<Produto[]> {
         return this.http.get<Produto[]>(`${this.apiUrl}/categoria/${categoriaId}`)
     }
-    criarProduto(produto: Produto): Observable<Produto> {
-        return this.http.post<Produto>(this.apiUrl, produto);
+
+    getProdutoPorId(produtoId: number): Observable<Produto> {
+        return this.http.get<Produto>(`${this.apiUrl}/${produtoId}`)
+    }
+    criarProduto(produto: Object): Observable<void> {
+        return this.http.post<void>(this.apiUrl, produto);
     }
 
     atualizarProduto(produto: Produto): Observable<void> {
@@ -24,5 +28,14 @@ export class ProdutoService {
 
     deletarProduto(id: number): Observable<void> {
         return this.http.delete<void>(`${this.apiUrl}/${id}`)
+    }
+
+    uploadImagem(arquivo: File, caminhoAntigo?: string): Observable<{ caminho: string }> {
+        const formData = new FormData();
+        formData.append('arquivo', arquivo);
+
+        if(caminhoAntigo) formData.append('caminhoAntigo', caminhoAntigo);
+
+        return this.http.post<{ caminho: string }>(`${this.apiUrl}/upload-imagem`, formData);
     }
 }

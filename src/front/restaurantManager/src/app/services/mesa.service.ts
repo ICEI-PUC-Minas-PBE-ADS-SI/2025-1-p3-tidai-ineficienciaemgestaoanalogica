@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { environment } from "../../environments/environment";
 import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { BehaviorSubject, Observable } from "rxjs";
 import { Mesa } from "../interfaces/mesa";
 
 @Injectable({
@@ -9,6 +9,8 @@ import { Mesa } from "../interfaces/mesa";
 })
 export class MesaService {
     private apiUrl = `${environment.apiUrl}/api/Mesas`;
+    private mesaSubject = new BehaviorSubject<Mesa[] | null>(null);
+    public mesas$ = this.mesaSubject.asObservable();
 
     constructor(private http: HttpClient) {}
 
@@ -28,8 +30,8 @@ export class MesaService {
         return this.http.get<Mesa>(`${this.apiUrl}/${id}`)
     }
 
-    criarMesa(mesa: Mesa): Observable<Mesa> {
-        return this.http.post<Mesa>(this.apiUrl, mesa);
+    criarMesa(nomeMesa: String): Observable<Mesa> {
+        return this.http.post<Mesa>(`${this.apiUrl}`, {nome: nomeMesa});
     }
 
     atualizarMesa(mesa: Mesa): Observable<void> {
@@ -38,5 +40,9 @@ export class MesaService {
 
     deletarMesa(id: number): Observable<void> {
         return this.http.delete<void>(`${this.apiUrl}/${id}`)
+    }
+
+    setMesas(mesas: Mesa[]) {
+        this.mesaSubject.next(mesas);
     }
 }

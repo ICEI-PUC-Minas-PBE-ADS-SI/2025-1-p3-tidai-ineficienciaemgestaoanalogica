@@ -23,6 +23,19 @@ export class AuthService {
   getFuncionarios() : Observable<Funcionario[] | null> {
     return this.http.get<Funcionario[]>(`${this.apiUrl}`);
   }
+
+  getFuncionarioById(id: Number) : Observable<Funcionario | null> {
+    return this.http.get<Funcionario>(`${this.apiUrl}/${id}`);
+  }
+  
+  atualizarFuncionario(id: Number, funcionario: Object) : Observable<void> {
+    return this.http.put<void>(`${this.apiUrl}/${id}`, funcionario);
+  }
+
+  criarFuncionario(funcionario: Object) : Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/registrar`, funcionario)
+  }
+
   carregarFuncionario(): Observable<FuncionarioLogado | null> {
     return this.http.get<FuncionarioLogado>(`${this.apiUrl}/logado`, {withCredentials: true}).pipe(
       tap(data => this.funcionario = data),
@@ -31,6 +44,10 @@ export class AuthService {
         return of(null);
       })
     );
+  }
+
+  removerFuncionario(funcionarioId: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${funcionarioId}`);
   }
 
   estaAutenticado(): boolean {

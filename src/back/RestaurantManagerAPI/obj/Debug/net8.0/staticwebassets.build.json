@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7Lnwu63YKpzBElgCA6h4CEBfOgfdqGwR5Hx+tNRVomU=",
+  "Hash": "1ffx/gN9njrcl548JlvXSda+4GK1bRcrQftyHIiZNOI=",
   "Source": "RestaurantManagerAPI",
   "BasePath": "_content/RestaurantManagerAPI",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\produtos\\agua-sem-gas.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fmazqb6h8p",
+      "Integrity": "hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg"
     },
     {
       "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\calabresa-acebolada.jpg",
@@ -660,6 +681,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-WfzuWg6NR15oIyJ+6IV7OQgWubfPHjzeciivqLZiRFQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.fmazqb6h8p.jpg",
+      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 02:11:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fmazqb6h8p"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 02:11:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE="
         }
       ]
     },

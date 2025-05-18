@@ -25,6 +25,10 @@ import { GerenciarFuncionariosComponent } from './components/gerenciar/gerenciar
 import { GerenciarMesasComponent } from './components/gerenciar/gerenciar-mesas/gerenciar-mesas.component';
 import { GerenciarListaCategoriasComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-lista-categorias/gerenciar-lista-categorias.component';
 import { GerenciarListaCategoriaComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-lista-categorias/gerenciar-lista-categoria/gerenciar-lista-categoria.component';
+import { CriarFuncionarioComponent } from './components/gerenciar/gerenciar-funcionarios/criar-funcionario/criar-funcionario.component';
+import { EditarFuncionarioComponent } from './components/gerenciar/gerenciar-funcionarios/editar-funcionario/editar-funcionario.component';
+import { EditarProdutoComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-produto/editar-produto/editar-produto.component';
+import { AdicionarProdutoComponent } from './components/gerenciar/gerenciar-produtos/gerenciar-produto/adicionar-produto/adicionar-produto.component';
 
 export const routes: Routes = [
     { 
@@ -124,8 +128,32 @@ export const routes: Routes = [
         data: {roles: ['Gerente']} 
     },
     { 
+        path: "gerenciar/produtos/adicionar", 
+        component: AdicionarProdutoComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/produtos/editar/:produtoId", 
+        component: EditarProdutoComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
         path: "gerenciar/funcionarios", 
         component: GerenciarFuncionariosComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/funcionarios/criar", 
+        component: CriarFuncionarioComponent, 
+        canActivate: [authGuard, roleGuard], 
+        data: {roles: ['Gerente']} 
+    },
+    { 
+        path: "gerenciar/funcionarios/editar/:funcionarioId", 
+        component: EditarFuncionarioComponent, 
         canActivate: [authGuard, roleGuard], 
         data: {roles: ['Gerente']} 
     },

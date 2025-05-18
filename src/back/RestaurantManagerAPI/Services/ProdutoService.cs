@@ -10,7 +10,7 @@ public class ProdutoService
         _context = context;
     }
 
-    public async Task<Produto> CriarProdutoAsync(CriarProdutoDTO dto)
+    public async Task<Produto?> CriarProdutoAsync(CriarProdutoDTO dto)
     {
         var produto = new Produto
         {
@@ -25,6 +25,9 @@ public class ProdutoService
             }).ToList()
         };
 
+        if (produto == null) return null;
+
+        _context.Add(produto);
         await _context.SaveChangesAsync();
         return produto;
     }
@@ -50,6 +53,7 @@ public class ProdutoService
             PrecoAdicional = e.PrecoAdicional
         }).ToList();
 
+        _context.Update(produto);
         await _context.SaveChangesAsync();
         return produto;
     }
@@ -69,11 +73,11 @@ public class ProdutoService
             Preco = produto.Preco,
             Foto = produto.Foto,
             CategoriaId = produto.CategoriaId,
-            Extras = produto.Extras!.Select(e => new ExtraDTO{
+            Extras = produto.Extras?.Select(e => new ExtraDTO{
                 Id = e.Id,
                 Nome = e.Nome,
                 PrecoAdicional = e.PrecoAdicional
-            }).ToList()
+            }).ToList() ?? new List<ExtraDTO>()
         };
     }
 }

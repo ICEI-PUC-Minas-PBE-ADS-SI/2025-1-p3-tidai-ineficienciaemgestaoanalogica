@@ -27,4 +27,8 @@ export class GerenciarCategoriaComponent {
       }
     );
   }
+
+  removerProduto(produtoId: number) {
+    this.produtos = this.produtos.filter(p => p.id !== produtoId);
+  }
 }

@@ -11,3 +11,15 @@
 .btn-font {
   font-size: 12px;
 }
+.form-control {
+  width: 2.5rem;
+}
+
+@media (max-width: 410px) {
+  .div-input-quant {
+    flex-direction: column;
+  }
+  .img-fluid {
+    justify-content: center;
+  }
+}

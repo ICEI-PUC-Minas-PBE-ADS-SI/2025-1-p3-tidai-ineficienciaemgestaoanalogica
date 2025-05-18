@@ -14,7 +14,7 @@
 <div class="m-4">
     <div class="container">
         <div class="card px-0">
-            <p class="card-header title-font main-color bg-secondary-color text-center p-3">{{nomeMesa}}</p>
+            <p class="card-header title-font main-color bg-secondary-color text-center p-3" *ngIf="mesa">{{mesa.nome}}</p>
             <div *ngIf="pedido$ | async as pedido" class="card-body data-font p-3 main-color">
                 <div *ngFor="let item of pedido.itensPedido">
                     <div class="d-flex justify-content-between">

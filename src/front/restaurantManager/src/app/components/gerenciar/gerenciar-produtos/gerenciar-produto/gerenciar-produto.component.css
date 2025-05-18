@@ -2,12 +2,42 @@
   font-size: 13px;
   font-weight: 600;
 }
-
 .card-text-produto{
   font-size: 13px;
   font-weight: 400;
 }
-
 .btn-font {
   font-size: 12px;
+}
+.btn-selecionar {
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+}
+.btn-adicionar {
+    border-radius: 0;
+    cursor: ponter;
+}
+.btn-adicionar:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.strong-font {
+    font-weight: 700;
+    font-size: 16px;
+}
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+}
+.form-control {
+    font-size: 12px;
+}
+button.btn-modal {
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 400;
 }

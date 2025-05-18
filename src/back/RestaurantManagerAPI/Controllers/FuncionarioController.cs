@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
+using BCrypt.Net;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -32,13 +33,51 @@ public class FuncionariosController : ControllerBase
         return Ok(funcionarios);
     }
 
-    [HttpPost("registrar")]
-    public async Task<IActionResult> RegistrarFuncionario([FromBody] Funcionario funcionario)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<FuncionarioDTO>> GetFuncionario(int id)
     {
-        funcionario.Senha = BCrypt.Net.BCrypt.HashPassword(funcionario.Senha);
+        var funcionario = await _context.Funcionarios
+            .Where(f => f.Id == id)
+            .Select(f => new FuncionarioDTO
+            {
+                Id = f.Id,
+                Nome = f.Nome,
+                Usuario = f.Usuario,
+                Tipo = f.Tipo
+            }).FirstOrDefaultAsync();
+
+        return Ok(funcionario);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeletarFuncionario(int id)
+    {
+        var funcionario = await _context.Funcionarios
+            .Where(f => f.Id == id)
+            .FirstOrDefaultAsync();
+
+        if (funcionario == null)
+            return NotFound();
+
+        _context.Funcionarios.Remove(funcionario);
+        await _context.SaveChangesAsync();
+        return Ok();
+    }
+
+    [HttpPost("registrar")]
+    public async Task<IActionResult> RegistrarFuncionario([FromBody] RegistrarDTO dto)
+    {
+        var funcionario = new Funcionario
+        {
+            Nome = dto.Nome,
+            Tipo = dto.Tipo,
+            Usuario = dto.Usuario,
+            Senha = BCrypt.Net.BCrypt.HashPassword(dto.Senha)
+        };
+
         _context.Funcionarios.Add(funcionario);
         await _context.SaveChangesAsync();
-        return Ok("Funcionario registrado.");
+        return Ok();
     }
 
     [HttpPost("login")]
@@ -68,6 +107,27 @@ public class FuncionariosController : ControllerBase
             Tipo = funcionario.Tipo
         };
 
+        return Ok();
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> EditarFuncionario(int id, [FromBody] EditarDTO dto)
+    {
+        if (!id.Equals(dto.Id))
+            return BadRequest();
+
+        var funcionario = await _context.Funcionarios.Where(f => f.Id.Equals(dto.Id)).FirstOrDefaultAsync();
+
+        if (funcionario == null)
+            return NotFound();
+
+        funcionario.Senha = BCrypt.Net.BCrypt.HashPassword(dto.Senha);
+        funcionario.Usuario = dto.Usuario;
+        funcionario.Nome = dto.Nome;
+        funcionario.Tipo = dto.Tipo;
+
+        _context.Funcionarios.Update(funcionario);
+        await _context.SaveChangesAsync();
         return Ok();
     }
 

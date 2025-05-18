@@ -1,20 +1,35 @@
-<div class="container" style="margin-bottom: 70px;">
+<div class="container" style="margin-bottom: 70px;" *ngIf="mesas$ | async as mesas">
     <div class="row mt-4 mx-2 btn-selecionar text-start py-3 px-1 main-color justify-content-between" *ngFor="let mesa of mesas">
         <div class="col" style="transform: translateY(4px);">
             {{mesa.nome}}
         </div>
         <div class="col text-end">
-            <img class="mx-3" [src]="images.remover" alt="Ícone remover" style="cursor: pointer;">
+            <img class="mx-3" [src]="images.remover" alt="Ícone remover" style="cursor: pointer;" data-bs-toggle="modal" [attr.data-bs-target]="'#modalRemover-' + mesa.id" style="cursor: pointer;">
             <img [src]="images.editar" alt="Ícone editar" data-bs-toggle="modal" [attr.data-bs-target]="'#modalEditar-' + mesa.id" style="cursor: pointer;">
         </div>
+        <!--Modal para editar-->
         <div class="modal" tabindex="-2" [id]="'modalEditar-' + mesa.id">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body text-center main-color">
-                        <textarea class="w-100 p-2" type="text" [attr.value]="mesa.nome" [(ngModel)]="mesa.nome"></textarea>
+                        <textarea class="w-100 p-2" type="text" placeholder="Insira um novo nome para a mesa" [(ngModel)]="nomeMesaAlterada"></textarea>
                     </div>
                     <div class="row g-0">
-                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Confirmar</button>
+                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal" (click)="editar(mesa)">Confirmar</button>
+                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal para remover-->
+        <div class="modal" tabindex="-3" [id]="'modalRemover-' + mesa.id">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center main-color">
+                        Tem certeza de que deseja deletar a categoria? Todos os pedidos associados a ela serão deletados.
+                    </div>
+                    <div class="row g-1">
+                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal" (click)="remover(mesa.id)">Confirmar</button>
                         <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
                     </div>
                 </div>
@@ -27,15 +42,15 @@
         Adicionar Mesa
 </button>
 
-
+<!--Modal para adicionar-->
 <div class="modal" tabindex="-2" id="modalAdicionar">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body text-center main-color">
-                <textarea class="w-100 p-2" type="text" placeholder="Insira o nome da mesa"></textarea>
+                <textarea class="w-100 p-2" type="text" placeholder="Insira o nome da mesa" [(ngModel)]="nomeNovaMesa"></textarea>
             </div>
             <div class="row g-0">
-                <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Confirmar</button>
+                <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal" (click)="adicionar()">Confirmar</button>
                 <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
             </div>
         </div>

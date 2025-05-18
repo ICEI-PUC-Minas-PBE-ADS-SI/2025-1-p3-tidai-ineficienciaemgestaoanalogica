@@ -1,0 +1,64 @@
+<div class="container mt-4 px-5 justify-content-center" *ngIf="produto">
+    <div class="mb-4">
+        <label for="formControlNome" class="form-label mb-3">Nome</label>
+        <input type="text" class="form-control py-3 px-2" id="exampleFormControlInput1" [(ngModel)]="produto.nome">
+    </div>
+    <div class="mb-4">
+        <label for="formControlCategoria" class="form-label mb-3">Categoria</label>
+        <select class="form-control py-3 px-2" id="formControlCategoria" [(ngModel)]="produto.categoriaId" name="categoria">
+            <option *ngFor="let categoria of categorias" [value]="categoria.id">
+                {{ categoria.nome }}
+            </option>
+        </select>
+    </div>
+    <div class="mb-4">
+        <label for="formControlDescricao" class="form-label mb-3">Descrição</label>
+        <input type="text" class="form-control py-3 px-2" id="formControlDescricao" [(ngModel)]="produto.descricao">
+    </div>
+    <div class="mb-4">
+        <label for="formControlPreco" class="form-label mb-3">Preço</label>
+        <div class="input-group">
+            <span class="input-group-text">R$</span>
+            <input type="number" class="form-control py-3 px-2" id="formControlPreco" [(ngModel)]="produto.preco">
+        </div>
+    </div>
+    <div class="mb-4">
+        <label for="formControlImagem" class="form-label mb-3">Imagem</label>
+        <label for="inputImagem" class="form-control bg-secondary-color text-center p-3" id="formControlImagem">Carregar imagem</label>
+        <input type="file" id="inputImagem" hidden (change)="onFileSelected($event)">
+        <span class="mt-2 file-name">{{ selectedFile?.name || (produto.foto ? produto.foto.split('/').pop() : 'Nenhuma imagem selecionada') }}</span>
+    </div>
+    <div class="mb-4">
+        <label for="formControlExtras" class="form-label mb-3">Extras</label>
+        <div id="formControlExtras" *ngFor="let extra of produto.extras; let i = index">
+            <div class="input-group mb-3">
+                <img class="input-group-text" [src]="images.remover" (click)="removerExtra(i)">
+                <input class="form-control" type="text" [value]="`${extra.nome} - ${extra.precoAdicional | currency: 'BRL'}`" disabled>
+                <img class="input-group-text" [src]="images.editar" data-bs-toggle="modal" data-bs-target="#modalEditar" (click)="editarExtra(extra)">
+            </div>
+        </div>
+        <div class="text-center px-5 border rounded" data-bs-toggle="modal" data-bs-target="#modalEditar" (click)="novoExtra()">
+            <img [src]="images.adicionar" alt="Adicionar">
+        </div>
+    </div>
+    <div class="mt-4">
+        <button type="submit" class="btn btn-font background bg-main-color px-3" (click)="atualizar()">Confirmar</button>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="modalEditar">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body main-color">
+                <input type="text" class="form-control mb-2"  placeholder="Insira o nome do extra" [(ngModel)]="extraTemp.nome">
+                <div class="input-group">
+                    <span class="input-group-text">R$</span>
+                    <input type="number" class="form-control"  placeholder="Insira o preço adicional do extra" [(ngModel)]="extraTemp.precoAdicional">
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-font bg-main-color background" data-bs-dismiss="modal" (click)="salvarExtra()">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
