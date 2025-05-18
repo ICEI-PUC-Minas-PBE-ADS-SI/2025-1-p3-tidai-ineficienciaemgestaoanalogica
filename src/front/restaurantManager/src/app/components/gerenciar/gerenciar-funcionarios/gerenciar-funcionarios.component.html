@@ -1,0 +1,35 @@
+<div *ngIf="erroLogin" class="alert alert-danger mx-2 mt-3">
+    {{ erroLogin }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="container" style="margin-bottom: 70px;">
+    <div class="row mt-4 mx-2 btn-selecionar text-start py-3 px-1 main-color justify-content-between" *ngFor="let funcionario of funcionarios">
+        <div class="col strong-font" style="transform: translateY(4px);">
+            {{funcionario.nome}}
+        </div>
+        <div class="col text-end">
+            <img class="mx-3" [src]="images.remover" alt="Ícone remover" data-bs-toggle="modal" [attr.data-bs-target]="'#modalRemover-'+ funcionario.id" style="cursor: pointer;">
+            <img [src]="images.editar" alt="Ícone editar" style="cursor: pointer;" [routerLink]="`editar/${funcionario.id}`">
+        </div>
+        <div class="modal" tabindex="-2" [id]="'modalRemover-' + funcionario.id">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body main-color">
+                        <label [for]="'input-user-' + funcionario.id" class="form-label mb-2">Faça login novamente para confirmar a exclusão</label>
+                        <input type="text" class="form-control mb-2" [id]="'input-user-' + funcionario.id" placeholder="Insira seu nome de usuario" [(ngModel)]="nomeUsuarioLogado">
+                        <input type="password" class="form-control" [id]="'input-senha-' + funcionario.id" placeholder="Insira sua senha" [(ngModel)]="senhaUsuarioLogado">
+                    </div>
+                    <div class="row g-0">
+                        <button type="submit" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal" (click)="remover(funcionario.id)">Confirmar</button>
+                        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button class="btn btn-adicionar bg-main-color strong-font background fixed-bottom justify-content-center p-4 d-flex" type="button" [routerLink]="'criar'">
+        Adicionar Funcionario
+</button>

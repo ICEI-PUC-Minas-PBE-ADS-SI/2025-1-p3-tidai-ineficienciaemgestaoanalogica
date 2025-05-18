@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\acai-tigela.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\acai-tigela.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-com-gas.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\agua-com-gas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-sem-gas.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\agua-sem-gas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\calabresa-acebolada.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\calabresa-acebolada.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-brahma.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\cerveja-brahma.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-skol.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\cerveja-skol.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\coca-cola-lata.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\coca-cola-lata.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\guarana-lata.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\guarana-lata.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\mousse-maracuja.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\mousse-maracuja.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pao-alho.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\pao-alho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-choco-morango.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\pizza-choco-morango.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-chocolate.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\pizza-chocolate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-marguerita.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\pizza-marguerita.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-portuguesa.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\pizza-portuguesa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza_calabresa.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\pizza_calabresa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-abacaxi.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\suco-abacaxi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-laranja.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\suco-laranja.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-branco-taca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\vinho-branco-taca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-tinto-taca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\produtos\\vinho-tinto-taca.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RestaurantManagerAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RestaurantManagerAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RestaurantManagerAPI.props",
+      "PackagePath": "build\\RestaurantManagerAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RestaurantManagerAPI.props",
+      "PackagePath": "buildMultiTargeting\\RestaurantManagerAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RestaurantManagerAPI.props",
+      "PackagePath": "buildTransitive\\RestaurantManagerAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

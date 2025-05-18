@@ -1,0 +1,15 @@
+<div class="login-wrapper">
+  <div class="login-container m-3">
+    <div class="login-title">YourRestaurantManager</div>
+    <form (ngSubmit)="login()" #formLogin="ngForm" class="login-form">
+      <label for="inputUser" class="form-label text-white">Usuário</label>
+      <input type="text" id="inputUser" class="form-control" name="usuario" [(ngModel)]="usuario" required>
+      <label for="inputPassword" class="form-label text-white mt-2">Senha</label>
+      <input type="password" id="inputPassword" class="form-control" name="senha" [(ngModel)]="senha" required>
+      <div *ngIf="erroLogin" class="alert alert-danger mt-4 mb-0">
+        {{ erroLogin }}
+      </div>
+      <button class="btn btn-font mt-4 w-100" type="submit">Confirmar</button>
+    </form>
+  </div>
+</div>

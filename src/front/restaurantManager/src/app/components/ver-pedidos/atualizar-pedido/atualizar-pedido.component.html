@@ -1,0 +1,81 @@
+<app-lista-categorias></app-lista-categorias>
+
+<button class="btn btn-atualizar main-color bg-background fixed-bottom text-start p-4 justify-content-between d-flex"
+        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  <span class="strong-font">{{ nomeMesa }}</span>
+  <span class="detail-font" style="transform: translateY(5px);" *ngIf="pedido$ | async as pedido">
+    {{ pedido.itensPedido.length }} produtos selecionados <img src="assets/images/arrow-down.svg" class="ms-2" alt="Seta para baixo" style="transform: translateY(-1px);">
+  </span>
+</button>
+
+<app-modal-aviso [mensagem]="'Pedido atualizado'"></app-modal-aviso>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample"
+     aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true" style="height: 80vh;">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body d-flex flex-column p-0" style="height: calc(100% - 56px);"> <!-- 56px = header -->
+    <div class="flex-grow-1 overflow-auto p-3" style="padding-bottom: 160px;"> 
+      <div *ngIf="pedido$ | async as pedido">
+        <div class="card mb-2" *ngFor="let item of pedido.itensPedido">
+          <div class="card-body d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center flex-grow-1">
+              <button class="p-0 m-0" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse-'+item.produto.id" aria-expanded="false" [attr.aria-controls]="'collapse-'+item.produto.id" style="border: 0;">
+                <img [src]="environment.apiUrl + item.produto.foto" alt="Foto" class="p-0" style="width: 60px; height: 60px;">
+              </button>
+              <p class="ms-3 mb-0">{{ item.produto.nome }}</p>
+            </div>
+            <div class="d-flex align-items-center border rounded flex-shrink-1" style="min-width: 0;">
+                <input type="text" class="form-control text-center" 
+                    style="width: 2.5rem; min-width: 0;" [(ngModel)]="item.quantidade">
+                <div>
+                    <img class="mx-2" src="assets/images/decrementar.svg" alt="botão diminuir" style="height: auto;" (click)="decrementar(item)">
+                </div>
+                <div>
+                    <img class="mx-1"  src="assets/images/incrementar.svg" alt="Botão aumentar" style="height: auto;" (click)="incrementar(item)">
+                </div>
+            </div>
+          </div>
+          <div class="flex-grow-1">
+            <div class="collapse ms-3 mb-2" [id]="'collapse-'+item.produto.id" *ngIf="item.produto.extras != null && item.produto.extras.length > 0">
+              <div class="form-check" *ngFor="let extra of item.produto.extras">
+                <input class="form-check-input" type="checkbox" #checkbox value="" 
+                  [id]="'extra-' + item.produto.id + '-' + extra.id"
+                  [checked]="item.extrasSelecionados.includes(extra.id)"
+                  (change)="onToggleExtra(item, extra.id, checkbox.checked)">
+                <label class="form-check-label" [for]="'extra-' + item.produto.id + extra.id">
+                {{extra.precoAdicional | currency:'BRL'}} - {{extra.nome}}
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Adicione uma observação" id="floatingTextarea2" style="height: 100px;" [(ngModel)]="pedido.observacao">{{pedido.observacao}}</textarea>
+          <label for="floatingTextarea2">Adicionar observação</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-100 bg-white border-top p-3 z-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <button class="btn btn-font" type="button" data-bs-toggle="modal" data-bs-target="#modal-confirmar" (click)="atualizarPedido()">Confirmar</button>
+        <h5 class="text-end me-3">{{ calcularTotal() | async | currency:'BRL' }}</h5>
+      </div>
+    </div>
+
+    <div class="w-100">
+      <button class="btn btn-fechar btn-flex background bg-main-color w-100 p-4 justify-content-between d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+      (mouseenter)="isHovered = true" 
+      (mouseleave)="isHovered = false">
+        <span class="strong-font">{{ nomeMesa }}</span>
+        <span class="detail-font" *ngIf="pedido$ | async as pedido" style="transform: translateY(5px);">
+          {{ pedido.itensPedido.length }} produtos selecionados 
+          <img [src]="isHovered ? 'assets/images/arrow-up-red.svg' : 'assets/images/arrow-up.svg'" class="ms-2" alt="Seta para cima" style="transform: translateY(-2px);">
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

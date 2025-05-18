@@ -1,0 +1,43 @@
+<div class="modal" tabindex="-2" id="modal-escolha">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center main-color">
+        <p>Tem certeza que deseja fechar o pedido?</p>
+      </div>
+      <div class="row g-0">
+        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal" (click)="fecharPedido()">Confirmar</button>
+        <button type="button" class="btn btn-modal data-font bg-main-color background col" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="m-4">
+    <div class="container">
+        <div class="card px-0">
+            <p class="card-header title-font main-color bg-secondary-color text-center p-3" *ngIf="mesa">{{mesa.nome}}</p>
+            <div *ngIf="pedido$ | async as pedido" class="card-body data-font p-3 main-color">
+                <div *ngFor="let item of pedido.itensPedido">
+                    <div class="d-flex justify-content-between">
+                        <span>{{item.quantidade}}x - {{item.produto.nome}}</span>
+                        <span>{{item.produto.preco | currency:'BRL'}}</span>
+                    </div>
+                    <div *ngIf="getExtras(item) as extras">
+                        <div *ngIf="extras.length > 0"  class="d-flex justify-content-between">
+                            <span style="padding-left: 32px;" *ngFor="let extra of extras">{{extra.nome}}</span>
+                            <span *ngFor="let extra of extras">{{extra.precoAdicional | currency:'BRL'}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span>Taxa de Garçom</span>
+                    <span>{{taxaGarcom | currency:'BRL'}}</span>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                    <span>Total</span>
+                    <span>{{precoFinal | currency:'BRL'}}</span>
+                </div>
+            </div>
+            <button class="btn btn-flex btn-font background bg-main-color p-4" type="button" data-bs-toggle="modal" data-bs-target="#modal-escolha">Gerar Conta</button>
+        </div>
+    </div>
+</div>

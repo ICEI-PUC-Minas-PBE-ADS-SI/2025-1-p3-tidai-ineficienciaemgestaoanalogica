@@ -1,0 +1,25 @@
+.card-title-produto{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-text-produto{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.btn-font {
+  font-size: 12px;
+}
+.form-control {
+  width: 2.5rem;
+}
+
+@media (max-width: 410px) {
+  .div-input-quant {
+    flex-direction: column;
+  }
+  .img-fluid {
+    justify-content: center;
+  }
+}

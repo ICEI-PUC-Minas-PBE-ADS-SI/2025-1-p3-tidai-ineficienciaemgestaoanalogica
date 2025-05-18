@@ -1,0 +1,35 @@
+.card {
+    border-radius: 0;
+    border: none;
+}
+
+.card-body {
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-font {
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.data-font {
+    font-weight: 500;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+
+.modal-body {
+    font-size: 14px;
+    font-weight: 700;
+    transform: translateY(8px);
+}
+
+button.btn-modal {
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
