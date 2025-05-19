@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:5159'
+  apiUrl: 'https://restaurant-manager-api.onrender.com:5000'
 };

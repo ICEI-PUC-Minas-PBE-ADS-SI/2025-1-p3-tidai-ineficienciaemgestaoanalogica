@@ -15,25 +15,31 @@ public class MesasController : ControllerBase
     public async Task<ActionResult<IEnumerable<Mesa>>> GetMesasComPedidosAbertos()
     {
         var mesas = await _context.Mesas
-            .Include(m => m.Pedidos.Where(p => p.DataHoraFim == null))
-                .ThenInclude(p => p.ItensPedido)
+            .Include(m => m.Pedidos!.Where(p => p.DataHoraFim == null))
+                .ThenInclude(p => p.ItensPedido!)
                     .ThenInclude(i => i.Produto)
-            .Where(m => m.Pedidos.Any(p => p.DataHoraFim == null))
-            .OrderBy(m => m.Pedidos
+            .Where(m => m.Pedidos!.Any(p => p.DataHoraFim == null))
+            .OrderBy(m => m.Pedidos!
                 .Where(p => p.DataHoraFim == null)
                 .Select(p => p.DataHoraInicio)
                 .FirstOrDefault())
             .Select(m => new MesaComPedidoAbertoDTO {
                 Id = m.Id,
                 Nome = m.Nome,
-                Observacao = m.Pedidos.Select(p => p.Observacao).FirstOrDefault(),
-                ItensPedido = m.Pedidos
+                Observacao = m.Pedidos!
+                        .Where(p => p.DataHoraFim == null)
+                        .Select(p => p.Observacao)
+                        .FirstOrDefault() ?? string.Empty,
+                ItensPedido = m.Pedidos!
                     .Where(p => p.DataHoraFim == null)
-                    .SelectMany(p => p.ItensPedido)
+                    .SelectMany(p => p.ItensPedido ?? new List<ItemPedido>())
                     .Select(i => new ItemPedidoResumoDTO{
-                        NomeProduto = i.Produto.Nome,
+                        NomeProduto = i.Produto != null ? i.Produto.Nome : string.Empty,
                         Quantidade = i.Quantidade,
-                        ExtrasSelecionados = i.ExtrasSelecionados.Select(e => e.Extra.Nome).ToList()
+                        ExtrasSelecionados = (i.ExtrasSelecionados != null ? i.ExtrasSelecionados
+                                            .Where(e => e.Extra != null)
+                                            .Select(e => e.Extra!.Nome)
+                                            : new List<string>()).ToList()
                     }).ToList()
             }).ToListAsync();
 

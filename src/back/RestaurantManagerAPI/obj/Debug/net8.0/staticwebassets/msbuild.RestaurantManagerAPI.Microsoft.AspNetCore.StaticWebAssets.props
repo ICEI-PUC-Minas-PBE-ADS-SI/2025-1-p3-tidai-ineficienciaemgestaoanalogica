@@ -144,6 +144,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\produtos\coca-cola-lata.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\produtos\d677979d-242b-4902-90bc-4570214bb8e8.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaurantManagerAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaurantManagerAPI</BasePath>
+      <RelativePath>uploads/produtos/d677979d-242b-4902-90bc-4570214bb8e8.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4l0ropncsb</Fingerprint>
+      <Integrity>SDguDc+2TmzkTpFePnfqev4EB9Nnhy00XgBHWK9cJNU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\produtos\d677979d-242b-4902-90bc-4570214bb8e8.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\produtos\d8bdac32-23d5-4acc-b462-4f59355726ad.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaurantManagerAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaurantManagerAPI</BasePath>
+      <RelativePath>uploads/produtos/d8bdac32-23d5-4acc-b462-4f59355726ad.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>523ohloe4z</Fingerprint>
+      <Integrity>g7W6inftgD2rpgYmv33Tl1ObDU6xIegxnNTfVLeXIXw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\produtos\d8bdac32-23d5-4acc-b462-4f59355726ad.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\produtos\guarana-lata.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>RestaurantManagerAPI</SourceId>

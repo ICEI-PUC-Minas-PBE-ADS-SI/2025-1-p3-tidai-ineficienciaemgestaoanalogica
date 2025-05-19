@@ -1,0 +1,1810 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "uploads/produtos/acai-tigela.62wshqu2jd.jpg",
+      "AssetFile": "uploads/produtos/acai-tigela.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TkqEnzlsZ+l8VxmmxWCwXbhXUEFrPCBGQSAZr7KHzrU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "62wshqu2jd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TkqEnzlsZ+l8VxmmxWCwXbhXUEFrPCBGQSAZr7KHzrU="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/acai-tigela.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/acai-tigela.jpg",
+      "AssetFile": "uploads/produtos/acai-tigela.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TkqEnzlsZ+l8VxmmxWCwXbhXUEFrPCBGQSAZr7KHzrU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TkqEnzlsZ+l8VxmmxWCwXbhXUEFrPCBGQSAZr7KHzrU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/agua-com-gas.jbpeqo3j9h.jpg",
+      "AssetFile": "uploads/produtos/agua-com-gas.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ryFtdoIn2VcIJQn5KTpcVMnsB6fCyjbokaGxG7aYctM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jbpeqo3j9h"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ryFtdoIn2VcIJQn5KTpcVMnsB6fCyjbokaGxG7aYctM="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/agua-com-gas.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/agua-com-gas.jpg",
+      "AssetFile": "uploads/produtos/agua-com-gas.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ryFtdoIn2VcIJQn5KTpcVMnsB6fCyjbokaGxG7aYctM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ryFtdoIn2VcIJQn5KTpcVMnsB6fCyjbokaGxG7aYctM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/agua-sem-gas.djac0fiu0n.jpg",
+      "AssetFile": "uploads/produtos/agua-sem-gas.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WfzuWg6NR15oIyJ+6IV7OQgWubfPHjzeciivqLZiRFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "djac0fiu0n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WfzuWg6NR15oIyJ+6IV7OQgWubfPHjzeciivqLZiRFQ="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/agua-sem-gas.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/agua-sem-gas.jpg",
+      "AssetFile": "uploads/produtos/agua-sem-gas.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WfzuWg6NR15oIyJ+6IV7OQgWubfPHjzeciivqLZiRFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WfzuWg6NR15oIyJ+6IV7OQgWubfPHjzeciivqLZiRFQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.fmazqb6h8p.jpg",
+      "AssetFile": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fmazqb6h8p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "AssetFile": "uploads/produtos/bdc314f5-07fc-40da-bd9b-54b8362c7ded.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hyZh+DCPEYx5hyk/0VBaPNj8mfScguUP74cxxZZDyoE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/calabresa-acebolada.jpg",
+      "AssetFile": "uploads/produtos/calabresa-acebolada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "297700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QcZXLDH4DABKVb2s8R3zOq5pZaJcOCnjiOdmX26DOPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QcZXLDH4DABKVb2s8R3zOq5pZaJcOCnjiOdmX26DOPs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/calabresa-acebolada.lzgxqee72u.jpg",
+      "AssetFile": "uploads/produtos/calabresa-acebolada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "297700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QcZXLDH4DABKVb2s8R3zOq5pZaJcOCnjiOdmX26DOPs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lzgxqee72u"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QcZXLDH4DABKVb2s8R3zOq5pZaJcOCnjiOdmX26DOPs="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/calabresa-acebolada.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/cerveja-brahma.9rj73q0eov.jpg",
+      "AssetFile": "uploads/produtos/cerveja-brahma.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xWqSEr9zbr82Vijr++ClIPlktwI51m/BQ9X0wqksxdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9rj73q0eov"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xWqSEr9zbr82Vijr++ClIPlktwI51m/BQ9X0wqksxdM="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/cerveja-brahma.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/cerveja-brahma.jpg",
+      "AssetFile": "uploads/produtos/cerveja-brahma.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xWqSEr9zbr82Vijr++ClIPlktwI51m/BQ9X0wqksxdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xWqSEr9zbr82Vijr++ClIPlktwI51m/BQ9X0wqksxdM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/cerveja-skol.aavh4mp8v6.jpg",
+      "AssetFile": "uploads/produtos/cerveja-skol.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ouSOo7Jg5twW6WSEIC+r2daIjko2vXhqTGQaACeITek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aavh4mp8v6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ouSOo7Jg5twW6WSEIC+r2daIjko2vXhqTGQaACeITek="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/cerveja-skol.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/cerveja-skol.jpg",
+      "AssetFile": "uploads/produtos/cerveja-skol.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ouSOo7Jg5twW6WSEIC+r2daIjko2vXhqTGQaACeITek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ouSOo7Jg5twW6WSEIC+r2daIjko2vXhqTGQaACeITek="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/coca-cola-lata.jpg",
+      "AssetFile": "uploads/produtos/coca-cola-lata.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1068095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"onzB7YLwFeC+ap6KmaPGBfaJ5ShVnvsk+LV43CQkcZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-onzB7YLwFeC+ap6KmaPGBfaJ5ShVnvsk+LV43CQkcZs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/coca-cola-lata.me9788f1bb.jpg",
+      "AssetFile": "uploads/produtos/coca-cola-lata.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1068095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"onzB7YLwFeC+ap6KmaPGBfaJ5ShVnvsk+LV43CQkcZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "me9788f1bb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-onzB7YLwFeC+ap6KmaPGBfaJ5ShVnvsk+LV43CQkcZs="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/coca-cola-lata.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/d677979d-242b-4902-90bc-4570214bb8e8.4l0ropncsb.jpg",
+      "AssetFile": "uploads/produtos/d677979d-242b-4902-90bc-4570214bb8e8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SDguDc+2TmzkTpFePnfqev4EB9Nnhy00XgBHWK9cJNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4l0ropncsb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SDguDc+2TmzkTpFePnfqev4EB9Nnhy00XgBHWK9cJNU="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/d677979d-242b-4902-90bc-4570214bb8e8.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/d677979d-242b-4902-90bc-4570214bb8e8.jpg",
+      "AssetFile": "uploads/produtos/d677979d-242b-4902-90bc-4570214bb8e8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SDguDc+2TmzkTpFePnfqev4EB9Nnhy00XgBHWK9cJNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SDguDc+2TmzkTpFePnfqev4EB9Nnhy00XgBHWK9cJNU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/d8bdac32-23d5-4acc-b462-4f59355726ad.523ohloe4z.jpg",
+      "AssetFile": "uploads/produtos/d8bdac32-23d5-4acc-b462-4f59355726ad.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g7W6inftgD2rpgYmv33Tl1ObDU6xIegxnNTfVLeXIXw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "523ohloe4z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g7W6inftgD2rpgYmv33Tl1ObDU6xIegxnNTfVLeXIXw="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/d8bdac32-23d5-4acc-b462-4f59355726ad.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/d8bdac32-23d5-4acc-b462-4f59355726ad.jpg",
+      "AssetFile": "uploads/produtos/d8bdac32-23d5-4acc-b462-4f59355726ad.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g7W6inftgD2rpgYmv33Tl1ObDU6xIegxnNTfVLeXIXw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g7W6inftgD2rpgYmv33Tl1ObDU6xIegxnNTfVLeXIXw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/guarana-lata.jpg",
+      "AssetFile": "uploads/produtos/guarana-lata.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QAEKRkDuhHyZF3aNkAlL8a5RPQI7f2d35VxftumTkLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QAEKRkDuhHyZF3aNkAlL8a5RPQI7f2d35VxftumTkLw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/guarana-lata.o2qruh8kj1.jpg",
+      "AssetFile": "uploads/produtos/guarana-lata.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QAEKRkDuhHyZF3aNkAlL8a5RPQI7f2d35VxftumTkLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o2qruh8kj1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QAEKRkDuhHyZF3aNkAlL8a5RPQI7f2d35VxftumTkLw="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/guarana-lata.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/mousse-maracuja.jpg",
+      "AssetFile": "uploads/produtos/mousse-maracuja.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e7GcbuzwxzSUw8oTkUkiN+qxMtTksUA1h7pAi6dR2lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e7GcbuzwxzSUw8oTkUkiN+qxMtTksUA1h7pAi6dR2lA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/mousse-maracuja.lo9yps8bju.jpg",
+      "AssetFile": "uploads/produtos/mousse-maracuja.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e7GcbuzwxzSUw8oTkUkiN+qxMtTksUA1h7pAi6dR2lA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lo9yps8bju"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e7GcbuzwxzSUw8oTkUkiN+qxMtTksUA1h7pAi6dR2lA="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/mousse-maracuja.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pao-alho.8dkt1wyv89.jpg",
+      "AssetFile": "uploads/produtos/pao-alho.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pPIWaZNOubj2FnWDMINJLGo6XLnNd9xyMlMgrYwJWpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8dkt1wyv89"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pPIWaZNOubj2FnWDMINJLGo6XLnNd9xyMlMgrYwJWpI="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pao-alho.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pao-alho.jpg",
+      "AssetFile": "uploads/produtos/pao-alho.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pPIWaZNOubj2FnWDMINJLGo6XLnNd9xyMlMgrYwJWpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pPIWaZNOubj2FnWDMINJLGo6XLnNd9xyMlMgrYwJWpI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-choco-morango.dkmfakasrt.jpg",
+      "AssetFile": "uploads/produtos/pizza-choco-morango.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/dnUPtlXf7dl7+Ju6YA3yQNqPVEZtdv0NitGJGjivoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dkmfakasrt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/dnUPtlXf7dl7+Ju6YA3yQNqPVEZtdv0NitGJGjivoE="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-choco-morango.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-choco-morango.jpg",
+      "AssetFile": "uploads/produtos/pizza-choco-morango.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/dnUPtlXf7dl7+Ju6YA3yQNqPVEZtdv0NitGJGjivoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/dnUPtlXf7dl7+Ju6YA3yQNqPVEZtdv0NitGJGjivoE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-chocolate.dat7jcdtgb.jpg",
+      "AssetFile": "uploads/produtos/pizza-chocolate.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "444695"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7ymY0YFQFO4nqeQ1cOpP75JIaQfDxZJGxnCp9ExFFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dat7jcdtgb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7ymY0YFQFO4nqeQ1cOpP75JIaQfDxZJGxnCp9ExFFw="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-chocolate.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-chocolate.jpg",
+      "AssetFile": "uploads/produtos/pizza-chocolate.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "444695"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7ymY0YFQFO4nqeQ1cOpP75JIaQfDxZJGxnCp9ExFFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7ymY0YFQFO4nqeQ1cOpP75JIaQfDxZJGxnCp9ExFFw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-marguerita.jpg",
+      "AssetFile": "uploads/produtos/pizza-marguerita.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "442693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VKJsLBpWkGUx+T68B15eXHttpuoPkAM8plH3jTphguw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VKJsLBpWkGUx+T68B15eXHttpuoPkAM8plH3jTphguw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-marguerita.ovqx46kcqr.jpg",
+      "AssetFile": "uploads/produtos/pizza-marguerita.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "442693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VKJsLBpWkGUx+T68B15eXHttpuoPkAM8plH3jTphguw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovqx46kcqr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VKJsLBpWkGUx+T68B15eXHttpuoPkAM8plH3jTphguw="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-marguerita.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-portuguesa.jpg",
+      "AssetFile": "uploads/produtos/pizza-portuguesa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1357845"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vQRbYc3CHQ2aWlWKEC1+4uaoGdq2KVTg9N0bGd2ZsRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vQRbYc3CHQ2aWlWKEC1+4uaoGdq2KVTg9N0bGd2ZsRw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-portuguesa.reft02swt8.jpg",
+      "AssetFile": "uploads/produtos/pizza-portuguesa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1357845"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vQRbYc3CHQ2aWlWKEC1+4uaoGdq2KVTg9N0bGd2ZsRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "reft02swt8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vQRbYc3CHQ2aWlWKEC1+4uaoGdq2KVTg9N0bGd2ZsRw="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-portuguesa.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza_calabresa.36x92t6idn.jpg",
+      "AssetFile": "uploads/produtos/pizza_calabresa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "961544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K8YyIxpQtoZHBO98HIlaZSIrDHcnA0ISSrGMSxIog+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "36x92t6idn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K8YyIxpQtoZHBO98HIlaZSIrDHcnA0ISSrGMSxIog+I="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza_calabresa.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza_calabresa.jpg",
+      "AssetFile": "uploads/produtos/pizza_calabresa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "961544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K8YyIxpQtoZHBO98HIlaZSIrDHcnA0ISSrGMSxIog+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K8YyIxpQtoZHBO98HIlaZSIrDHcnA0ISSrGMSxIog+I="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/suco-abacaxi.jpg",
+      "AssetFile": "uploads/produtos/suco-abacaxi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a16wijNP//qQ/e8BENp/Jmj/LTkD5KqkLOXyrd+mxYI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a16wijNP//qQ/e8BENp/Jmj/LTkD5KqkLOXyrd+mxYI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/suco-abacaxi.xh9m80olmu.jpg",
+      "AssetFile": "uploads/produtos/suco-abacaxi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a16wijNP//qQ/e8BENp/Jmj/LTkD5KqkLOXyrd+mxYI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xh9m80olmu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a16wijNP//qQ/e8BENp/Jmj/LTkD5KqkLOXyrd+mxYI="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/suco-abacaxi.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/suco-laranja.dy0zfhvo1m.jpg",
+      "AssetFile": "uploads/produtos/suco-laranja.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a83//ReOcsmkEh0PmKmzMGARGyUMsyFbTk2kVXBp+6g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dy0zfhvo1m"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a83//ReOcsmkEh0PmKmzMGARGyUMsyFbTk2kVXBp+6g="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/suco-laranja.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/suco-laranja.jpg",
+      "AssetFile": "uploads/produtos/suco-laranja.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a83//ReOcsmkEh0PmKmzMGARGyUMsyFbTk2kVXBp+6g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a83//ReOcsmkEh0PmKmzMGARGyUMsyFbTk2kVXBp+6g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/vinho-branco-taca.jpg",
+      "AssetFile": "uploads/produtos/vinho-branco-taca.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bDuEnVESbuIG5EDDCe13CcjyWTuDLNHSg9CZFtoTi7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bDuEnVESbuIG5EDDCe13CcjyWTuDLNHSg9CZFtoTi7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/vinho-branco-taca.oxf30ykz0y.jpg",
+      "AssetFile": "uploads/produtos/vinho-branco-taca.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bDuEnVESbuIG5EDDCe13CcjyWTuDLNHSg9CZFtoTi7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oxf30ykz0y"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bDuEnVESbuIG5EDDCe13CcjyWTuDLNHSg9CZFtoTi7w="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/vinho-branco-taca.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/vinho-tinto-taca.8wep37pbzd.jpg",
+      "AssetFile": "uploads/produtos/vinho-tinto-taca.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WDnKGoJWPmTKCyhNOV+jcYDPlkigaJAwVrUKC0biKxs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wep37pbzd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WDnKGoJWPmTKCyhNOV+jcYDPlkigaJAwVrUKC0biKxs="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/vinho-tinto-taca.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/vinho-tinto-taca.jpg",
+      "AssetFile": "uploads/produtos/vinho-tinto-taca.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WDnKGoJWPmTKCyhNOV+jcYDPlkigaJAwVrUKC0biKxs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WDnKGoJWPmTKCyhNOV+jcYDPlkigaJAwVrUKC0biKxs="
+        }
+      ]
+    }
+  ]
+}

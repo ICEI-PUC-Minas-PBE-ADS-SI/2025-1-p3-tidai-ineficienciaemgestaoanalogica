@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+if (connectionString == "env")
+    connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
@@ -24,18 +27,15 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Gerente", policy => policy.RequireRole("Gerente"));
 });
 
+
+var frontendUrl = Environment.GetEnvironmentVariable("FrontendUrl") ?? "http://localhost:4200";
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngular", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
+        policy.WithOrigins(frontendUrl)
               .AllowCredentials() 
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
-    options.AddPolicy("AllowAny", policy =>
-    {
-        policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -52,6 +52,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<PedidoService>();
 builder.Services.AddScoped<ProdutoService>();
 
+builder.WebHost.UseUrls("http://*:5000");
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -61,10 +63,16 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-app.UseCors("AllowAngular");
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
+
 app.Run();

@@ -1,0 +1,30 @@
+services:
+  api:
+    build:
+      context: ./src/back/RestaurantManagerAPI  # Caminho real do seu projeto
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=appdb;User=root;Password=senha123;
+      - FrontendUrl=https://your-restaurant-manager.vercel.app/
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_DATABASE: appdb
+      MYSQL_ROOT_PASSWORD: senha123
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:

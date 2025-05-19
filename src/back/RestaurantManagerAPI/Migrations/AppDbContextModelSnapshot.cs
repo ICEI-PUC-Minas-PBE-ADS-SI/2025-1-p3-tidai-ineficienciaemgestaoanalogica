@@ -37,53 +37,6 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categorias");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Nome = "Pizzas Salgadas"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Nome = "Pizzas Doces"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Nome = "Entradas e Petiscos"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Nome = "Refrigerantes"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Nome = "Sucos Naturais"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Nome = "Água"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Nome = "Cervejas"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Nome = "Vinhos"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Nome = "Sobremesas"
-                        });
                 });
 
             modelBuilder.Entity("Extra", b =>
@@ -110,64 +63,6 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasIndex("ProdutoId");
 
                     b.ToTable("Extras");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Nome = "Média",
-                            PrecoAdicional = 8m,
-                            ProdutoId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Nome = "Grande",
-                            PrecoAdicional = 16m,
-                            ProdutoId = 1
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Nome = "Média",
-                            PrecoAdicional = 8m,
-                            ProdutoId = 2
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Nome = "Grande",
-                            PrecoAdicional = 16m,
-                            ProdutoId = 2
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Nome = "Média",
-                            PrecoAdicional = 8m,
-                            ProdutoId = 3
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Nome = "Grande",
-                            PrecoAdicional = 16m,
-                            ProdutoId = 3
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Nome = "Jarra 1l",
-                            PrecoAdicional = 18m,
-                            ProdutoId = 10
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Nome = "Jarra 1l",
-                            PrecoAdicional = 18m,
-                            ProdutoId = 11
-                        });
                 });
 
             modelBuilder.Entity("ExtraSelecionado", b =>
@@ -224,10 +119,18 @@ namespace RestaurantManagerAPI.Migrations
                         new
                         {
                             Id = 1,
-                            Nome = "Gerente",
-                            Senha = "$2a$11$PGMyoYsa2h/mqlN7u7YTBuf.S7WD2fqmMe57ZVXzVVYSe3T1unG0i",
+                            Nome = "Administrador",
+                            Senha = "$2a$11$bb.Uc37MdlDs/HQNZeUILeXskNeEsrH0I1MpuDd1roA92yDri2DL6",
                             Tipo = "Gerente",
                             Usuario = "admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "João da Silva",
+                            Senha = "$2a$11$7HtVWQCS2YtBimkkHM1AF./dnOSu5IHfqHzU5dJTwhX/FJhz9VpSq",
+                            Tipo = "Funcionario",
+                            Usuario = "joao"
                         });
                 });
 
@@ -301,43 +204,6 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Mesas");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Nome = "Mesa 01"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Nome = "Mesa 02"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Nome = "Mesa 03"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Nome = "Mesa 04"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Nome = "Mesa 05"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Nome = "Mesa 06"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Nome = "Mesa 07"
-                        });
                 });
 
             modelBuilder.Entity("Pedido", b =>
@@ -411,179 +277,6 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasIndex("CategoriaId");
 
                     b.ToTable("Produtos");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CategoriaId = 1,
-                            Descricao = "Molho de tomate, mussarela, rodelas de calabresa de primeira qualidade e cebola fatiada",
-                            Foto = "/uploads/produtos/pizza_calabresa.jpg",
-                            Nome = "Calabresa",
-                            Preco = 30.00m
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoriaId = 1,
-                            Descricao = "Molho de tomate, mussarela, rodelas de tomate fresco, manjericão fresco e um toque de parmesão",
-                            Foto = "/uploads/produtos/pizza-marguerita.jpg",
-                            Nome = "Marguerita",
-                            Preco = 32.00m
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CategoriaId = 1,
-                            Descricao = "Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas pretas e orégano",
-                            Foto = "/uploads/produtos/pizza-portuguesa.jpg",
-                            Nome = "Portuguesa",
-                            Preco = 35.00m
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CategoriaId = 2,
-                            Descricao = "Delicioso chocolate ao leite derretido",
-                            Foto = "/uploads/produtos/pizza-chocolate.jpg",
-                            Nome = "Chocolate Preto",
-                            Preco = 30.00m
-                        },
-                        new
-                        {
-                            Id = 5,
-                            CategoriaId = 2,
-                            Descricao = "Chocolate branco derretido com morangos frescos fatiados",
-                            Foto = "/uploads/produtos/pizza-choco-morango.jpg",
-                            Nome = "Chocolate Branco com Morango",
-                            Preco = 35.00m
-                        },
-                        new
-                        {
-                            Id = 6,
-                            CategoriaId = 3,
-                            Descricao = "Pão baguete com pasta de alho caseira, gratinado com queijo (Unidade)",
-                            Foto = "/uploads/produtos/pao-alho.jpg",
-                            Nome = "Pão de Alho Tradicional",
-                            Preco = 8.00m
-                        },
-                        new
-                        {
-                            Id = 7,
-                            CategoriaId = 3,
-                            Descricao = "Porção de calabresa fatiada e salteada com cebola. Acompanha pão.",
-                            Foto = "/uploads/produtos/calabresa-acebolada.jpg",
-                            Nome = "Calabresa Acebolada",
-                            Preco = 38.00m
-                        },
-                        new
-                        {
-                            Id = 8,
-                            CategoriaId = 4,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/coca-cola-lata.jpg",
-                            Nome = "Coca-Cola",
-                            Preco = 6.00m
-                        },
-                        new
-                        {
-                            Id = 9,
-                            CategoriaId = 4,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/guarana-lata.jpg",
-                            Nome = "Guaraná Antarctica",
-                            Preco = 6.00m
-                        },
-                        new
-                        {
-                            Id = 10,
-                            CategoriaId = 5,
-                            Descricao = "Natural - Copo 400ml",
-                            Foto = "/uploads/produtos/suco-laranja.jpg",
-                            Nome = "Suco de Laranja",
-                            Preco = 9.00m
-                        },
-                        new
-                        {
-                            Id = 11,
-                            CategoriaId = 5,
-                            Descricao = "Polpa/Natural - Copo 400ml",
-                            Foto = "/uploads/produtos/suco-abacaxi.jpg",
-                            Nome = "Suco de Abacaxi",
-                            Preco = 9.00m
-                        },
-                        new
-                        {
-                            Id = 12,
-                            CategoriaId = 6,
-                            Descricao = "Garrafa 500ml",
-                            Foto = "/uploads/produtos/agua-sem-gas.jpg",
-                            Nome = "Água Mineral Sem Gás",
-                            Preco = 4.00m
-                        },
-                        new
-                        {
-                            Id = 13,
-                            CategoriaId = 6,
-                            Descricao = "Garrafa 500ml",
-                            Foto = "/uploads/produtos/agua-com-gas.jpg",
-                            Nome = "Água Mineral Com Gás",
-                            Preco = 4.50m
-                        },
-                        new
-                        {
-                            Id = 14,
-                            CategoriaId = 7,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/cerveja-skol.jpg",
-                            Nome = "Skol",
-                            Preco = 7.00m
-                        },
-                        new
-                        {
-                            Id = 15,
-                            CategoriaId = 7,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/cerveja-brahma.jpg",
-                            Nome = "Brahma",
-                            Preco = 7.00m
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CategoriaId = 8,
-                            Descricao = "Taça - Cabernet Sauvignon ou Merlot",
-                            Foto = "/uploads/produtos/vinho-tinto-taca.jpg",
-                            Nome = "Vinho Tinto da Casa",
-                            Preco = 20.00m
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CategoriaId = 8,
-                            Descricao = "Taça - Sauvignon Blanc",
-                            Foto = "/uploads/produtos/vinho-branco-taca.jpg",
-                            Nome = "Vinho Branco da Casa",
-                            Preco = 20.00m
-                        },
-                        new
-                        {
-                            Id = 18,
-                            CategoriaId = 9,
-                            Descricao = "Mousse de maracujá com açúcar",
-                            Foto = "/uploads/produtos/mousse-maracuja.jpg",
-                            Nome = "Mousse de Maracujá",
-                            Preco = 12.00m
-                        },
-                        new
-                        {
-                            Id = 19,
-                            CategoriaId = 9,
-                            Descricao = "300ml - Açaí com granola e banana",
-                            Foto = "/uploads/produtos/acai-tigela.jpg",
-                            Nome = "Açaí na Tigela",
-                            Preco = 22.00m
-                        });
                 });
 
             modelBuilder.Entity("RelatorioPedido", b =>

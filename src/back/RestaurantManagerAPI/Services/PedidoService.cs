@@ -89,22 +89,22 @@ public class PedidoService
     public async Task<RelatorioPedidoDTO?> FecharPedidoAsync(int id)
     {
         var pedido = await _context.Pedidos
-            .Include(p => p.Mesa)
-            .Include(p => p.Funcionario)
-            .Include(p => p.ItensPedido)
-                .ThenInclude(i => i.Produto)
-            .Include(p => p.ItensPedido)
-                .ThenInclude(i => i.ExtrasSelecionados)
+            .Include(p => p.Mesa!)
+            .Include(p => p.Funcionario!)
+            .Include(p => p.ItensPedido!)
+                .ThenInclude(i => i.Produto!)
+            .Include(p => p.ItensPedido!)
+                .ThenInclude(i => i.ExtrasSelecionados ?? new List<ExtraSelecionado>())
                 .ThenInclude(e => e.Extra)
             .FirstOrDefaultAsync(p => p.Id == id);
 
         if(pedido == null)
             return null;
 
-        foreach (var i in pedido.ItensPedido)
+        foreach (var i in pedido.ItensPedido!)
         {
             Console.WriteLine(i.PrecoUnitario);
-            Console.WriteLine(i.Produto.Nome);
+            Console.WriteLine(i.Produto!.Nome);
             Console.WriteLine(i.Quantidade);
             Console.WriteLine(i.ExtrasSelecionados);
         }
@@ -137,10 +137,10 @@ public class PedidoService
     public async Task<PedidoDTO?> MapearPedidoResponse(int id)
     {
         var pedido = await _context.Pedidos
-            .Include(p => p.ItensPedido)
-                .ThenInclude(ip => ip.Produto)
-                    .ThenInclude(p => p.Extras)
-            .Include(p => p.ItensPedido)
+            .Include(p => p.ItensPedido!)
+                .ThenInclude(ip => ip.Produto!)
+                    .ThenInclude(p => p.Extras ?? new List<Extra>())
+            .Include(p => p.ItensPedido!)
                 .ThenInclude(ip => ip.ExtrasSelecionados)
             .FirstOrDefaultAsync(p => p.Id == id);
 
@@ -161,7 +161,7 @@ public class PedidoService
                 Quantidade = ip.Quantidade,
                 PrecoUnitario = ip.PrecoUnitario,
                 ExtrasSelecionados = ip.ExtrasSelecionados?.Select(e => e.ExtraId).ToList() ?? new(),
-                Produto = new ProdutoDTO
+                Produto = ip.Produto != null ? new ProdutoDTO
                 {
                     Id = ip.Produto.Id,
                     Nome = ip.Produto.Nome,
@@ -169,13 +169,13 @@ public class PedidoService
                     Preco = ip.Produto.Preco,
                     Foto = ip.Produto.Foto,
                     CategoriaId = ip.Produto.CategoriaId,
-                    Extras = ip.Produto.Extras.Select(e => new ExtraDTO
+                    Extras = ip.Produto.Extras != null ? ip.Produto.Extras.Select(e => new ExtraDTO
                     {
                         Id = e.Id,
                         Nome = e.Nome,
                         PrecoAdicional = e.PrecoAdicional
-                    }).ToList()
-                }
+                    }).ToList() : new List<ExtraDTO>()
+                } : new ProdutoDTO()
             }).ToList() ?? new()
         };
     }
@@ -185,8 +185,8 @@ public class PedidoService
         return new RelatorioPedidoDTO
         {
             Id = relatorio.Id,
-            NomeMesa = relatorio.NomeMesa,
-            NomeFuncionario = relatorio.NomeFuncionario,
+            NomeMesa = relatorio.NomeMesa ?? "",
+            NomeFuncionario = relatorio.NomeFuncionario ?? "",
             DataHoraInicio = relatorio.DataHoraInicio,
             DataHoraFim = relatorio.DataHoraFim,
             PrecoFinal = relatorio.PrecoFinal,
