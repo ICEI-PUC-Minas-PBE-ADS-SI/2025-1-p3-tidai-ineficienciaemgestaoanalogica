@@ -1,0 +1,23 @@
+services:
+  - name: restaurant-manager-api
+    type: web
+    env: docker
+    dockerfilePath: src/back/RestaurantManagerAPI/Dockerfile
+    envVars:
+      - key: ConnectionStrings__DefaultConnection
+        value: Server=restaurant-db;Database=appdb;User=root;Password=senha123;
+      - key: FrontendUrl
+        value: https://your-restaurant-manager.vercel.app/
+      - key: ASPNETCORE_URLS
+        value: http://+:5000
+
+  - name: restaurant-manager-db
+    type: private_service
+    env: docker
+    image: mysql:8
+    envVars:
+      - key: MYSQL_DATABASE
+        value: appdb
+      - key: MYSQL_ROOT_PASSWORD
+        value: senha123
+
