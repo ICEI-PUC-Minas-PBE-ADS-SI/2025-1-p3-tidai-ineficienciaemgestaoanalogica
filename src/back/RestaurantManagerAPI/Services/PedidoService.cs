@@ -94,7 +94,7 @@ public class PedidoService
             .Include(p => p.ItensPedido!)
                 .ThenInclude(i => i.Produto!)
             .Include(p => p.ItensPedido!)
-                .ThenInclude(i => i.ExtrasSelecionados ?? new List<ExtraSelecionado>())
+                .ThenInclude(i => i.ExtrasSelecionados)
                 .ThenInclude(e => e.Extra)
             .FirstOrDefaultAsync(p => p.Id == id);
 
@@ -122,7 +122,7 @@ public class PedidoService
                 Quantidade = i.Quantidade,
                 ExtrasSelecionados = i.ExtrasSelecionados?
                     .Select(e => e.Extra?.Nome ?? "Extra removido")
-                    .ToList() ?? new List<string>()
+                    .ToList()
             }).ToList() ?? new List<ItemRelatorioPedido>()
         };
 
@@ -139,7 +139,7 @@ public class PedidoService
         var pedido = await _context.Pedidos
             .Include(p => p.ItensPedido!)
                 .ThenInclude(ip => ip.Produto!)
-                    .ThenInclude(p => p.Extras ?? new List<Extra>())
+                    .ThenInclude(p => p.Extras)
             .Include(p => p.ItensPedido!)
                 .ThenInclude(ip => ip.ExtrasSelecionados)
             .FirstOrDefaultAsync(p => p.Id == id);

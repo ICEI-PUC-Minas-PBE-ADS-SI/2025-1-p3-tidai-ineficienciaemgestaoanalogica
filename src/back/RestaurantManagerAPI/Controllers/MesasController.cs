@@ -15,24 +15,24 @@ public class MesasController : ControllerBase
     public async Task<ActionResult<IEnumerable<Mesa>>> GetMesasComPedidosAbertos()
     {
         var mesas = await _context.Mesas
-            .Include(m => m.Pedidos!.Where(p => p.DataHoraFim == null))
+            .Include(m => m.Pedidos.Where(p => p.DataHoraFim == null))
                 .ThenInclude(p => p.ItensPedido!)
                     .ThenInclude(i => i.Produto)
-            .Where(m => m.Pedidos!.Any(p => p.DataHoraFim == null))
-            .OrderBy(m => m.Pedidos!
+            .Where(m => m.Pedidos.Any(p => p.DataHoraFim == null))
+            .OrderBy(m => m.Pedidos
                 .Where(p => p.DataHoraFim == null)
                 .Select(p => p.DataHoraInicio)
                 .FirstOrDefault())
             .Select(m => new MesaComPedidoAbertoDTO {
                 Id = m.Id,
                 Nome = m.Nome,
-                Observacao = m.Pedidos!
+                Observacao = m.Pedidos
                         .Where(p => p.DataHoraFim == null)
                         .Select(p => p.Observacao)
                         .FirstOrDefault() ?? string.Empty,
-                ItensPedido = m.Pedidos!
+                ItensPedido = m.Pedidos
                     .Where(p => p.DataHoraFim == null)
-                    .SelectMany(p => p.ItensPedido ?? new List<ItemPedido>())
+                    .SelectMany(p => p.ItensPedido!)
                     .Select(i => new ItemPedidoResumoDTO{
                         NomeProduto = i.Produto != null ? i.Produto.Nome : string.Empty,
                         Quantidade = i.Quantidade,
