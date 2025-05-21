@@ -18,7 +18,7 @@ public class PedidoService
             MesaId = dto.MesaId,
             FuncionarioId = dto.FuncionarioId,
             Observacao = dto.Observacao,
-            DataHoraInicio = DateTime.Now,
+            DataHoraInicio = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time")),
             ItensPedido = dto.ItensPedido.Select(ip => new ItemPedido{
                 ProdutoId = ip.ProdutoId,
                 Quantidade = ip.Quantidade,
@@ -112,7 +112,7 @@ public class PedidoService
         var relatorio = new RelatorioPedido
         {
             DataHoraInicio = pedido.DataHoraInicio,
-            DataHoraFim = DateTime.Now,
+            DataHoraFim = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time")),
             NomeMesa = pedido.Mesa?.Nome ?? "Desconhecido",
             NomeFuncionario = pedido.Funcionario?.Nome ?? "Desconhecido",
             PrecoFinal = pedido.PrecoFinal,

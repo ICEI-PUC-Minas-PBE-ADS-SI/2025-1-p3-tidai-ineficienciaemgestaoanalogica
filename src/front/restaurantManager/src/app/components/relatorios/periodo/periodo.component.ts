@@ -41,6 +41,6 @@ export class PeriodoComponent {
     )
   }
   enviar(){
-    this.router.navigate([`${this.dataSelecionadaInicio.toISOString().split('T')[0]}/${this.dataSelecionadaInicio.toISOString().split('T')[0]}`], { relativeTo: this.route })
+    this.router.navigate([`${this.dataSelecionadaInicio.toISOString().split('T')[0]}/${this.dataSelecionadaFim.toISOString().split('T')[0]}`], { relativeTo: this.route })
   }
 }
