@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace RestaurantManagerAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250518231251_InitalSeed")]
-    partial class InitalSeed
+    [Migration("20250521201231_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,28 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categorias");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nome = "Pizzas"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "Bebidas"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nome = "Sobremesas"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nome = "Acompanhamentos"
+                        });
                 });
 
             modelBuilder.Entity("Extra", b =>
@@ -66,6 +88,92 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasIndex("ProdutoId");
 
                     b.ToTable("Extras");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nome = "Média",
+                            PrecoAdicional = 8.50m,
+                            ProdutoId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "Grande",
+                            PrecoAdicional = 12.50m,
+                            ProdutoId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nome = "Média",
+                            PrecoAdicional = 8.50m,
+                            ProdutoId = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nome = "Grande",
+                            PrecoAdicional = 12.50m,
+                            ProdutoId = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Nome = "Média",
+                            PrecoAdicional = 8.50m,
+                            ProdutoId = 3
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Nome = "Grande",
+                            PrecoAdicional = 12.50m,
+                            ProdutoId = 3
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Nome = "Média",
+                            PrecoAdicional = 8.50m,
+                            ProdutoId = 4
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Nome = "Grande",
+                            PrecoAdicional = 12.50m,
+                            ProdutoId = 4
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 13
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 14
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Nome = "Molho Extra",
+                            PrecoAdicional = 2.50m,
+                            ProdutoId = 17
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Nome = "Molho Extra",
+                            PrecoAdicional = 2.50m,
+                            ProdutoId = 18
+                        });
                 });
 
             modelBuilder.Entity("ExtraSelecionado", b =>
@@ -123,7 +231,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 1,
                             Nome = "Administrador",
-                            Senha = "$2a$11$bb.Uc37MdlDs/HQNZeUILeXskNeEsrH0I1MpuDd1roA92yDri2DL6",
+                            Senha = "$2a$11$jUYbELcP2CnolUSJWqId3uSWuXh2XlB9wQN0V2xdmFr33EBz6LIOu",
                             Tipo = "Gerente",
                             Usuario = "admin"
                         },
@@ -131,7 +239,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 2,
                             Nome = "João da Silva",
-                            Senha = "$2a$11$7HtVWQCS2YtBimkkHM1AF./dnOSu5IHfqHzU5dJTwhX/FJhz9VpSq",
+                            Senha = "$2a$11$UIulyqCEJlS1NDgO4oqemOZbekDHiZVBVVliKWFIQztPRzcKMdJCK",
                             Tipo = "Funcionario",
                             Usuario = "joao"
                         });
@@ -207,6 +315,33 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Mesas");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nome = "Mesa 01"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "Mesa 02"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nome = "Mesa 03"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nome = "Mesa 04"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Nome = "Mesa 05"
+                        });
                 });
 
             modelBuilder.Entity("Pedido", b =>
@@ -280,6 +415,170 @@ namespace RestaurantManagerAPI.Migrations
                     b.HasIndex("CategoriaId");
 
                     b.ToTable("Produtos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoriaId = 1,
+                            Descricao = "Calabresa, molho de tomate, mussarela e cebola",
+                            Foto = "/uploads/produtos/pizza-calabresa.jpg",
+                            Nome = "Pizza de Calabresa",
+                            Preco = 23.40m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoriaId = 1,
+                            Descricao = "Mussarela, tomate, manjericão e molho de tomate",
+                            Foto = "/uploads/produtos/pizza-marguerita.jpg",
+                            Nome = "Pizza Marguerita",
+                            Preco = 25.90m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoriaId = 1,
+                            Descricao = "Presunto, mussarela, ovo, cebola, azeitona e molho de tomate",
+                            Foto = "/uploads/produtos/pizza-portuguesa.jpg",
+                            Nome = "Pizza Portuguesa",
+                            Preco = 28.50m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoriaId = 1,
+                            Descricao = "Chocolate ao leite, morangos frescos e leite condensado",
+                            Foto = "/uploads/produtos/pizza-choco-morango.jpg",
+                            Nome = "Pizza Chocolate com Morango",
+                            Preco = 32.00m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoriaId = 2,
+                            Descricao = "Garrafa de 500ml",
+                            Foto = "/uploads/produtos/agua-com-gas.jpg",
+                            Nome = "Água com Gás",
+                            Preco = 4.50m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoriaId = 2,
+                            Descricao = "Garrafa de 500ml",
+                            Foto = "/uploads/produtos/agua-sem-gas.jpg",
+                            Nome = "Água sem Gás",
+                            Preco = 3.50m
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoriaId = 2,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/coca-cola-lata.jpg",
+                            Nome = "Coca-Cola Lata",
+                            Preco = 5.00m
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoriaId = 2,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/guarana-lata.jpg",
+                            Nome = "Guaraná Lata",
+                            Preco = 4.80m
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CategoriaId = 2,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/cerveja-skol.jpg",
+                            Nome = "Cerveja Skol",
+                            Preco = 6.50m
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CategoriaId = 2,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/cerveja-brahma.jpg",
+                            Nome = "Cerveja Brahma",
+                            Preco = 6.50m
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CategoriaId = 2,
+                            Descricao = "Copo 300ml",
+                            Foto = "/uploads/produtos/suco-laranja.jpg",
+                            Nome = "Suco de Laranja",
+                            Preco = 7.50m
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CategoriaId = 2,
+                            Descricao = "Copo 300ml",
+                            Foto = "/uploads/produtos/suco-abacaxi.jpg",
+                            Nome = "Suco de Abacaxi",
+                            Preco = 7.50m
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CategoriaId = 2,
+                            Descricao = "Taça de 200ml",
+                            Foto = "/uploads/produtos/vinho-tinto-taca.jpg",
+                            Nome = "Vinho Tinto Taça",
+                            Preco = 12.00m
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CategoriaId = 2,
+                            Descricao = "Taça de 200ml",
+                            Foto = "/uploads/produtos/vinho-branco-taca.jpg",
+                            Nome = "Vinho Branco Taça",
+                            Preco = 12.00m
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoriaId = 3,
+                            Descricao = "Porção individual",
+                            Foto = "/uploads/produtos/mousse-maracuja.jpg",
+                            Nome = "Mousse de Maracujá",
+                            Preco = 9.90m
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoriaId = 3,
+                            Descricao = "300ml com granola e banana",
+                            Foto = "/uploads/produtos/acai-tigela.jpg",
+                            Nome = "Açaí na Tigela",
+                            Preco = 14.50m
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CategoriaId = 4,
+                            Descricao = "Porção com 8 unidades",
+                            Foto = "/uploads/produtos/pao-alho.jpg",
+                            Nome = "Pão de Alho",
+                            Preco = 12.00m
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoriaId = 4,
+                            Descricao = "Porção para 2 pessoas",
+                            Foto = "/uploads/produtos/calabresa-acebolada.jpg",
+                            Nome = "Calabresa Acebolada",
+                            Preco = 18.00m
+                        });
                 });
 
             modelBuilder.Entity("RelatorioPedido", b =>

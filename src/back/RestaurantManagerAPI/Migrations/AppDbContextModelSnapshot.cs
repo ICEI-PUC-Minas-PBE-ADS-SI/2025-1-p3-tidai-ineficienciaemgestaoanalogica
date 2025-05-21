@@ -228,7 +228,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 1,
                             Nome = "Administrador",
-                            Senha = "$2a$11$E4WRsGpzHJXs6CJO9mIw2ejpSZYGgQ8Iu6E415ItCgUAFyR4F78N6",
+                            Senha = "$2a$11$jUYbELcP2CnolUSJWqId3uSWuXh2XlB9wQN0V2xdmFr33EBz6LIOu",
                             Tipo = "Gerente",
                             Usuario = "admin"
                         },
@@ -236,7 +236,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 2,
                             Nome = "João da Silva",
-                            Senha = "$2a$11$l76OdealWElKQR41yZiiP.z9IXMTo/UkJbLD1JwyQL/zni8S8cYwy",
+                            Senha = "$2a$11$UIulyqCEJlS1NDgO4oqemOZbekDHiZVBVVliKWFIQztPRzcKMdJCK",
                             Tipo = "Funcionario",
                             Usuario = "joao"
                         });

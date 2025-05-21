@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace RestaurantManagerAPI.Migrations
 {
     /// <inheritdoc />
@@ -248,9 +250,80 @@ namespace RestaurantManagerAPI.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.InsertData(
+                table: "Categorias",
+                columns: new[] { "Id", "Nome" },
+                values: new object[,]
+                {
+                    { 1, "Pizzas" },
+                    { 2, "Bebidas" },
+                    { 3, "Sobremesas" },
+                    { 4, "Acompanhamentos" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Funcionarios",
                 columns: new[] { "Id", "Nome", "Senha", "Tipo", "Usuario" },
-                values: new object[] { 1, "Administrador", "$2a$11$u.x7DC0sDAjiy236mqu/5e2GHbJftzTcRCEiOry1JVBtRVECqTere", "Gerente", "admin" });
+                values: new object[,]
+                {
+                    { 1, "Administrador", "$2a$11$jUYbELcP2CnolUSJWqId3uSWuXh2XlB9wQN0V2xdmFr33EBz6LIOu", "Gerente", "admin" },
+                    { 2, "João da Silva", "$2a$11$UIulyqCEJlS1NDgO4oqemOZbekDHiZVBVVliKWFIQztPRzcKMdJCK", "Funcionario", "joao" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Mesas",
+                columns: new[] { "Id", "Nome" },
+                values: new object[,]
+                {
+                    { 1, "Mesa 01" },
+                    { 2, "Mesa 02" },
+                    { 3, "Mesa 03" },
+                    { 4, "Mesa 04" },
+                    { 5, "Mesa 05" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Produtos",
+                columns: new[] { "Id", "CategoriaId", "Descricao", "Foto", "Nome", "Preco" },
+                values: new object[,]
+                {
+                    { 1, 1, "Calabresa, molho de tomate, mussarela e cebola", "/uploads/produtos/pizza-calabresa.jpg", "Pizza de Calabresa", 23.40m },
+                    { 2, 1, "Mussarela, tomate, manjericão e molho de tomate", "/uploads/produtos/pizza-marguerita.jpg", "Pizza Marguerita", 25.90m },
+                    { 3, 1, "Presunto, mussarela, ovo, cebola, azeitona e molho de tomate", "/uploads/produtos/pizza-portuguesa.jpg", "Pizza Portuguesa", 28.50m },
+                    { 4, 1, "Chocolate ao leite, morangos frescos e leite condensado", "/uploads/produtos/pizza-choco-morango.jpg", "Pizza Chocolate com Morango", 32.00m },
+                    { 5, 2, "Garrafa de 500ml", "/uploads/produtos/agua-com-gas.jpg", "Água com Gás", 4.50m },
+                    { 6, 2, "Garrafa de 500ml", "/uploads/produtos/agua-sem-gas.jpg", "Água sem Gás", 3.50m },
+                    { 7, 2, "Lata 350ml", "/uploads/produtos/coca-cola-lata.jpg", "Coca-Cola Lata", 5.00m },
+                    { 8, 2, "Lata 350ml", "/uploads/produtos/guarana-lata.jpg", "Guaraná Lata", 4.80m },
+                    { 9, 2, "Lata 350ml", "/uploads/produtos/cerveja-skol.jpg", "Cerveja Skol", 6.50m },
+                    { 10, 2, "Lata 350ml", "/uploads/produtos/cerveja-brahma.jpg", "Cerveja Brahma", 6.50m },
+                    { 11, 2, "Copo 300ml", "/uploads/produtos/suco-laranja.jpg", "Suco de Laranja", 7.50m },
+                    { 12, 2, "Copo 300ml", "/uploads/produtos/suco-abacaxi.jpg", "Suco de Abacaxi", 7.50m },
+                    { 13, 2, "Taça de 200ml", "/uploads/produtos/vinho-tinto-taca.jpg", "Vinho Tinto Taça", 12.00m },
+                    { 14, 2, "Taça de 200ml", "/uploads/produtos/vinho-branco-taca.jpg", "Vinho Branco Taça", 12.00m },
+                    { 15, 3, "Porção individual", "/uploads/produtos/mousse-maracuja.jpg", "Mousse de Maracujá", 9.90m },
+                    { 16, 3, "300ml com granola e banana", "/uploads/produtos/acai-tigela.jpg", "Açaí na Tigela", 14.50m },
+                    { 17, 4, "Porção com 8 unidades", "/uploads/produtos/pao-alho.jpg", "Pão de Alho", 12.00m },
+                    { 18, 4, "Porção para 2 pessoas", "/uploads/produtos/calabresa-acebolada.jpg", "Calabresa Acebolada", 18.00m }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Extras",
+                columns: new[] { "Id", "Nome", "PrecoAdicional", "ProdutoId" },
+                values: new object[,]
+                {
+                    { 1, "Média", 8.50m, 1 },
+                    { 2, "Grande", 12.50m, 1 },
+                    { 3, "Média", 8.50m, 2 },
+                    { 4, "Grande", 12.50m, 2 },
+                    { 5, "Média", 8.50m, 3 },
+                    { 6, "Grande", 12.50m, 3 },
+                    { 7, "Média", 8.50m, 4 },
+                    { 8, "Grande", 12.50m, 4 },
+                    { 9, "Gelo", 1.00m, 13 },
+                    { 10, "Gelo", 1.00m, 14 },
+                    { 11, "Molho Extra", 2.50m, 17 },
+                    { 12, "Molho Extra", 2.50m, 18 }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Extras_ProdutoId",
