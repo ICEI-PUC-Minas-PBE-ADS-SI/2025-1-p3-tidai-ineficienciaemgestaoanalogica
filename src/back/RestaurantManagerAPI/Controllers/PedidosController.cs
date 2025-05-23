@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
@@ -9,11 +10,13 @@ public class PedidosController : ControllerBase
 {
     private readonly AppDbContext _context;
     private readonly PedidoService _pedidoService;
+    private readonly IHubContext<PedidoHub> _hubContext;
 
-    public PedidosController(AppDbContext context, PedidoService pedidoService)
+    public PedidosController(AppDbContext context, PedidoService pedidoService, IHubContext<PedidoHub> hubContext)
     {
         _context = context;
         _pedidoService = pedidoService;
+        _hubContext = hubContext;
     }
 
     //[Authorize(Policy = "Funcionario")]
@@ -44,6 +47,8 @@ public class PedidosController : ControllerBase
     {
         var pedido = await _pedidoService.CriarPedidoAsync(dto);
         var response = await _pedidoService.MapearPedidoResponse(pedido.Id);
+
+        await _hubContext.Clients.All.SendAsync("ReceberAtualizacao");
         return CreatedAtAction(nameof(GetPedido), new { id = pedido.Id }, response);
     }
 
@@ -58,6 +63,7 @@ public class PedidosController : ControllerBase
             return NotFound("Pedido não encontrado.");
 
         var response = await _pedidoService.MapearPedidoResponse(id);
+        await _hubContext.Clients.All.SendAsync("ReceberAtualizacao");
         return Ok(response);
     }
 
@@ -70,6 +76,7 @@ public class PedidosController : ControllerBase
         if(relatorio == null)
             return NotFound(new { mensagem = "Pedido nào encontrado" });
 
+        await _hubContext.Clients.All.SendAsync("ReceberAtualizacao");
         return Ok(relatorio);
     }
 
@@ -85,6 +92,7 @@ public class PedidosController : ControllerBase
 
         _context.Remove(pedido);
         await _context.SaveChangesAsync();
+        await _hubContext.Clients.All.SendAsync("ReceberAtualizacao");
         return NoContent();
     }
 }

@@ -10,6 +10,7 @@ import { Extra } from 'src/app/interfaces/extra';
 import { ItemPedido } from 'src/app/interfaces/item-pedido';
 import { Relatorio } from 'src/app/interfaces/relatorio';
 import { Mesa } from 'src/app/interfaces/mesa';
+import { PedidoSocketService } from 'src/app/services/pedido-socket.service';
 
 @Component({
   selector: 'app-fechar-pedido',
@@ -25,9 +26,18 @@ export class FecharPedidoComponent {
   precoFinal: number = 0;
   pedido$!:  Observable<Pedido | null>;
 
-  constructor(private route: ActivatedRoute, private router: Router, private pedidoService: PedidoService, private mesaService: MesaService) {}
+  constructor(private route: ActivatedRoute, private router: Router, private pedidoService: PedidoService, private mesaService: MesaService, private socketService: PedidoSocketService) {}
   ngOnInit(): void{
     const mesaId = Number(this.route.snapshot.paramMap.get('mesaId'))
+
+    this.socketService.iniciarConexao();
+
+    this.socketService.pedidoAtualizado$.subscribe(() => {
+      this.pedidoService.getPedidoPelaMesa(mesaId).subscribe(
+        (data) => this.pedidoService.setPedido(data),
+        (error) => console.error('Erro ao recarregar pedido após atualização: ', error)
+      )
+    })
 
     this.pedidoService.getPedidoPelaMesa(mesaId).subscribe(
       (data) => {

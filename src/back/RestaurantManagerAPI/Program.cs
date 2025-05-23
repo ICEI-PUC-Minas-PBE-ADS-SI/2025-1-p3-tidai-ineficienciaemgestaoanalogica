@@ -51,6 +51,7 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddScoped<PedidoService>();
 builder.Services.AddScoped<ProdutoService>();
+builder.Services.AddSignalR();
 
 builder.WebHost.UseUrls("http://*:5000");
 
@@ -66,6 +67,7 @@ app.UseStaticFiles();
 app.UseCors("AllowLocalNetwork");
 app.UseAuthentication();
 app.UseAuthorization();
+app.MapHub<PedidoHub>("/hub/pedidos");
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())

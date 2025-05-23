@@ -11,6 +11,7 @@ import { MesaService } from 'src/app/services/mesa.service';
 import { Mesa } from 'src/app/interfaces/mesa'
 import { ItemPedido } from 'src/app/interfaces/item-pedido';
 import { ModalAvisoComponent } from "../../modal-aviso/modal-aviso.component";
+import { PedidoSocketService } from 'src/app/services/pedido-socket.service';
 
 @Component({
   selector: 'app-atualizar-pedido',
@@ -24,7 +25,7 @@ export class AtualizarPedidoComponent {
   pedido$!:  Observable<Pedido | null>;
   isHovered = false;
 
-  constructor(private route: ActivatedRoute, private pedidoService: PedidoService, private mesaService: MesaService) {}
+  constructor(private route: ActivatedRoute, private pedidoService: PedidoService, private mesaService: MesaService, private socketService: PedidoSocketService) {}
 
   ngOnInit(): void{
     const mesaId = Number(this.route.snapshot.paramMap.get('mesaId'))
@@ -37,7 +38,7 @@ export class AtualizarPedidoComponent {
       {
         console.error('Erro ao carregar pedidos: ', error)
       }
-    )
+    );
     this.pedido$ = this.pedidoService.pedido$;
 
     this.mesaService.getMesas().subscribe(
@@ -48,7 +49,19 @@ export class AtualizarPedidoComponent {
       (error) => {
         console.error('Erro ao carregar nome da mesa: ', error)
       }
-    )
+    );
+
+    this.socketService.iniciarConexao();
+
+    this.socketService.pedidoAtualizado$.subscribe(() => {
+      console.log('Atualização recebida via SignalR');
+
+      this.pedidoService.getPedidoPelaMesa(mesaId).subscribe(
+        (data) => this.pedidoService.setPedido(data),
+        (err) => console.error('Erro ao recarregar pedido após atualização', err)
+      );
+      this.pedido$ = this.pedidoService.pedido$;
+    });
   }
 
   onToggleExtra(item: ItemPedido, extraId: number, checked:boolean) {
