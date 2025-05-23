@@ -13,6 +13,10 @@ import { PedidoService } from 'src/app/services/pedido.service';
 export class RelatorioComponent {
 
   relatorios?: Relatorio[]
+  mostrarVersaoImpressao = false;
+  precoFinal = 0;
+  dataDia = ""
+
   constructor(private route: ActivatedRoute, private pedidoService: PedidoService) {}
 
   ngOnInit(){
@@ -21,17 +25,29 @@ export class RelatorioComponent {
     this.pedidoService.getRelatorioDia(dia).subscribe(
       (data) => {
         this.relatorios = data;
+        this.precoFinal = data.reduce((soma, r) => soma + r.precoFinal, 0);
       },
       (error) =>
       {
         console.error('Erro ao carregar relatorios: ', error)
       }
     );
+    this.dataDia = new Date(dia).toLocaleDateString('pt-BR');
   }
 
   dataConvert(data: Date): string
   {
     const dataFormatada = new Date(data)
     return dataFormatada.toLocaleDateString('pt-BR')
+  }
+
+  async imprimirRelatorio() {
+    this.mostrarVersaoImpressao = true;
+
+    await new Promise(resolve => setTimeout(resolve,100))
+
+    window.print();
+
+    this.mostrarVersaoImpressao = false;
   }
 }

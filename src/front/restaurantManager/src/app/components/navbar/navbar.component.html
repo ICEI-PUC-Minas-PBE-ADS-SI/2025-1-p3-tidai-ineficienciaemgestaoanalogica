@@ -1,5 +1,26 @@
-<div class="continer-flex bg-main-color">
-    <nav class="navbar navbar-dark justify-content-center">
-        <a [routerLink]="['']" class="navbar-brand mb-0 p-2">YourRestaurantManager</a>
-    </nav>
+<nav class="navbar bg-main-color position-relative py-3">
+  <div class="container-fluid d-flex align-items-center">
+    <div class="me-auto"></div>
+    <a [routerLink]="['']" class="navbar-brand position-absolute start-50 translate-middle-x">
+      YourRestaurantManager
+    </a>
+    <a class="ms-auto" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalSair">
+      <img [src]="imgLogout" alt="Logout" class="align-self-center pe-2">
+    </a>
+  </div>
+</nav>
+
+<div class="modal" tabindex="-1" id="modalSair">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title main-color">Tem certeza de que deseja sair?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg-main-color background" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn bg-main-color background" data-bs-dismiss="modal" (click)="logout()">Sair</button>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,34 +1,78 @@
-<app-modal-aviso [mensagem]="'Conta impressa'"></app-modal-aviso>
-<div class="m-4" *ngIf="relatorio != null">
-    <div class="container">
-        <div class="card px-0 data-font">
-            <div class="card-body p-3">
-                <div class="d-flex justify-content-between">
-                    <span>{{relatorio.dataHoraFim.toLocaleDateString('pt-BR')}}</span>
-                    <span>{{relatorio.dataHoraFim.toLocaleTimeString('pt-BR')}}</span>
-                </div>
-                <hr>
-                <div *ngFor="let item of relatorio.itens">
+<div *ngIf="!mostrarVersaoImpressao">
+    <div class="m-4" *ngIf="relatorio != null">
+        <div class="container">
+            <div class="card px-0 data-font">
+                <div class="card-body p-3">
                     <div class="d-flex justify-content-between">
-                        <span>{{item.quantidade}}x - {{item.nomeProduto}}</span>
-                        <span>{{item.precoUnitario | currency:'BRL'}}</span>
+                        <span>{{dataConvert(relatorio.dataHoraFim)}}</span>
+                        <span>{{timeConvert(relatorio.dataHoraFim)}}</span>
                     </div>
-                    <div *ngIf="item.extras as extras">
-                        <div *ngIf="extras.length > 0">
-                            <span style="padding-left: 32px;" *ngFor="let extra of extras">{{extra}}</span>
+                    <hr>
+                    <div *ngFor="let item of relatorio.itens">
+                        <div class="d-flex justify-content-between">
+                            <span>{{item.quantidade}}x - {{item.nomeProduto}}</span>
+                            <span>{{item.precoUnitario | currency:'BRL'}}</span>
+                        </div>
+                        <div *ngIf="item.extras as extras">
+                            <div *ngIf="extras.length > 0">
+                                <span style="padding-left: 32px;" *ngFor="let extra of extras">{{extra}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Taxa de Garçom</span>
+                        <span>{{(relatorio.precoFinal * 0.1) | currency:'BRL'}}</span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <span>Total</span>
+                        <span>{{(relatorio.precoFinal + (relatorio.precoFinal * 0.1)) | currency:'BRL'}}</span>
+                    </div>
+                </div>
+                <button class="btn btn-flex btn-font background bg-main-color p-4" type="button" (click)="imprimirRelatorio()">Imprimir</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="mostrarVersaoImpressao" class="cupom-container">
+    <div *ngIf="relatorio != null">
+        <div class="cupom">
+            <div class="text-center mb-2">
+                <strong>Conta {{relatorio.nomeMesa}}</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <span>{{ dataConvert(relatorio.dataHoraFim) }}</span>
+                <span>{{ timeConvert(relatorio.dataHoraFim) }}</span>
+            </div>
+            <hr class="dashed" />
+
+            <div *ngFor="let item of relatorio.itens" class="mb-2">
+                <div class="d-flex justify-content-between">
+                    <span>{{ item.quantidade }}x {{ item.nomeProduto }}</span>
+                    <span>{{ item.precoUnitario | currency:'BRL' }}</span>
+                </div>
+                <div *ngIf="item.extras as extras">
+                    <div *ngIf="extras.length > 0" class="ms-3">
+                        <div *ngFor="let extra of extras">
+                            <small>+ {{ extra }}</small>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between">
-                    <span>Taxa de Garçom</span>
-                    <span>{{(relatorio.precoFinal * 0.1) | currency:'BRL'}}</span>
-                </div>
-                <div class="d-flex justify-content-between mt-4">
-                    <span>Total</span>
-                    <span>{{(relatorio.precoFinal + (relatorio.precoFinal * 0.1)) | currency:'BRL'}}</span>
-                </div>
             </div>
-            <button class="btn btn-flex btn-font background bg-main-color p-4" type="button" data-bs-toggle="modal" data-bs-target="#modal-confirmar">Imprimir</button>
+
+            <hr class="dashed" />
+            <div class="d-flex justify-content-between">
+                <span>Taxa de Garçom</span>
+                <span>{{ (relatorio.precoFinal * 0.1) | currency:'BRL' }}</span>
+            </div>
+
+            <div class="d-flex justify-content-between mt-2">
+                <strong>Total</strong>
+                <strong>{{ (relatorio.precoFinal + relatorio.precoFinal * 0.1) | currency:'BRL' }}</strong>
+            </div>
+
+            <div class="text-center mt-3">
+                <small>Obrigado pela preferência!</small>
+            </div>
         </div>
     </div>
 </div>

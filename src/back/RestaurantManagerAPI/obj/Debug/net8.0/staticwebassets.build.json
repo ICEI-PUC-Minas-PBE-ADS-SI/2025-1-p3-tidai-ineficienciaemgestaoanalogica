@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XwG2fiE75d86tSKyg7YXn/QocMRp5VeqcCy279m58YA=",
+  "Hash": "wwFHa9Yei4FgE4NdxTDku0qo7Ci3CfpMpSQQZVezN0Y=",
   "Source": "RestaurantManagerAPI",
   "BasePath": "_content/RestaurantManagerAPI",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "RestaurantManagerAPI\\wwwroot",
+      "Name": "RestaurantManagerAPI/wwwroot",
       "Source": "RestaurantManagerAPI",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\acai-tigela.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/acai-tigela.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/acai-tigela#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "TkqEnzlsZ+l8VxmmxWCwXbhXUEFrPCBGQSAZr7KHzrU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\acai-tigela.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/acai-tigela.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-com-gas.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/agua-com-gas.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/agua-com-gas#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "ryFtdoIn2VcIJQn5KTpcVMnsB6fCyjbokaGxG7aYctM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\agua-com-gas.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/agua-com-gas.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-sem-gas.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/agua-sem-gas.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/agua-sem-gas#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -77,13 +77,118 @@
       "Integrity": "WfzuWg6NR15oIyJ+6IV7OQgWubfPHjzeciivqLZiRFQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\agua-sem-gas.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/agua-sem-gas.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\calabresa-acebolada.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/aneis-cebola.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/aneis-cebola#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7jlzfnk5l6",
+      "Integrity": "Pf3vW6J1F3rJhldRn3wBq/ylgBb2kljW7o0XyzE16Ls=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/aneis-cebola.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/batata-frita.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/batata-frita#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pr7gb01mwr",
+      "Integrity": "q/kFJI/Zza7kuOtGR52lw+r/iW3fRALA+3ir08kTw4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/batata-frita.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/brownie.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/brownie#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ifj4qzpm3",
+      "Integrity": "yI5xRaQ6trz6gaoLw/M1U8vZXt7LE75QNmnPyNXoFrQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/brownie.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/bruschetta.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/bruschetta#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ycmkmdsmie",
+      "Integrity": "Mhj2m0N2a8ZKY5f9VHIlX3uZVzFJWduMMfe7WdcR9n4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/bruschetta.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/caipirinha.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/caipirinha#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yypveiyfxf",
+      "Integrity": "xjRQMHOXI1Wgo2Uw4RVLUcvmflx9EhXgi4eNKEMZ88Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/caipirinha.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/calabresa-acebolada.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/calabresa-acebolada#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -98,13 +203,13 @@
       "Integrity": "QcZXLDH4DABKVb2s8R3zOq5pZaJcOCnjiOdmX26DOPs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\calabresa-acebolada.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/calabresa-acebolada.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-brahma.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cerveja-brahma.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/cerveja-brahma#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -119,13 +224,13 @@
       "Integrity": "xWqSEr9zbr82Vijr++ClIPlktwI51m/BQ9X0wqksxdM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\cerveja-brahma.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/cerveja-brahma.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-skol.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cerveja-skol.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/cerveja-skol#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -140,13 +245,34 @@
       "Integrity": "ouSOo7Jg5twW6WSEIC+r2daIjko2vXhqTGQaACeITek=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\cerveja-skol.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/cerveja-skol.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\coca-cola-lata.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cheesecake.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/cheesecake#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "apvza73af1",
+      "Integrity": "PgGj7VxMNip+WJ7W0QyZHmTvuMpQnIrvDk8qXT4OX0w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/cheesecake.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/coca-cola-lata.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/coca-cola-lata#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -161,13 +287,13 @@
       "Integrity": "onzB7YLwFeC+ap6KmaPGBfaJ5ShVnvsk+LV43CQkcZs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\coca-cola-lata.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/coca-cola-lata.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\guarana-lata.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/guarana-lata.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/guarana-lata#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -182,13 +308,34 @@
       "Integrity": "QAEKRkDuhHyZF3aNkAlL8a5RPQI7f2d35VxftumTkLw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\guarana-lata.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/guarana-lata.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\mousse-maracuja.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/heineken.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/heineken#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hx0twnak1f",
+      "Integrity": "C9rB7q3PsW/ViZE0zUWLyyJcPEtLuyhj9OyyMh3svw0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/heineken.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/mousse-maracuja.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/mousse-maracuja#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -203,13 +350,34 @@
       "Integrity": "e7GcbuzwxzSUw8oTkUkiN+qxMtTksUA1h7pAi6dR2lA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\mousse-maracuja.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/mousse-maracuja.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pao-alho.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/nuggets.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/nuggets#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o1sgkkp9ai",
+      "Integrity": "/CWstsPeqMEri/2CwJ2YjS1/GfWf3/qaaIJHUBgztns=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/nuggets.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pao-alho.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/pao-alho#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -224,13 +392,55 @@
       "Integrity": "pPIWaZNOubj2FnWDMINJLGo6XLnNd9xyMlMgrYwJWpI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\pao-alho.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pao-alho.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-calabresa.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-banana.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-banana#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4wdsabog2z",
+      "Integrity": "rPSKFrThLZSJAWEQKrc7IYZdfbXSCzDnmuH1gSCfmsA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-banana.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-brigadeiro.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-brigadeiro#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0omv3d6zzo",
+      "Integrity": "gNvtJmmyR/IwCMzrnJxZCuZCti5zMqGRQtqvubQP6pU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-brigadeiro.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-calabresa.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/pizza-calabresa#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -245,13 +455,13 @@
       "Integrity": "K8YyIxpQtoZHBO98HIlaZSIrDHcnA0ISSrGMSxIog+I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\pizza-calabresa.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-calabresa.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-choco-morango.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-choco-morango.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/pizza-choco-morango#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -266,13 +476,13 @@
       "Integrity": "/dnUPtlXf7dl7+Ju6YA3yQNqPVEZtdv0NitGJGjivoE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\pizza-choco-morango.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-choco-morango.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-chocolate.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-chocolate.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/pizza-chocolate#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -287,13 +497,55 @@
       "Integrity": "+7ymY0YFQFO4nqeQ1cOpP75JIaQfDxZJGxnCp9ExFFw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\pizza-chocolate.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-chocolate.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-marguerita.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-doce-leite.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-doce-leite#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aas76zg2fo",
+      "Integrity": "8jwQzYpK97FLslb+OUx52ru5VP8uvG61/9TMfIw/jOk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-doce-leite.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-frango.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-frango#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sbthceh8k2",
+      "Integrity": "SL1MkkUCnkyUJh+sqKbH+16WUkBpP+1pQE+A5TyI63g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-frango.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-marguerita.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/pizza-marguerita#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -308,13 +560,55 @@
       "Integrity": "VKJsLBpWkGUx+T68B15eXHttpuoPkAM8plH3jTphguw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\pizza-marguerita.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-marguerita.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-portuguesa.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-nutella.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-nutella#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hc712lredl",
+      "Integrity": "ccHy1OuSIgg0UQk8MpHBRwAOC5foAJ+16gqr1DGsoCE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-nutella.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-pepperoni.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-pepperoni#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "omidzz1rin",
+      "Integrity": "cCEzsIUcOPOH/Dne/Uw7Bit0g3wgOS2RSAokAEHLxvU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-pepperoni.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-portuguesa.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/pizza-portuguesa#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -329,13 +623,97 @@
       "Integrity": "vQRbYc3CHQ2aWlWKEC1+4uaoGdq2KVTg9N0bGd2ZsRw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\pizza-portuguesa.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-portuguesa.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-abacaxi.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-romeu-julieta.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-romeu-julieta#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "451anmlqb2",
+      "Integrity": "uHy/2SHQs/bHrUsg5CNKwucdoNdnqcYF9u0oE4M2ipM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-romeu-julieta.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-vegetariana.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pizza-vegetariana#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p4liij6hip",
+      "Integrity": "h6boIsNZ9LuhsGfXohbJy/yrXztDX8qkRFv9a9Adzeo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pizza-vegetariana.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pudim.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/pudim#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i9s9cmt738",
+      "Integrity": "qtTffSx7a+rj6Wp7k/J8VAzZYbh6ShCjzfF9cXfFbKg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/pudim.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/sorvete.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
+      "BasePath": "_content/RestaurantManagerAPI",
+      "RelativePath": "uploads/produtos/sorvete#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g5rvnnspcv",
+      "Integrity": "zDHlEJDHC3mqO9vtHIyjKF+1HhhEAkc9eG3P2qnbPMk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/produtos/sorvete.jpg"
+    },
+    {
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/suco-abacaxi.jpg",
+      "SourceId": "RestaurantManagerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/suco-abacaxi#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -350,13 +728,13 @@
       "Integrity": "a16wijNP//qQ/e8BENp/Jmj/LTkD5KqkLOXyrd+mxYI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\suco-abacaxi.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/suco-abacaxi.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-laranja.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/suco-laranja.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/suco-laranja#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -371,13 +749,13 @@
       "Integrity": "a83//ReOcsmkEh0PmKmzMGARGyUMsyFbTk2kVXBp+6g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\suco-laranja.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/suco-laranja.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-branco-taca.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/vinho-branco-taca.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/vinho-branco-taca#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -392,13 +770,13 @@
       "Integrity": "bDuEnVESbuIG5EDDCe13CcjyWTuDLNHSg9CZFtoTi7w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\vinho-branco-taca.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/vinho-branco-taca.jpg"
     },
     {
-      "Identity": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-tinto-taca.jpg",
+      "Identity": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/vinho-tinto-taca.jpg",
       "SourceId": "RestaurantManagerAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\",
+      "ContentRoot": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/",
       "BasePath": "_content/RestaurantManagerAPI",
       "RelativePath": "uploads/produtos/vinho-tinto-taca#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -413,13 +791,13 @@
       "Integrity": "WDnKGoJWPmTKCyhNOV+jcYDPlkigaJAwVrUKC0biKxs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\produtos\\vinho-tinto-taca.jpg"
+      "OriginalItemSpec": "wwwroot/uploads/produtos/vinho-tinto-taca.jpg"
     }
   ],
   "Endpoints": [
     {
       "Route": "uploads/produtos/acai-tigela.62wshqu2jd.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\acai-tigela.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/acai-tigela.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -440,7 +818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -464,7 +842,7 @@
     },
     {
       "Route": "uploads/produtos/acai-tigela.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\acai-tigela.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/acai-tigela.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -485,7 +863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -501,7 +879,7 @@
     },
     {
       "Route": "uploads/produtos/agua-com-gas.jbpeqo3j9h.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-com-gas.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/agua-com-gas.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -522,7 +900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -546,7 +924,7 @@
     },
     {
       "Route": "uploads/produtos/agua-com-gas.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-com-gas.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/agua-com-gas.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -567,7 +945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -583,7 +961,7 @@
     },
     {
       "Route": "uploads/produtos/agua-sem-gas.djac0fiu0n.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-sem-gas.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/agua-sem-gas.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -604,7 +982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -628,7 +1006,7 @@
     },
     {
       "Route": "uploads/produtos/agua-sem-gas.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\agua-sem-gas.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/agua-sem-gas.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -649,7 +1027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -664,8 +1042,418 @@
       ]
     },
     {
+      "Route": "uploads/produtos/aneis-cebola.7jlzfnk5l6.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/aneis-cebola.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10129"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pf3vW6J1F3rJhldRn3wBq/ylgBb2kljW7o0XyzE16Ls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:42:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7jlzfnk5l6"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/aneis-cebola.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pf3vW6J1F3rJhldRn3wBq/ylgBb2kljW7o0XyzE16Ls="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/aneis-cebola.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/aneis-cebola.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10129"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pf3vW6J1F3rJhldRn3wBq/ylgBb2kljW7o0XyzE16Ls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:42:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pf3vW6J1F3rJhldRn3wBq/ylgBb2kljW7o0XyzE16Ls="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/batata-frita.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/batata-frita.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10123"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q/kFJI/Zza7kuOtGR52lw+r/iW3fRALA+3ir08kTw4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:42:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q/kFJI/Zza7kuOtGR52lw+r/iW3fRALA+3ir08kTw4w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/batata-frita.pr7gb01mwr.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/batata-frita.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10123"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q/kFJI/Zza7kuOtGR52lw+r/iW3fRALA+3ir08kTw4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:42:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pr7gb01mwr"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/batata-frita.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q/kFJI/Zza7kuOtGR52lw+r/iW3fRALA+3ir08kTw4w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/brownie.0ifj4qzpm3.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/brownie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yI5xRaQ6trz6gaoLw/M1U8vZXt7LE75QNmnPyNXoFrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ifj4qzpm3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/brownie.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yI5xRaQ6trz6gaoLw/M1U8vZXt7LE75QNmnPyNXoFrQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/brownie.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/brownie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yI5xRaQ6trz6gaoLw/M1U8vZXt7LE75QNmnPyNXoFrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yI5xRaQ6trz6gaoLw/M1U8vZXt7LE75QNmnPyNXoFrQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bruschetta.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/bruschetta.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173089"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mhj2m0N2a8ZKY5f9VHIlX3uZVzFJWduMMfe7WdcR9n4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:42:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mhj2m0N2a8ZKY5f9VHIlX3uZVzFJWduMMfe7WdcR9n4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/bruschetta.ycmkmdsmie.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/bruschetta.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173089"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mhj2m0N2a8ZKY5f9VHIlX3uZVzFJWduMMfe7WdcR9n4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:42:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ycmkmdsmie"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/bruschetta.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mhj2m0N2a8ZKY5f9VHIlX3uZVzFJWduMMfe7WdcR9n4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/caipirinha.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/caipirinha.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xjRQMHOXI1Wgo2Uw4RVLUcvmflx9EhXgi4eNKEMZ88Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:46:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xjRQMHOXI1Wgo2Uw4RVLUcvmflx9EhXgi4eNKEMZ88Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/caipirinha.yypveiyfxf.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/caipirinha.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xjRQMHOXI1Wgo2Uw4RVLUcvmflx9EhXgi4eNKEMZ88Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:46:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yypveiyfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/caipirinha.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xjRQMHOXI1Wgo2Uw4RVLUcvmflx9EhXgi4eNKEMZ88Y="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/calabresa-acebolada.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\calabresa-acebolada.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/calabresa-acebolada.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -686,7 +1474,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -702,7 +1490,7 @@
     },
     {
       "Route": "uploads/produtos/calabresa-acebolada.lzgxqee72u.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\calabresa-acebolada.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/calabresa-acebolada.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -723,7 +1511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -747,7 +1535,7 @@
     },
     {
       "Route": "uploads/produtos/cerveja-brahma.9rj73q0eov.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-brahma.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cerveja-brahma.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -768,7 +1556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -792,7 +1580,7 @@
     },
     {
       "Route": "uploads/produtos/cerveja-brahma.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-brahma.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cerveja-brahma.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -813,7 +1601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -829,7 +1617,7 @@
     },
     {
       "Route": "uploads/produtos/cerveja-skol.aavh4mp8v6.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-skol.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cerveja-skol.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -850,7 +1638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -874,7 +1662,7 @@
     },
     {
       "Route": "uploads/produtos/cerveja-skol.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\cerveja-skol.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cerveja-skol.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -895,7 +1683,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -910,8 +1698,90 @@
       ]
     },
     {
+      "Route": "uploads/produtos/cheesecake.apvza73af1.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cheesecake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "210783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PgGj7VxMNip+WJ7W0QyZHmTvuMpQnIrvDk8qXT4OX0w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:44:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "apvza73af1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/cheesecake.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PgGj7VxMNip+WJ7W0QyZHmTvuMpQnIrvDk8qXT4OX0w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/cheesecake.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/cheesecake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "210783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PgGj7VxMNip+WJ7W0QyZHmTvuMpQnIrvDk8qXT4OX0w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:44:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PgGj7VxMNip+WJ7W0QyZHmTvuMpQnIrvDk8qXT4OX0w="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/coca-cola-lata.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\coca-cola-lata.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/coca-cola-lata.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -932,7 +1802,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -948,7 +1818,7 @@
     },
     {
       "Route": "uploads/produtos/coca-cola-lata.me9788f1bb.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\coca-cola-lata.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/coca-cola-lata.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -969,7 +1839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -993,7 +1863,7 @@
     },
     {
       "Route": "uploads/produtos/guarana-lata.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\guarana-lata.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/guarana-lata.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1014,7 +1884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1030,7 +1900,7 @@
     },
     {
       "Route": "uploads/produtos/guarana-lata.o2qruh8kj1.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\guarana-lata.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/guarana-lata.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1051,7 +1921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1074,8 +1944,90 @@
       ]
     },
     {
+      "Route": "uploads/produtos/heineken.hx0twnak1f.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/heineken.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C9rB7q3PsW/ViZE0zUWLyyJcPEtLuyhj9OyyMh3svw0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:47:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hx0twnak1f"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/heineken.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C9rB7q3PsW/ViZE0zUWLyyJcPEtLuyhj9OyyMh3svw0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/heineken.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/heineken.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C9rB7q3PsW/ViZE0zUWLyyJcPEtLuyhj9OyyMh3svw0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:47:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C9rB7q3PsW/ViZE0zUWLyyJcPEtLuyhj9OyyMh3svw0="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/mousse-maracuja.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\mousse-maracuja.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/mousse-maracuja.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1096,7 +2048,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1112,7 +2064,7 @@
     },
     {
       "Route": "uploads/produtos/mousse-maracuja.lo9yps8bju.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\mousse-maracuja.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/mousse-maracuja.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1133,7 +2085,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1156,8 +2108,90 @@
       ]
     },
     {
+      "Route": "uploads/produtos/nuggets.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/nuggets.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CWstsPeqMEri/2CwJ2YjS1/GfWf3/qaaIJHUBgztns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:43:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CWstsPeqMEri/2CwJ2YjS1/GfWf3/qaaIJHUBgztns="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/nuggets.o1sgkkp9ai.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/nuggets.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CWstsPeqMEri/2CwJ2YjS1/GfWf3/qaaIJHUBgztns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:43:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1sgkkp9ai"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/nuggets.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CWstsPeqMEri/2CwJ2YjS1/GfWf3/qaaIJHUBgztns="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/pao-alho.8dkt1wyv89.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pao-alho.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pao-alho.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1178,7 +2212,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1202,7 +2236,7 @@
     },
     {
       "Route": "uploads/produtos/pao-alho.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pao-alho.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pao-alho.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1223,7 +2257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1238,8 +2272,172 @@
       ]
     },
     {
+      "Route": "uploads/produtos/pizza-banana.4wdsabog2z.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-banana.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPSKFrThLZSJAWEQKrc7IYZdfbXSCzDnmuH1gSCfmsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:39:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4wdsabog2z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-banana.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPSKFrThLZSJAWEQKrc7IYZdfbXSCzDnmuH1gSCfmsA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-banana.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-banana.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPSKFrThLZSJAWEQKrc7IYZdfbXSCzDnmuH1gSCfmsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:39:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPSKFrThLZSJAWEQKrc7IYZdfbXSCzDnmuH1gSCfmsA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-brigadeiro.0omv3d6zzo.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-brigadeiro.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gNvtJmmyR/IwCMzrnJxZCuZCti5zMqGRQtqvubQP6pU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:40:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0omv3d6zzo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-brigadeiro.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gNvtJmmyR/IwCMzrnJxZCuZCti5zMqGRQtqvubQP6pU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-brigadeiro.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-brigadeiro.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gNvtJmmyR/IwCMzrnJxZCuZCti5zMqGRQtqvubQP6pU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:40:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gNvtJmmyR/IwCMzrnJxZCuZCti5zMqGRQtqvubQP6pU="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/pizza-calabresa.36x92t6idn.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-calabresa.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-calabresa.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1260,7 +2458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1284,7 +2482,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-calabresa.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-calabresa.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-calabresa.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1305,7 +2503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1321,7 +2519,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-choco-morango.dkmfakasrt.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-choco-morango.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-choco-morango.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1342,7 +2540,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1366,7 +2564,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-choco-morango.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-choco-morango.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-choco-morango.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1387,7 +2585,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1403,7 +2601,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-chocolate.dat7jcdtgb.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-chocolate.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-chocolate.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1424,7 +2622,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1448,7 +2646,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-chocolate.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-chocolate.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-chocolate.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1469,7 +2667,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1484,8 +2682,172 @@
       ]
     },
     {
+      "Route": "uploads/produtos/pizza-doce-leite.aas76zg2fo.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-doce-leite.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8jwQzYpK97FLslb+OUx52ru5VP8uvG61/9TMfIw/jOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:41:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aas76zg2fo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-doce-leite.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8jwQzYpK97FLslb+OUx52ru5VP8uvG61/9TMfIw/jOk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-doce-leite.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-doce-leite.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8jwQzYpK97FLslb+OUx52ru5VP8uvG61/9TMfIw/jOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:41:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8jwQzYpK97FLslb+OUx52ru5VP8uvG61/9TMfIw/jOk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-frango.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-frango.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "343820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SL1MkkUCnkyUJh+sqKbH+16WUkBpP+1pQE+A5TyI63g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:35:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SL1MkkUCnkyUJh+sqKbH+16WUkBpP+1pQE+A5TyI63g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-frango.sbthceh8k2.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-frango.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "343820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SL1MkkUCnkyUJh+sqKbH+16WUkBpP+1pQE+A5TyI63g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:35:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sbthceh8k2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-frango.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SL1MkkUCnkyUJh+sqKbH+16WUkBpP+1pQE+A5TyI63g="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/pizza-marguerita.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-marguerita.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-marguerita.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1506,7 +2868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1522,7 +2884,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-marguerita.ovqx46kcqr.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-marguerita.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-marguerita.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1543,7 +2905,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1566,8 +2928,172 @@
       ]
     },
     {
+      "Route": "uploads/produtos/pizza-nutella.hc712lredl.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-nutella.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13547"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccHy1OuSIgg0UQk8MpHBRwAOC5foAJ+16gqr1DGsoCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:39:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hc712lredl"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-nutella.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccHy1OuSIgg0UQk8MpHBRwAOC5foAJ+16gqr1DGsoCE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-nutella.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-nutella.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13547"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccHy1OuSIgg0UQk8MpHBRwAOC5foAJ+16gqr1DGsoCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:39:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccHy1OuSIgg0UQk8MpHBRwAOC5foAJ+16gqr1DGsoCE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-pepperoni.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-pepperoni.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cCEzsIUcOPOH/Dne/Uw7Bit0g3wgOS2RSAokAEHLxvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cCEzsIUcOPOH/Dne/Uw7Bit0g3wgOS2RSAokAEHLxvU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-pepperoni.omidzz1rin.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-pepperoni.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cCEzsIUcOPOH/Dne/Uw7Bit0g3wgOS2RSAokAEHLxvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "omidzz1rin"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-pepperoni.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cCEzsIUcOPOH/Dne/Uw7Bit0g3wgOS2RSAokAEHLxvU="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/pizza-portuguesa.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-portuguesa.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-portuguesa.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1588,7 +3114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1604,7 +3130,7 @@
     },
     {
       "Route": "uploads/produtos/pizza-portuguesa.reft02swt8.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\pizza-portuguesa.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-portuguesa.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1625,7 +3151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1648,8 +3174,336 @@
       ]
     },
     {
+      "Route": "uploads/produtos/pizza-romeu-julieta.451anmlqb2.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-romeu-julieta.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uHy/2SHQs/bHrUsg5CNKwucdoNdnqcYF9u0oE4M2ipM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:38:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "451anmlqb2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-romeu-julieta.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uHy/2SHQs/bHrUsg5CNKwucdoNdnqcYF9u0oE4M2ipM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-romeu-julieta.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-romeu-julieta.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uHy/2SHQs/bHrUsg5CNKwucdoNdnqcYF9u0oE4M2ipM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:38:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uHy/2SHQs/bHrUsg5CNKwucdoNdnqcYF9u0oE4M2ipM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-vegetariana.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-vegetariana.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6boIsNZ9LuhsGfXohbJy/yrXztDX8qkRFv9a9Adzeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:36:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6boIsNZ9LuhsGfXohbJy/yrXztDX8qkRFv9a9Adzeo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pizza-vegetariana.p4liij6hip.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pizza-vegetariana.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6boIsNZ9LuhsGfXohbJy/yrXztDX8qkRFv9a9Adzeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:36:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p4liij6hip"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pizza-vegetariana.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6boIsNZ9LuhsGfXohbJy/yrXztDX8qkRFv9a9Adzeo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pudim.i9s9cmt738.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pudim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qtTffSx7a+rj6Wp7k/J8VAzZYbh6ShCjzfF9cXfFbKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i9s9cmt738"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/pudim.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qtTffSx7a+rj6Wp7k/J8VAzZYbh6ShCjzfF9cXfFbKg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/pudim.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/pudim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qtTffSx7a+rj6Wp7k/J8VAzZYbh6ShCjzfF9cXfFbKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qtTffSx7a+rj6Wp7k/J8VAzZYbh6ShCjzfF9cXfFbKg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/sorvete.g5rvnnspcv.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/sorvete.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zDHlEJDHC3mqO9vtHIyjKF+1HhhEAkc9eG3P2qnbPMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:45:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g5rvnnspcv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/produtos/sorvete.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zDHlEJDHC3mqO9vtHIyjKF+1HhhEAkc9eG3P2qnbPMk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/produtos/sorvete.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/sorvete.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zDHlEJDHC3mqO9vtHIyjKF+1HhhEAkc9eG3P2qnbPMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 03:45:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zDHlEJDHC3mqO9vtHIyjKF+1HhhEAkc9eG3P2qnbPMk="
+        }
+      ]
+    },
+    {
       "Route": "uploads/produtos/suco-abacaxi.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-abacaxi.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/suco-abacaxi.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1670,7 +3524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1686,7 +3540,7 @@
     },
     {
       "Route": "uploads/produtos/suco-abacaxi.xh9m80olmu.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-abacaxi.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/suco-abacaxi.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1707,7 +3561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1731,7 +3585,7 @@
     },
     {
       "Route": "uploads/produtos/suco-laranja.dy0zfhvo1m.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-laranja.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/suco-laranja.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1752,7 +3606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1776,7 +3630,7 @@
     },
     {
       "Route": "uploads/produtos/suco-laranja.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\suco-laranja.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/suco-laranja.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1797,7 +3651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1813,7 +3667,7 @@
     },
     {
       "Route": "uploads/produtos/vinho-branco-taca.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-branco-taca.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/vinho-branco-taca.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1834,7 +3688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1850,7 +3704,7 @@
     },
     {
       "Route": "uploads/produtos/vinho-branco-taca.oxf30ykz0y.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-branco-taca.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/vinho-branco-taca.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1871,7 +3725,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1895,7 +3749,7 @@
     },
     {
       "Route": "uploads/produtos/vinho-tinto-taca.8wep37pbzd.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-tinto-taca.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/vinho-tinto-taca.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1916,7 +3770,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1940,7 +3794,7 @@
     },
     {
       "Route": "uploads/produtos/vinho-tinto-taca.jpg",
-      "AssetFile": "C:\\Users\\pedro\\Documents\\tidai-dev\\src\\back\\RestaurantManagerAPI\\wwwroot\\uploads\\produtos\\vinho-tinto-taca.jpg",
+      "AssetFile": "/home/pedro/Documents/restaurant-manager/src/back/RestaurantManagerAPI/wwwroot/uploads/produtos/vinho-tinto-taca.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1961,7 +3815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 03:28:38 GMT"
+          "Value": "Thu, 22 May 2025 14:22:30 GMT"
         },
         {
           "Name": "Cache-Control",

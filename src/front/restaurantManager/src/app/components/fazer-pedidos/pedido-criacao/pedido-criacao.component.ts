@@ -41,9 +41,13 @@ export class PedidoCriacaoComponent {
 
     this.pedido$ = this.pedidoService.pedido$;
 
-    this.mesaService.getMesa(mesaId).subscribe(
+    this.mesaService.getMesas().subscribe(
       (data) => {
-        this.nomeMesa = data.nome;
+        const mesa = data.find(m => m.id);
+        this.nomeMesa = mesa !== undefined ? mesa.nome : "";
+      },
+      (error) => {
+        console.error('Erro ao carregar nome da mesa: ', error)
       }
     )
   }
@@ -76,7 +80,7 @@ export class PedidoCriacaoComponent {
       )
     );
   }
- 
+
 
   criarPedido() {
     this.pedidoService.pedido$.pipe(

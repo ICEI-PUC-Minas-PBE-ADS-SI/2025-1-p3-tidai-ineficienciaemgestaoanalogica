@@ -27,7 +27,7 @@ export class AuthService {
   getFuncionarioById(id: Number) : Observable<Funcionario | null> {
     return this.http.get<Funcionario>(`${this.apiUrl}/${id}`);
   }
-  
+
   atualizarFuncionario(id: Number, funcionario: Object) : Observable<void> {
     return this.http.put<void>(`${this.apiUrl}/${id}`, funcionario);
   }
@@ -51,16 +51,15 @@ export class AuthService {
   }
 
   estaAutenticado(): boolean {
-    return this.funcionario !== null 
+    return this.funcionario !== null
   }
 
   possuiRole(role: string[]): boolean {
     return role.includes(this.funcionario!.tipo);
   }
 
-  logout() {
-    this.funcionario = null;
-    this.router.navigate(['/login']);
+  logout(): Observable<void>{
+    return this.http.post<void>(`${this.apiUrl}/logout`, {});
   }
 
   getFuncionario(): FuncionarioLogado | null {

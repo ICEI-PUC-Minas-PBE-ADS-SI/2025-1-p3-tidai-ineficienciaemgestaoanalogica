@@ -27,14 +27,14 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Gerente", policy => policy.RequireRole("Gerente"));
 });
 
-
-var frontendUrl = Environment.GetEnvironmentVariable("FrontendUrl") ?? "http://localhost:4200";
-
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", policy =>
+    options.AddPolicy("AllowLocalNetwork", policy =>
     {
-        policy.WithOrigins(frontendUrl, "http://localhost:4200")
+        policy.SetIsOriginAllowed(origin => 
+                origin.StartsWith("http://192.168.") || 
+                origin.Contains("restaurant-manager.local") || 
+                origin.StartsWith("http://localhost"))
               .AllowCredentials() 
               .AllowAnyHeader()
               .AllowAnyMethod();
@@ -63,8 +63,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-app.UseCors("AllowFrontend");
-app.UseHttpsRedirection();
+app.UseCors("AllowLocalNetwork");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

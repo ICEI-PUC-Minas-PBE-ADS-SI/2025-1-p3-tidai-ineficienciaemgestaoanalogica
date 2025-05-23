@@ -47,17 +47,27 @@ namespace RestaurantManagerAPI.Migrations
                         new
                         {
                             Id = 2,
-                            Nome = "Bebidas"
+                            Nome = "Pizzas Doces"
                         },
                         new
                         {
                             Id = 3,
-                            Nome = "Sobremesas"
+                            Nome = "Acompanhamentos"
                         },
                         new
                         {
                             Id = 4,
-                            Nome = "Acompanhamentos"
+                            Nome = "Sobremesas"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Nome = "Bebidas"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Nome = "Bebidas Alcoólicas"
                         });
                 });
 
@@ -146,30 +156,240 @@ namespace RestaurantManagerAPI.Migrations
                         new
                         {
                             Id = 9,
-                            Nome = "Gelo",
-                            PrecoAdicional = 1.00m,
-                            ProdutoId = 13
+                            Nome = "Média",
+                            PrecoAdicional = 8.50m,
+                            ProdutoId = 5
                         },
                         new
                         {
                             Id = 10,
-                            Nome = "Gelo",
-                            PrecoAdicional = 1.00m,
-                            ProdutoId = 14
+                            Nome = "Grande",
+                            PrecoAdicional = 12.50m,
+                            ProdutoId = 5
                         },
                         new
                         {
                             Id = 11,
-                            Nome = "Molho Extra",
-                            PrecoAdicional = 2.50m,
-                            ProdutoId = 17
+                            Nome = "Média",
+                            PrecoAdicional = 8.50m,
+                            ProdutoId = 6
                         },
                         new
                         {
                             Id = 12,
-                            Nome = "Molho Extra",
-                            PrecoAdicional = 2.50m,
+                            Nome = "Grande",
+                            PrecoAdicional = 12.50m,
+                            ProdutoId = 6
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Nome = "Borda Doce",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 7
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Nome = "Borda Doce",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 8
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Nome = "Borda Doce",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 9
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Nome = "Borda Doce",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 10
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Nome = "Borda Doce",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 11
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Nome = "Borda Doce",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 12
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Nome = "Porção Grande",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 13
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Nome = "Porção Grande",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 14
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Nome = "Porção Grande",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 15
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Nome = "Porção Grande",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 16
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Nome = "Porção Grande",
+                            PrecoAdicional = 5.00m,
+                            ProdutoId = 17
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Nome = "Porção Grande",
+                            PrecoAdicional = 5.00m,
                             ProdutoId = 18
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Nome = "Calda Extra",
+                            PrecoAdicional = 3.00m,
+                            ProdutoId = 19
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Nome = "Calda Extra",
+                            PrecoAdicional = 3.00m,
+                            ProdutoId = 20
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Nome = "Calda Extra",
+                            PrecoAdicional = 3.00m,
+                            ProdutoId = 21
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Nome = "Calda Extra",
+                            PrecoAdicional = 3.00m,
+                            ProdutoId = 22
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Nome = "Calda Extra",
+                            PrecoAdicional = 3.00m,
+                            ProdutoId = 23
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Nome = "Calda Extra",
+                            PrecoAdicional = 3.00m,
+                            ProdutoId = 24
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 25
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 26
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 27
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 28
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 29
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Nome = "Gelo",
+                            PrecoAdicional = 1.00m,
+                            ProdutoId = 30
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Nome = "Garrafa 600ml",
+                            PrecoAdicional = 8.00m,
+                            ProdutoId = 31
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Nome = "Garrafa 600ml",
+                            PrecoAdicional = 8.00m,
+                            ProdutoId = 32
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Nome = "Garrafa 750ml",
+                            PrecoAdicional = 45.00m,
+                            ProdutoId = 33
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Nome = "Garrafa 750ml",
+                            PrecoAdicional = 45.00m,
+                            ProdutoId = 34
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Nome = "Jarra 1L",
+                            PrecoAdicional = 25.00m,
+                            ProdutoId = 35
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Nome = "Garrafa 600ml",
+                            PrecoAdicional = 8.00m,
+                            ProdutoId = 36
                         });
                 });
 
@@ -228,7 +448,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 1,
                             Nome = "Administrador",
-                            Senha = "$2a$11$jUYbELcP2CnolUSJWqId3uSWuXh2XlB9wQN0V2xdmFr33EBz6LIOu",
+                            Senha = "$2a$11$gpi14./Bidhwo88XRFrRz.Aj8aLWDGb.fFWJDt68Fr0CxqvgLhpoa",
                             Tipo = "Gerente",
                             Usuario = "admin"
                         },
@@ -236,7 +456,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 2,
                             Nome = "João da Silva",
-                            Senha = "$2a$11$UIulyqCEJlS1NDgO4oqemOZbekDHiZVBVVliKWFIQztPRzcKMdJCK",
+                            Senha = "$2a$11$a0wT6qawrH63G9ULXxxSZ.gIVZoJA4UAKpSPeo4f8GnupxyABcnPe",
                             Tipo = "Funcionario",
                             Usuario = "joao"
                         });
@@ -445,6 +665,33 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 4,
                             CategoriaId = 1,
+                            Descricao = "Pepperoni, mussarela e molho de tomate",
+                            Foto = "/uploads/produtos/pizza-pepperoni.jpg",
+                            Nome = "Pizza Pepperoni",
+                            Preco = 29.90m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoriaId = 1,
+                            Descricao = "Frango desfiado, catupiry e milho",
+                            Foto = "/uploads/produtos/pizza-frango.jpg",
+                            Nome = "Pizza Frango Catupiry",
+                            Preco = 30.50m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoriaId = 1,
+                            Descricao = "Berinjela, abobrinha, pimentão, cebola e azeitonas",
+                            Foto = "/uploads/produtos/pizza-vegetariana.jpg",
+                            Nome = "Pizza Vegetariana",
+                            Preco = 31.00m
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoriaId = 2,
                             Descricao = "Chocolate ao leite, morangos frescos e leite condensado",
                             Foto = "/uploads/produtos/pizza-choco-morango.jpg",
                             Nome = "Pizza Chocolate com Morango",
@@ -452,116 +699,53 @@ namespace RestaurantManagerAPI.Migrations
                         },
                         new
                         {
-                            Id = 5,
-                            CategoriaId = 2,
-                            Descricao = "Garrafa de 500ml",
-                            Foto = "/uploads/produtos/agua-com-gas.jpg",
-                            Nome = "Água com Gás",
-                            Preco = 4.50m
-                        },
-                        new
-                        {
-                            Id = 6,
-                            CategoriaId = 2,
-                            Descricao = "Garrafa de 500ml",
-                            Foto = "/uploads/produtos/agua-sem-gas.jpg",
-                            Nome = "Água sem Gás",
-                            Preco = 3.50m
-                        },
-                        new
-                        {
-                            Id = 7,
-                            CategoriaId = 2,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/coca-cola-lata.jpg",
-                            Nome = "Coca-Cola Lata",
-                            Preco = 5.00m
-                        },
-                        new
-                        {
                             Id = 8,
                             CategoriaId = 2,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/guarana-lata.jpg",
-                            Nome = "Guaraná Lata",
-                            Preco = 4.80m
+                            Descricao = "Goiabada e queijo mussarela",
+                            Foto = "/uploads/produtos/pizza-romeu-julieta.jpg",
+                            Nome = "Pizza Romeu e Julieta",
+                            Preco = 28.50m
                         },
                         new
                         {
                             Id = 9,
                             CategoriaId = 2,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/cerveja-skol.jpg",
-                            Nome = "Cerveja Skol",
-                            Preco = 6.50m
+                            Descricao = "Banana caramelizada, canela e leite condensado",
+                            Foto = "/uploads/produtos/pizza-banana.jpg",
+                            Nome = "Pizza Banana Canela",
+                            Preco = 27.90m
                         },
                         new
                         {
                             Id = 10,
                             CategoriaId = 2,
-                            Descricao = "Lata 350ml",
-                            Foto = "/uploads/produtos/cerveja-brahma.jpg",
-                            Nome = "Cerveja Brahma",
-                            Preco = 6.50m
+                            Descricao = "Nutella, morangos frescos e chocolate branco",
+                            Foto = "/uploads/produtos/pizza-nutella.jpg",
+                            Nome = "Pizza Nutella com Morango",
+                            Preco = 35.00m
                         },
                         new
                         {
                             Id = 11,
                             CategoriaId = 2,
-                            Descricao = "Copo 300ml",
-                            Foto = "/uploads/produtos/suco-laranja.jpg",
-                            Nome = "Suco de Laranja",
-                            Preco = 7.50m
+                            Descricao = "Chocolate, granulado e leite condensado",
+                            Foto = "/uploads/produtos/pizza-brigadeiro.jpg",
+                            Nome = "Pizza Brigadeiro",
+                            Preco = 26.50m
                         },
                         new
                         {
                             Id = 12,
                             CategoriaId = 2,
-                            Descricao = "Copo 300ml",
-                            Foto = "/uploads/produtos/suco-abacaxi.jpg",
-                            Nome = "Suco de Abacaxi",
-                            Preco = 7.50m
+                            Descricao = "Doce de leite argentino e coco ralado",
+                            Foto = "/uploads/produtos/pizza-doce-leite.jpg",
+                            Nome = "Pizza Doce de Leite",
+                            Preco = 29.00m
                         },
                         new
                         {
                             Id = 13,
-                            CategoriaId = 2,
-                            Descricao = "Taça de 200ml",
-                            Foto = "/uploads/produtos/vinho-tinto-taca.jpg",
-                            Nome = "Vinho Tinto Taça",
-                            Preco = 12.00m
-                        },
-                        new
-                        {
-                            Id = 14,
-                            CategoriaId = 2,
-                            Descricao = "Taça de 200ml",
-                            Foto = "/uploads/produtos/vinho-branco-taca.jpg",
-                            Nome = "Vinho Branco Taça",
-                            Preco = 12.00m
-                        },
-                        new
-                        {
-                            Id = 15,
                             CategoriaId = 3,
-                            Descricao = "Porção individual",
-                            Foto = "/uploads/produtos/mousse-maracuja.jpg",
-                            Nome = "Mousse de Maracujá",
-                            Preco = 9.90m
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CategoriaId = 3,
-                            Descricao = "300ml com granola e banana",
-                            Foto = "/uploads/produtos/acai-tigela.jpg",
-                            Nome = "Açaí na Tigela",
-                            Preco = 14.50m
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CategoriaId = 4,
                             Descricao = "Porção com 8 unidades",
                             Foto = "/uploads/produtos/pao-alho.jpg",
                             Nome = "Pão de Alho",
@@ -569,12 +753,210 @@ namespace RestaurantManagerAPI.Migrations
                         },
                         new
                         {
-                            Id = 18,
-                            CategoriaId = 4,
+                            Id = 14,
+                            CategoriaId = 3,
                             Descricao = "Porção para 2 pessoas",
                             Foto = "/uploads/produtos/calabresa-acebolada.jpg",
                             Nome = "Calabresa Acebolada",
                             Preco = 18.00m
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoriaId = 3,
+                            Descricao = "Porção grande com cheddar e bacon",
+                            Foto = "/uploads/produtos/batata-frita.jpg",
+                            Nome = "Batata Frita",
+                            Preco = 15.00m
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoriaId = 3,
+                            Descricao = "Porção com 10 unidades",
+                            Foto = "/uploads/produtos/aneis-cebola.jpg",
+                            Nome = "Anéis de Cebola",
+                            Preco = 14.50m
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CategoriaId = 3,
+                            Descricao = "6 unidades com tomate e manjericão",
+                            Foto = "/uploads/produtos/bruschetta.jpg",
+                            Nome = "Bruschetta",
+                            Preco = 13.00m
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoriaId = 3,
+                            Descricao = "10 unidades com molho barbecue",
+                            Foto = "/uploads/produtos/nuggets.jpg",
+                            Nome = "Nuggets",
+                            Preco = 16.00m
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CategoriaId = 4,
+                            Descricao = "Porção individual",
+                            Foto = "/uploads/produtos/mousse-maracuja.jpg",
+                            Nome = "Mousse de Maracujá",
+                            Preco = 9.90m
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CategoriaId = 4,
+                            Descricao = "300ml com granola e banana",
+                            Foto = "/uploads/produtos/acai-tigela.jpg",
+                            Nome = "Açaí na Tigela",
+                            Preco = 14.50m
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CategoriaId = 4,
+                            Descricao = "Brownie quente com sorvete de creme",
+                            Foto = "/uploads/produtos/brownie.jpg",
+                            Nome = "Brownie com Sorvete",
+                            Preco = 18.00m
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CategoriaId = 4,
+                            Descricao = "Fatia com calda de morango",
+                            Foto = "/uploads/produtos/cheesecake.jpg",
+                            Nome = "Cheesecake de Morango",
+                            Preco = 16.50m
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CategoriaId = 4,
+                            Descricao = "Fatia tradicional",
+                            Foto = "/uploads/produtos/pudim.jpg",
+                            Nome = "Pudim de Leite",
+                            Preco = 8.50m
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CategoriaId = 4,
+                            Descricao = "Escolha dois sabores",
+                            Foto = "/uploads/produtos/sorvete.jpg",
+                            Nome = "Sorvete 2 Bolas",
+                            Preco = 12.00m
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CategoriaId = 5,
+                            Descricao = "Garrafa de 500ml",
+                            Foto = "/uploads/produtos/agua-com-gas.jpg",
+                            Nome = "Água com Gás",
+                            Preco = 4.50m
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CategoriaId = 5,
+                            Descricao = "Garrafa de 500ml",
+                            Foto = "/uploads/produtos/agua-sem-gas.jpg",
+                            Nome = "Água sem Gás",
+                            Preco = 3.50m
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CategoriaId = 5,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/coca-cola-lata.jpg",
+                            Nome = "Coca-Cola Lata",
+                            Preco = 5.00m
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CategoriaId = 5,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/guarana-lata.jpg",
+                            Nome = "Guaraná Lata",
+                            Preco = 4.80m
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CategoriaId = 5,
+                            Descricao = "Copo 300ml",
+                            Foto = "/uploads/produtos/suco-laranja.jpg",
+                            Nome = "Suco de Laranja",
+                            Preco = 7.50m
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CategoriaId = 5,
+                            Descricao = "Copo 300ml",
+                            Foto = "/uploads/produtos/suco-abacaxi.jpg",
+                            Nome = "Suco de Abacaxi",
+                            Preco = 7.50m
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CategoriaId = 6,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/cerveja-skol.jpg",
+                            Nome = "Cerveja Skol",
+                            Preco = 6.50m
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CategoriaId = 6,
+                            Descricao = "Lata 350ml",
+                            Foto = "/uploads/produtos/cerveja-brahma.jpg",
+                            Nome = "Cerveja Brahma",
+                            Preco = 6.50m
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CategoriaId = 6,
+                            Descricao = "Taça de 200ml",
+                            Foto = "/uploads/produtos/vinho-tinto-taca.jpg",
+                            Nome = "Vinho Tinto Taça",
+                            Preco = 12.00m
+                        },
+                        new
+                        {
+                            Id = 34,
+                            CategoriaId = 6,
+                            Descricao = "Taça de 200ml",
+                            Foto = "/uploads/produtos/vinho-branco-taca.jpg",
+                            Nome = "Vinho Branco Taça",
+                            Preco = 12.00m
+                        },
+                        new
+                        {
+                            Id = 35,
+                            CategoriaId = 6,
+                            Descricao = "Tradicional de limão (300ml)",
+                            Foto = "/uploads/produtos/caipirinha.jpg",
+                            Nome = "Caipirinha",
+                            Preco = 15.00m
+                        },
+                        new
+                        {
+                            Id = 36,
+                            CategoriaId = 6,
+                            Descricao = "Garrafa 330ml",
+                            Foto = "/uploads/produtos/heineken.jpg",
+                            Nome = "Heineken Long Neck",
+                            Preco = 9.90m
                         });
                 });
 

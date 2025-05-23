@@ -8,6 +8,7 @@ import { Pedido } from 'src/app/interfaces/pedido';
 import { environment } from "src/environments/environment";
 import { map, filter, Observable, take } from 'rxjs';
 import { MesaService } from 'src/app/services/mesa.service';
+import { Mesa } from 'src/app/interfaces/mesa'
 import { ItemPedido } from 'src/app/interfaces/item-pedido';
 import { ModalAvisoComponent } from "../../modal-aviso/modal-aviso.component";
 
@@ -19,7 +20,7 @@ import { ModalAvisoComponent } from "../../modal-aviso/modal-aviso.component";
 })
 export class AtualizarPedidoComponent {
   environment = environment;
-  nomeMesa: string = "";
+  nomeMesa: string | undefined;
   pedido$!:  Observable<Pedido | null>;
   isHovered = false;
 
@@ -39,9 +40,13 @@ export class AtualizarPedidoComponent {
     )
     this.pedido$ = this.pedidoService.pedido$;
 
-    this.mesaService.getMesa(mesaId).subscribe(
+    this.mesaService.getMesas().subscribe(
       (data) => {
-        this.nomeMesa = data.nome;
+        const mesa = data.find(m => m.id);
+        this.nomeMesa = mesa !== undefined ? mesa.nome : "";
+      },
+      (error) => {
+        console.error('Erro ao carregar nome da mesa: ', error)
       }
     )
   }
@@ -75,7 +80,7 @@ export class AtualizarPedidoComponent {
       )
     );
   }
- 
+
 
   atualizarPedido() {
     this.pedidoService.pedido$.pipe(

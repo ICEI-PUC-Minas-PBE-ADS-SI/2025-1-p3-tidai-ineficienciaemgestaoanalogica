@@ -146,4 +146,20 @@ public class FuncionariosController : ControllerBase
 
         return Ok(funcionario);
     }
+
+    [HttpPost("logout")]
+    public async Task<IActionResult> LogoutFuncionario()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+        Response.Cookies.Delete(".AspNetCore.Cookies", new CookieOptions
+        {
+            Path = "/",
+            HttpOnly = true,
+            Secure = false,
+            SameSite = SameSiteMode.Lax
+        });
+
+        return Ok();
+    }
 }

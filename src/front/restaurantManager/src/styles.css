@@ -206,3 +206,8 @@ footer {
     padding: 9.5px 11px;
     border: 1px solid var(--secondary-color);
 }
+@media print {
+  .app-navbar {
+    display: none;
+  }
+}

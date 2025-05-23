@@ -16,3 +16,41 @@
 .data-font {
     font-weight: 500;
 }
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .cupom-container,
+  .cupom-container * {
+    visibility: visible;
+  }
+
+  .cupom-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .cupom {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    max-width: 300px;
+    margin: auto;
+    border: 1px dashed #000;
+    padding: 10px;
+  }
+
+  .dashed {
+    border-top: 1px dashed #000;
+  }
+
+  button,
+  .btn,
+  .no-print {
+    display: none !important;
+  }
+}
+
