@@ -24,13 +24,159 @@ Com isso, o projeto busca não apenas aumentar a produtividade e a satisfação 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Esta seção fornece instruções para configurar e executar o sistema em um ambiente local utilizando Docker.
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+---
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+### Índice
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+1. [Dependências](#dependencias)
+2. [Instalação das Dependências](#instalacao-das-dependencias)
+   - [Windows](#windows)
+   - [Linux (Ubuntu/Debian)](#linux-ubuntudebian)
+3. [Configuração e Execução](#configuracao-e-execucao)
+4. [Acessando a Aplicação](#acessando-a-aplicacao)
+5. [Contas de Demonstração](#contas-de-demostracao)
+6. [Gerenciamento do Sistema](#gerenciamento-do-sistema)
+7. [Possívels Problemas](#possiveis-problemas)
+
+---
+
+### <span id="dependencias">Dependências</span>
+
+- **Git**
+- **Docker**
+- **Docker Compose**
+
+---
+
+### <span id="instalacao-das-dependencias">Instalação das Dependências</span>
+
+#### <span id="windows">Windows</span>
+1. [Baixe e instale o Git](https://git-scm.com/download/win)
+2. [Instale o Docker Desktop](https://www.docker.com/products/docker-desktop/)
+3. Após instalação:
+   - Reinicie seu computador
+   - Abra o Docker Desktop
+   - Acesse Settings > General e habilite:
+     - "Use WSL 2 based engine" (recomendado)
+     - "Start Docker Desktop when you log in"
+
+#### <span id="linux-ubuntudebian">Linux (Ubuntu/Debian)</span>
+Execute os seguintes comandos no terminal:
+
+```bash
+# Atualiza pacotes e instala Git
+sudo apt update && sudo apt upgrade -y
+sudo apt install git -y
+
+# Instala Docker e o Docker Compose
+sudo apt install docker.io docker-compose -y
+sudo systemctl enable --now docker
+
+# Configura usuário (sem essa mudança todo comando docker precisa do sudo)
+sudo usermod -aG docker $USER
+newgrp docker
+```
+---
+
+### <span id="configuracao-e-execucao">Configuração e Execução</span>
+
+Siga estes passos para iniciar a aplicação:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica.git restaurant-manager
+   cd restaurant-manager
+   ```
+
+2. **Inicie os containers**:
+   ```bash
+   docker compose up --build
+   ```
+
+   A primeira execução pode levar alguns minutos enquanto:
+   - Baixa as imagens necessárias
+   - Constrói os serviços frontend e backend
+   - Configura o banco de dados MySQL
+
+   A primeira execução pode ser interrompida por algum problema na comunicação interna do docker, normalmente, basta executar o comando novamente sem realizar um novo build:
+
+   ```bash
+   docker compose up
+   ```
+
+3. **Verifique os logs**:
+   - Aguarde até ver a mensagem `Angular application started` no terminal
+   - O backend estará pronto quando aparecer `Now listening on: http://[::]:5000`
+
+---
+
+### <span id="acessando-a-aplicacao">Acessando a Aplicação</span>
+
+Após a inicialização completa, acesse:
+
+- **Interface do Usuário**: [http://localhost](http://localhost)
+- **API Backend**: [http://localhost:5000](http://localhost:5000)
+
+---
+
+### <span id="contas-de-demostracao">Contas de Demonstração</span>
+
+Dois perfis estão disponíveis para teste:
+
+#### Perfil de Gerente
+- **Usuário**: admin
+- **Senha**: admin
+- **Permissões**: Acessar todas as telas do sistema
+
+#### Perfil de Funcionário
+- **Usuário**: joao
+- **Senha**: joao123
+- **Permissões**: Acessar apenas as telas de fazer pedidos e ver pedidos
+
+---
+
+### <span id="gerenciamento-do-sistema">Gerenciamento do Sistema</span>
+
+#### Para parar a aplicação:
+
+```bash
+docker compose down
+```
+
+#### Para reiniciar:
+
+```bash
+docker compose up
+```
+
+#### Para limpar completamente (incluindo dados):
+
+```bash
+docker compose down -v --rmi all
+```
+
+#### Comandos úteis:
+- Ver containers ativos: `docker ps`
+- Acessar logs: `docker compose logs -f`
+- Reconstruir imagens: `docker compose build --no-cache`
+- Executar a aplicação em segundo plano:  `docker compose up -d`
+
+---
+
+### <span id="possiveis-problemas">Possíveis Problemas</span>
+
+Problemas comuns e soluções:
+
+1. **Erro de porta conflitante**:
+   - Verifique se não há outros serviços usando as portas 80 ou 5000
+   - Use `netstat -tulnp | grep LISTEN` (Linux) ou `netstat -ano` (Windows)
+
+2. **Problemas no Docker Desktop**:
+   - Reinicie o serviço Docker
+   - Verifique se a virtualização está habilitada na BIOS
+   - Verifique se o WSL2 está instalado e funcionando
 
 # Documentação
 
