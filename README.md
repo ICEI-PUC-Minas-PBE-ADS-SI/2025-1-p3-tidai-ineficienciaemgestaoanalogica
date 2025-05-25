@@ -132,7 +132,7 @@ Dois perfis estão disponíveis para teste:
 
 #### Perfil de Funcionário
 - **Usuário**: joao
-- **Senha**: joao123
+- **Senha**: senha123
 - **Permissões**: Acessar apenas as telas de fazer pedidos e ver pedidos
 
 ---
