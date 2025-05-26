@@ -1,56 +1,88 @@
+CREATE DATABASE restaurante
+USE restaurante;
+
 CREATE TABLE Categorias (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Produtos (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    Descricao VARCHAR(255),
-    Preco DECIMAL(10,2) NOT NULL,
-    Foto VARCHAR(255),
-    CategoriaId INT NOT NULL,
-    FOREIGN KEY (CategoriaId) REFERENCES Categorias(Id)
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  Descricao VARCHAR(255) NOT NULL,
+  Preco DECIMAL(10,2) NOT NULL,
+  Foto VARCHAR(255) NOT NULL,
+  CategoriaId INT NOT NULL,
+  FOREIGN KEY (CategoriaId) REFERENCES Categorias(Id) ON DELETE CASCADE
 );
 
 CREATE TABLE Extras (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    PrecoAdicional DECIMAL(10,2) NOT NULL,
-    ProdutoId INT NOT NULL,
-    FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id)
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  PrecoAdicional DECIMAL(10,2) NOT NULL,
+  ProdutoId INT NOT NULL,
+  FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id) ON DELETE CASCADE
 );
 
 CREATE TABLE Funcionarios (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    Usuario VARCHAR(50) UNIQUE NOT NULL,
-    Senha VARCHAR(60) NOT NULL
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  Usuario VARCHAR(50) NOT NULL,
+  Senha VARCHAR(255) NOT NULL,
+  Tipo VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Mesas (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(50) NOT NULL
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Pedidos (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    MesaId INT NOT NULL,
-    FuncionarioId INT NOT NULL,
-    DataHoraInicio DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    DataHoraFim DATETIME,
-    Status ENUM('Aberto', 'Fechado', 'Cancelado') DEFAULT 'Aberto',
-    FOREIGN KEY (MesaId) REFERENCES Mesas(Id),
-    FOREIGN KEY (FuncionarioId) REFERENCES Funcionarios(Id)
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  MesaId INT NOT NULL,
+  FuncionarioId INT NOT NULL,
+  DataHoraInicio DATETIME NOT NULL,
+  DataHoraFim DATETIME,
+  PrecoFinal DECIMAL(10,2) NOT NULL,
+  Observacao VARCHAR(255) NOT NULL,
+  FOREIGN KEY (MesaId) REFERENCES Mesas(Id) ON DELETE CASCADE,
+  FOREIGN KEY (FuncionarioId) REFERENCES Funcionarios(Id) ON DELETE CASCADE
 );
 
 CREATE TABLE ItensPedido (
-    PRIMARY KEY (PedidoId, ProdutoId),
-    PedidoId INT NOT NULL,
-    ProdutoId INT NOT NULL,
-    Quantidade INT NOT NULL DEFAULT 1,
-    PrecoUnitario DECIMAL(10,2) NOT NULL,
-    FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id),
-    FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id)
+  PedidoId INT NOT NULL,
+  ProdutoId INT NOT NULL,
+  Quantidade INT NOT NULL,
+  PrecoUnitario DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (ProdutoId, PedidoId),
+  FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id) ON DELETE CASCADE,
+  FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id) ON DELETE CASCADE
 );
 
+CREATE TABLE ExtrasSelecionados (
+  ProdutoId INT NOT NULL,
+  PedidoId INT NOT NULL,
+  ExtraId INT NOT NULL,
+  PRIMARY KEY (ProdutoId, PedidoId, ExtraId),
+  FOREIGN KEY (ExtraId) REFERENCES Extras(Id) ON DELETE CASCADE,
+  FOREIGN KEY (ProdutoId, PedidoId) REFERENCES ItensPedido(ProdutoId, PedidoId) ON DELETE CASCADE
+);
+
+CREATE TABLE RelatorioPedidos (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  DataHoraInicio DATETIME NOT NULL,
+  DataHoraFim DATETIME NOT NULL,
+  NomeMesa VARCHAR(100),
+  NomeFuncionario VARCHAR(100),
+  PrecoFinal DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE ItensRelatorioPedidos (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  RelatorioPedidoId INT NOT NULL,
+  NomeProduto VARCHAR(100) NOT NULL,
+  Quantidade INT NOT NULL,
+  PrecoUnitario DECIMAL(10,2) NOT NULL,
+  ExtrasSelecionados TEXT NOT NULL,
+  FOREIGN KEY (RelatorioPedidoId) REFERENCES RelatorioPedidos(Id) ON DELETE CASCADE
+);
