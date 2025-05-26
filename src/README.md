@@ -13,7 +13,7 @@ Este sistema não está hospedado em um servidor público. Ele é executado loca
 Para executá-lo localmente, é necessário ter o Docker e o Docker Compose instalados. Em seguida, basta rodar:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 Após a inicialização, a aplicação estará acessível via http://localhost.
