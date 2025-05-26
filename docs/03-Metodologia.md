@@ -113,15 +113,15 @@ Atualizado em: 28/04/2025
 
 #### Sprint 4
 
-Atualizado em: 07/05/2025
+Atualizado em: 25/05/2025
 
 | Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status   | Terminado em |
 | :----                          | :----                             | :----:      | :----:     | :----:   | :----:       |
-| Marco Antonio Alves Moreira    | HTML e CSS                        | 29/04/2025  | 14/05/2025 | 📝      |              |
-| Thiago Botelho Neves           | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | 📝      |              |
-| Davi Telles Xavier             | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | 📝      |              |
-| Caio Moreira Marques           | Registro de Testes de Software    | 29/04/2025  | 26/05/2025 | 📝      |              |
-| Pedro César da Matta Silveira  | Versão inicial do código          | 29/04/2025  | 26/05/2025 | 📝      |              |
+| Marco Antonio Alves Moreira    | HTML e CSS                        | 29/04/2025  | 14/05/2025 | ✔️        |  14/05/2025  |
+| Thiago Botelho Neves           | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | ✔️        |  17/05/2025  |
+| Davi Telles Xavier             | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | ✔️        |  17/05/2025  |
+| Caio Moreira Marques           | Registro de Testes de Software    | 29/04/2025  | 26/05/2025 | ✔️        |  25/05/2025  |
+| Pedro César da Matta Silveira  | Versão inicial do código          | 29/04/2025  | 26/05/2025 |✔️✔️        |  18/05/2025  |
 
 Legenda:
 - ✔️ : terminado
