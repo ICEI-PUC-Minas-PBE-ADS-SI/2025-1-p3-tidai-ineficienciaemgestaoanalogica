@@ -1,46 +1,42 @@
 # Especificação do projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
 ## Personas
 
-### João, o Gestor;
-- Idade: 45 anos;
-- Perfil: Proprietário de um restaurante de médio porte, preocupado com eficiência operacional e controle de custos;
-- Desafios: Gerenciar pedidos, evitar desperdícios, monitorar desempenho da equipe e garantir qualidade no atendimento;
-- Necessidades: Um sistema que facilite a supervisão de processos, forneça dados em tempo real e permita um controle melhor do estoque e das vendas.
+### Roberto, o Gerente
+- Idade: 48 anos;
+- Perfil: Proprietário do restaurante, focado na gestão estratégica e financeira. Ele precisa de dados consolidados para tomar decisões assertivas sobre o negócio.
+- Desafios: Manter o cardápio e os preços sempre atualizados no sistema, treinar novos funcionários para usar a ferramenta corretamente e garantir que os dados financeiros sejam precisos para o fechamento do mês.
+- Necessidades: Um painel de controle com acesso a relatórios detalhados e ferramentas simples para gerenciar os produtos vendidos.
 
 ### Carlos, o Garçom
-- Idade: 28 anos;
-- Perfil: Profissional experiente, com cinco anos no setor, busca agilidade no atendimento e satisfação dos clientes;
-- Desafios: Anotar pedidos corretamente, evitar erros na cozinha e gerenciar múltiplas mesas simultaneamente;
-- Necessidades: Um sistema rápido e intuitivo para registrar pedidos e comunicar-se com a cozinha sem precisar de papel.
+- Idade: 26 anos;
+- Perfil: Profissional ágil e comunicativo, responsável por atender os clientes nas mesas. Sua prioridade é a rapidez e a precisão no registro dos pedidos.
+- Desafios: Anotar pedidos complexos com modificações e gerenciar várias mesas simultaneamente, principalmente em horários de pico.
+- Necessidades: Uma interface intuitiva e rápida para lançar itens, adicionar observações e enviar os pedidos para a cozinha sem erros.
 
-### Ana, a Cozinheira
-- Idade: 35 anos;
-- Perfil: Responsável pela execução dos pratos conforme os pedidos e padrões do restaurante;
-- Desafios: Gerenciar fluxo de pedidos, evitar desperdício e manter a qualidade dos pratos, principalmente em horários de pico;
-- Necessidades: Uma interface clara para visualizar os pedidos em tempo real e organizar melhor o tempo de preparo.
+### Lúcia, a Atendente de Caixa
+- Idade: 38 anos;
+- Perfil: Organizada e metódica, sua função é finalizar a experiência do cliente, garantindo que a cobrança seja feita de forma correta e sem demora.
+- Desafios: Evitar filas no caixa, conferir rapidamente todos os itens de um pedido longo e aplicar taxas de serviço corretamente.
+- Necessidades: Um sistema que permita localizar facilmente o pedido de uma mesa e gerar uma conta clara e formatada para impressão imediata.
 
-### Pedro, o Cliente
-- Idade: 32 anos;
-- Perfil: Profissional que almoça fora frequentemente e busca um atendimento rápido e eficiente;
-- Desafios: Tempo limitado para refeições e espera excessiva por atendimento;
-- Necessidades: Uma forma fácil de visualizar o cardápio, fazer pedidos rapidamente e pagar sem demora;
-
+### Sandra, a Cozinheira
+- Idade: 42 anos;
+- Perfil: Chefe de cozinha experiente, responsável por garantir a qualidade e a padronização dos pratos. Ela trabalha sob pressão para manter o fluxo da cozinha.
+- Desafios: Interpretar corretamente as comandas, especialmente as observações (ponto da carne, alergias, ingredientes a remover) e organizar a fila de preparo.
+- Necessidades: Receber os pedidos de forma padronizada e legível, com todas as especificações do cliente bem destacadas para evitar erros na produção.
 
 ## Histórias de usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-| EU COMO... `PERSONA`   | QUERO/PRECISO... `FUNCIONALIDADE`                                                                 | PARA... `MOTIVO/VALOR`                                                                 |
-|-------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| **Gestor**              | Acessar relatórios de vendas e consumo com filtros (diário/semanal/mensal, categoria, horário)   | Tomar decisões estratégicas (ex: avaliar desempenho, definir compras de insumos).     |
-| **Garçom**              | Registrar pedidos rapidamente com opções de modificação (ex: sem cebola)                         | Agilizar o atendimento e evitar erros no envio de pedidos para a cozinha.             |
-| **Cozinheira**          | Visualizar pedidos em ordem cronológica com status de preparo (ex: "Em andamento", "Pronto")     | Organizar a produção e priorizar a preparação dos pratos conforme demanda.            |
-| **Cliente**             | Visualizar cardápio digital via QR Code e realizar pedidos/pagamentos pelo celular               | Evitar filas e agilizar o processo de pedido/pagamento para uma experiência rápida.   |
+| EU COMO... `PERSONA` | QUERO/PRECISO... `FUNCIONALIDADE` | PARA... `MOTIVO/VALOR` |
+| :--- | :--- | :--- |
+| Gerente | Gerar relatórios de vendas consolidados por período | Analisar o desempenho financeiro do restaurante e tomar decisões estratégicas. |
+| | Adicionar e editar os produtos do cardápio no sistema | Manter o menu sempre atualizado para que os pedidos sejam registrados com os preços e itens corretos. |
+| Garçom | Lançar e atualizar os pedidos de uma mesa de forma rápida e intuitiva | Agilizar o atendimento ao cliente e minimizar a chance de erros na comunicação com a cozinha. |
+| Atendente de Caixa | Acessar um pedido e imprimir a conta final detalhada | Realizar o fechamento da conta de forma ágil e transparente, evitando filas no caixa. |
+| Cozinheira | Receber a comanda com os itens e observações de forma clara e padronizada | Preparar os pratos exatamente como o cliente solicitou, garantindo a qualidade e a satisfação. |
 
 ## Requisitos
 
