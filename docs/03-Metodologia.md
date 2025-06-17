@@ -78,6 +78,14 @@ Processo de Commits:
 - Plano de Testes de Software: Thiago Botelho Neves e Davi Telles Xavier 
 - Registro de Testes de Software: Caio Moreira Marques
 
+#### Sprint 4
+- _Scrum master_: Pedro César da Matta Silveira
+- Versão final do Código: Pedro César da Matta Silveira
+- Revisão da Documentação: Thiago Botelho Neves
+- Planejamento de Testes de Usabilidade: Caio Moreira Marques
+- Registro de Testes de Usabilidade: Marco Antonio Alves Moreira 
+- Apresentação: Davi Telles Xavier
+
 ###  Quadro de tarefas
 
 #### Sprint 1
@@ -111,7 +119,7 @@ Atualizado em: 28/04/2025
 | Thiago Botelho Neves           | Arquitetura da Solução            | 31/03/2025  | 28/04/2025 | ✔️      | 26/04/2025   |
 | Davi Telles Xavier             | Modelo de Dados                   | 31/03/2025  | 28/04/2025 | ✔️      | 28/04/2025   |
 
-#### Sprint 4
+#### Sprint 3
 
 Atualizado em: 25/05/2025
 
@@ -121,7 +129,19 @@ Atualizado em: 25/05/2025
 | Thiago Botelho Neves           | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | ✔️        |  17/05/2025  |
 | Davi Telles Xavier             | Plano de Testes de Software       | 29/04/2025  | 14/05/2025 | ✔️        |  17/05/2025  |
 | Caio Moreira Marques           | Registro de Testes de Software    | 29/04/2025  | 26/05/2025 | ✔️        |  25/05/2025  |
-| Pedro César da Matta Silveira  | Versão inicial do código          | 29/04/2025  | 26/05/2025 |✔️✔️        |  18/05/2025  |
+| Pedro César da Matta Silveira  | Versão inicial do código          | 29/04/2025  | 26/05/2025 | ✔️        |  18/05/2025  |
+
+#### Sprint 4
+
+Atualizado em: 17/06/2025
+
+| Responsável                    | Tarefa/Requisito                  | Iniciado em | Prazo      | Status   | Terminado em |
+| :----                          | :----                             | :----:      | :----:     | :----:   | :----:       |
+| Pedro César da Matta Silveira  | Versão Final do Código            | 02/06/2025  | 23/06/2025 | 📝        |   |
+| Thiago Botelho Neves           | Revisão da Documentação           | 02/06/2025  | 23/06/2025 | 📝        |   |
+| Caio Moreira Marques           | Plano de Testes de Usabilidade    | 02/06/2025  | 18/06/2025 | 📝        |   |
+| Marco Antonio Alves Moreira    | Registro de Testes de Usabilidade | 02/06/2025  | 23/06/2025 | 📝        |   |
+| Davi Telles Xavier             | Apresentação                      | 02/06/2025  | 23/06/2025 | 📝        |   |
 
 Legenda:
 - ✔️ : terminado
