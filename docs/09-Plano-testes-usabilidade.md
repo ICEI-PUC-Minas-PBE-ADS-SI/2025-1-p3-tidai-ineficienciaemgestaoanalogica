@@ -30,13 +30,43 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 
 > Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico, você deve detalhar quais funcionalidades foram avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
 
-## Cenários de teste de usabilidade
+## Personas
 
-| Nº do cenário | Descrição do cenário |
-|---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphones nessa faixa de preço. |
+### Roberto, o Gerente
+- *Idade:* 48 anos;
+- *Perfil:* Proprietário do restaurante, focado na gestão estratégica e financeira. Ele precisa de dados consolidados para tomar decisões assertivas sobre o negócio.
+- *Desafios:* Manter o cardápio e os preços sempre atualizados no sistema, treinar novos funcionários para usar a ferramenta corretamente e garantir que os dados financeiros sejam precisos para o fechamento do mês.
+- *Necessidades:* Um painel de controle com acesso a relatórios detalhados e ferramentas simples para gerenciar os produtos vendidos.
 
+### Carlos, o Garçom
+- *Idade:* 26 anos;
+- *Perfil:* Profissional ágil e comunicativo, responsável por atender os clientes nas mesas. Sua prioridade é a rapidez e a precisão no registro dos pedidos.
+- *Desafios:* Anotar pedidos complexos com modificações e gerenciar várias mesas simultaneamente, principalmente em horários de pico.
+- *Necessidades:* Uma interface intuitiva e rápida para lançar itens, adicionar observações e enviar os pedidos para a cozinha sem erros.
+
+### Lúcia, a Atendente de Caixa
+- *Idade:* 38 anos;
+- *Perfil:* Organizada e metódica, sua função é finalizar a experiência do cliente, garantindo que a cobrança seja feita de forma correta e sem demora.
+- *Desafios:* Evitar filas no caixa, conferir rapidamente todos os itens de um pedido longo e aplicar taxas de serviço corretamente.
+- *Necessidades:* Um sistema que permita localizar facilmente o pedido de uma mesa e gerar uma conta clara e formatada para impressão imediata.
+
+### Sandra, a Cozinheira
+- *Idade:* 42 anos;
+- *Perfil:* Chefe de cozinha experiente, responsável por garantir a qualidade e a padronização dos pratos. Ela trabalha sob pressão para manter o fluxo da cozinha.
+- *Desafios:* Interpretar corretamente as comandas, especialmente as observações (ponto da carne, alergias, ingredientes a remover) e organizar a fila de preparo.
+- *Necessidades:* Receber os pedidos de forma padronizada e legível, com todas as especificações do cliente bem destacadas para evitar erros na produção.
+
+## Histórias de usuários
+
+Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
+
+| EU COMO... PERSONA | QUERO/PRECISO... FUNCIONALIDADE | PARA... MOTIVO/VALOR |
+| :--- | :--- | :--- |
+| *Gerente* | Gerar relatórios de vendas consolidados por período | Analisar o desempenho financeiro do restaurante e tomar decisões estratégicas. |
+| | Adicionar e editar os produtos do cardápio no sistema | Manter o menu sempre atualizado para que os pedidos sejam registrados com os preços e itens corretos. |
+| *Garçom* | Lançar e atualizar os pedidos de uma mesa de forma rápida e intuitiva | Agilizar o atendimento ao cliente e minimizar a chance de erros na comunicação com a cozinha. |
+| *Atendente de Caixa* | Acessar um pedido e imprimir a conta final detalhada | Realizar o fechamento da conta de forma ágil e transparente, evitando filas no caixa. |
+| *Cozinheira* | Receber a comanda com os itens e observações de forma clara e padronizada | Preparar os pratos exatamente como o cliente solicitou, garantindo a qualidade e a satisfação. |
 
 > **Links úteis**:
 > - [Teste de usabilidade: o que é e como fazer passo a passo](https://neilpatel.com/br/blog/teste-de-usabilidade/)
