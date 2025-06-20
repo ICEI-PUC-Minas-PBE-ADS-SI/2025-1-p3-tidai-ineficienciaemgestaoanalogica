@@ -1,37 +1,143 @@
 # Registro de testes de usabilidade
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>, <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a>
-
 Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O registro de testes de usabilidade é um relatório que contém as evidências dos testes e os relatos dos usuários participantes, baseado no <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a> desenvolvido para os casos de uso desta etapa.
 
-Cenário 1: Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando.
+Cenário 1: Você é um gerente que deseja gerar relatórios de vendas consolidados por período, para tomar decisões estratégicas com base no desempenho financeiro do restaurante.
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+| Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27,87 segundos                  |
-| 2       | SIM             | 5                    | 17,11 segundos                  |
-| 3       | SIM             | 5                    | 39,09 segundos                  |
+| 1       | SIM             | 5                    | 1,03 minutos                  |
+| 2       | -             | 0                    | 00 segundos                  |
+| 3       | -             | 0                    | 00 segundos                  |
+| 4       | -             | 0                    | 00 segundos                  |
+| 5       | -             | 0                    | 00 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
 
 
-Comentários dos usuários: Achei o site muito bom e intuitivo. Não tive dificuldades e acho que ficou bem intuitivo.
+Comentários dos usuários:
+
+1- Achei fácil de entender, os botões estavam bem claros e consegui gerar o relatório rapido.
+
+2-
+
+3-
+
+4-
+
+5-
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphones nessa faixa de preço.
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+Cenário 2: Você é um gerente que deseja adicionar e editar os produtos do cardápio usando o sistema, mantendo o menu sempre atualizado para que tudo ocorra como esperado.
+
+| Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22,54 segundos                          |
-| 2       | SIM             | 5                    | 31,42 segundos                          |
-| 3       | SIM             | 5                    | 36,21 segundos                          |
+| 1       | SIM (com ajuda)             | 3                    | 2,21 minutos                 |
+| 2       | -             | 0                    | 00 segundos                  |
+| 3       | -             | 0                    | 00 segundos                  |
+| 4       | -             | 0                    | 00 segundos                  |
+| 5       | -             | 0                    | 00 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13,57 segundos |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
 
-Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam  redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros,  tanto na hora da pesquisa, quanto depois dela, nos resultados.
 
+Comentários dos usuários:
+
+1- Consegui fazer, mas demorei um pouco para achar onde editar e fiquei um tempinho clicando nos lugares errados.
+
+2-
+
+3-
+
+4-
+
+5-
+
+
+
+Cenário 3: Você é um garçom que quer lançar pedidos de uma mesa, para o registro de vendas e atendimento da mesa.
+
+| Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 1,09 minutos                  |
+| 2       | -             | 0                    | 00 segundos                  |
+| 3       | -             | 0                    | 00 segundos                  |
+| 4       | -             | 0                    | 00 segundos                  |
+| 5       | -             | 0                    | 00 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
+
+
+Comentários dos usuários:
+
+1- Essa parte estava bem direta, as imagens dos itens ajudam, consegui lançar tudo certinho.
+
+2-
+
+3-
+
+4-
+
+5-
+
+
+Cenário 4: Você é um atendente de caixa que deseja acessar um pedido e imprimir a conta final do cliente detalhada, com todos os consumo.
+
+| Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 39 segundos                  |
+| 2       | -             | 0                    | 00 segundos                  |
+| 3       | -             | 0                    | 00 segundos                  |
+| 4       | -             | 0                    | 00 segundos                  |
+| 5       | -             | 0                    | 00 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
+
+
+Comentários dos usuários:
+
+1- Mais fácil, Só apertei uma sequência de botões e já imprimiu a conta. Caminho bem direto e prático.
+
+2-
+
+3-
+
+4-
+
+5-
+
+
+
+Cenário 5: Você é um cozinheiro que precisa receber os pedidos com o itens e observações de forma clara para a preparação do produto
+
+| Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 58 segundos                  |
+| 2       | -             | 0                    | 00 segundos                  |
+| 3       | -             | 0                    | 00 segundos                  |
+| 4       | -             | 0                    | 00 segundos                  |
+| 5       | -             | 0                    | 00 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
+
+
+Comentários dos usuários:
+
+1- Gostei da forma como os pedidos aparecem, mas acho que as observações poderiam estar com uma cor mais forte
+
+2-
+
+3-
+
+4-
+
+5-
 
 
 ## Avaliação 
@@ -43,6 +149,3 @@ Além disso, a aplicação também alcançou um elevado nível de satisfação s
 Em relação ao tempo de conclusão de cada tarefa/cenário, observou-se uma discrepância significativa entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Essa diferença, até certo ponto, é esperada, dado que o desenvolvedor já possui conhecimento prévio de toda a interface da aplicação, do posicionamento dos elementos, da lógica de organização das páginas, etc.
 
 No entanto, considerando que a diferença foi expressiva (por exemplo, 113 segundos — média dos usuários — contra 25 segundos — especialista — no cenário três), e levando em conta os comentários feitos por alguns usuários, foram identificadas oportunidades para melhorias na usabilidade da aplicação.
-
-> **Links úteis**:
-> - [Ferramentas de testes de usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
