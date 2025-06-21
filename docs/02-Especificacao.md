@@ -54,7 +54,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | RF-006  | Gerenciar Categorias         | Processamento de Inclusão, Alteração, Exclusão e Consulta de Categorias de Produtos                                               |
 | RF-007  | Gerenciar Funcionários       | Processamento de Inclusão, Alteração, Exclusão e Consulta de Funcionários, incluindo a Definição de Permissões de Acesso.         |
 | RF-008  | Visualizar Relatórios        | Exibição de um Relatório Consolidado de Todos os Pedidos em um Dia ou Período específico                                          |
-| RF-009  | Imprimir Contas e Relatórios | Geração e Envio para Impressão de Relatórios Diários ou por Período em Formato adequado                                           |
+| RF-009  | Imprimir Relatórios | Geração e Envio para Impressão de Relatórios Diários ou por Período em Formato adequado                                           |
 
 ---
 

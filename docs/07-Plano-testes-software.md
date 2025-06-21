@@ -11,7 +11,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-001 – Gerenciamento de Produtos**  |
 |:---: |:---: |
-| Requisito associado | RF-001 - O gerente deve ser capaz de gerenciar produtos. |
+| Requisito associado | RF-005 - Gerenciar Produtos. |
 | Objetivo do teste | Verificar criação, edição e remoção de produtos. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br> - Acessar tela de gerenciar <br> - Selecionar opção produtos <br><br> **Criar Produto**  <br> - Pressionar o botão adicionar <br> - Preencher dados do produto <br> - Confirmar criação do produto <br><br> **Editar Produto** <br> - Pressionar botão editar em um dos produtos(ícone de lápis) <br> - Alterar dados do produto <br> - Confirmar edição do produto <br><br> **Remover Produto** <br> - Pressionar botão remover em um dos produtos <br> Confirmar remoção do produto |
 | Critério de êxito | - Produto criado aparece na lista <br> - Produto editado exibe novos dados <br> - Produto removido some da tela |
@@ -20,7 +20,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-002 – Gerenciamento de Categorias**  |
 |:---: |:---: |
-| Requisito associado | RF-002 - O gerente deve ser capaz de gerenciar as categorias de produtos. |
+| Requisito associado | RF-006 - Gerenciar Categorias |
 | Objetivo do teste | Verificar criação, edição e remoção de categorias. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br> - Acessar tela de gerenciar <br> - Selecionar opção Produtos <br> - Pressionar o botão editar(ícone de lápis) na barra de categorias <br><br> **Criar Categoria** <br> Pressionar botão adicionar <br>  - Preencher nome da categoria <br> - Confirmar criação da categoria <br><br> **Editar Categoria** <br> - Pressionar botão editar em uma das categorias(ícone de lápis) <br> - Alterar nome da categoria <br> - Confirmar edição da categoria <br><br> **Remover Categoria** <br> - Pressionar botão remover em uma das categorias(ícone de lixeira) <br> Confirmar remoção da categoria |
 | Critério de êxito | - Categoria criada aparece na lista <br> - Categoria renomeada exibe novo nome <br> - Categoria e produtos vinculados são removidos. |
@@ -29,7 +29,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-003 – Gerenciamento de Pedidos**  |
 |:---: |:---: |
-| Requisito associado | RF-003 - O funcionário deve ser capaz de gerenciar pedidos. |
+| Requisito associado | RF-002 - Gerenciar Pedidos. |
 | Objetivo do teste | Verificar criação, atualização e fechamento de pedidos. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br><br> **Fazer Pedido** <br> - Acessar tela de fazer pedidos <br> Selecionar mesa <br> - Adicionar produtos <br> - Pressionar botão inferior <br> - Adicionar extras e observação <br> - Confirmar <br><br> **Atualizar Pedido** <br> - Acessar tela de ver pedidos <br> - Pressionar o botão atualizar em um dos pedidos <br> - Alterar produtos/extras/observações <br> - Confirmar <br><br> **Fechar Pedido** <br> - Acessar tela de ver pedidos <br> - Pressionar o botão fechar em um dos pedidos <br> - Confirmar |
 | Critério de êxito | - Pedido criado aparece na lista <br> - Pedido atualizado exibe novos dados <br> - Pedido fechado some da lista |
@@ -38,7 +38,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-004 – Visualização de Relatórios**  |
 |:---: |:---: |
-| Requisito associado | RF-004 - O gerente deve ser capaz de visualizar relatórios de pedidos por data ou períodos personalizados. |
+| Requisito associado | RF-008 - Visualizar Relatórios |
 | Objetivo do teste | Verificar a geração de relatórios diários e por período personalizado. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br> - Acessar tela de relatórios <br><br> **Gerar relatório diário** <br> - Selecionar opção Diário <br> - Selecionar data <br> - Gerar <br><br> **Gerar relatório por período** <br> - Selecionar opção Período <br> - Selecionar data de início e de fim <br> - Gerar |
 | Critério de êxito | - Relatório diário exibe cards dos pedidos da data selecionada <br> - Relatório por período exibe cards dos dias do período selecionado |
@@ -47,7 +47,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-005 – Gerenciamento de Funcionários**  |
 |:---: |:---: |
-| Requisito associado | RF-005 - O gerente deve ser capaz de gerenciar o acesso dos funcionários do sistema. |
+| Requisito associado | RF-007 - Gerenciar Funcionários |
 | Objetivo do teste | Verificar cadastro, edição e remoção de funcionários. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br> - Acessar tela de gerenciamento <br> - Selecionar opção Funcionarios <br><br> **Adicionar Funcionario** <br> - Pressionar botão adicionar <br> - Inserir dados do funcionário e sua responsabilidade <br> - Confirmar <br><br> **Editar funcionario** <br> - Pressionar botão editar(ícone de lápis) <br> - Inserir novos dados do funcionário <br> - Confirmar <br><br> **Remover Funcionario** <br> - Pressionar botão remover(ícone de lixeira) <br> - Confirmar |
 | Critério de êxito | - Funcionário cadastrado aparece na lista <br> - Dados editados são atualizados <br> - Funcionário removido some da lista |
@@ -56,7 +56,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-006 – Gerenciamento de Mesas**  |
 |:---: |:---: |
-| Requisito associado | RF-006 - O gerente deve ser capaz de gerenciar as mesas do restaurante. |
+| Requisito associado | RF-004 - Gerenciar Mesas |
 | Objetivo do teste | Verificar adição, renomeação e remoção de mesas. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br> - Acessar tela de gerenciamento <br> - Selecionar opção Mesas <br><br> **Adicionar Mesa** <br> - Pressionar botão adicionar <br> - Inserir nome <br> - Confirmar <br><br> **Renomear Mesa** <br> - Pressionar botão editar(ícone de lápis) <br> - Inserir novo nome <br> - Confirmar <br><br> **Remover Mesa** <br> - Pressionar botão remover(ícone de lixeira) <br> - Confirmar |
 | Critério de êxito | - Mesa adicionada paarece na lista <br> - Mesa renomeada exibe novo nome <br> - Mesa removida some da lista |
@@ -65,7 +65,7 @@ Serão testadas as funcionalidades principais do sistema, considerando o fluxo e
 
 | **Caso de teste**  | **CT-007 – Impressão de Contas e Relatórios**  |
 |:---: |:---: |
-| Requisito associado | RF-007 - O sistema deve permitir a impressão de contas e relatórios. |
+| Requisito associado | RF-003 - Imprimir Contas e RF-009 Imprimir Relatórios. |
 | Objetivo do teste | Verificar a impressão de contas e relatórios (diário/período). |
 | Passos | - Acessar o navegador <br> - Informar o endereço do sistema <br> - Fazer login (se necessário) <br><br> **Imprimir Conta** <br> - Acessar tela de ver pedidos <br> - Pressionar a opção fechar em um dos pedidos <br> - Confirmar <br> - Pressionar o botão imprimir <br><br> **Imprimir Relatório** <br> - Gerar Relatório (CT-004) <br> - Pressionar o botão imprimir |
 | Critério de êxito | - Modal de impressão é exibido com formatação adaptada para o relatório |
