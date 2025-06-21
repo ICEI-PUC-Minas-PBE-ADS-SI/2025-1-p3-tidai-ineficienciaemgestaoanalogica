@@ -18,6 +18,7 @@ public class Pedido
 
     [Required]
     public DateTime DataHoraInicio { get; set; }
+    public DateTime DataHoraAtualizacao { get; set; }
     public DateTime? DataHoraFim { get; set; }
 
     [Column(TypeName = "decimal(10,2)")]

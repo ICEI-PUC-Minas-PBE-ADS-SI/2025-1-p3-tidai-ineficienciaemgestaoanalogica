@@ -21,8 +21,7 @@ public class MesasController : ControllerBase
             .Where(m => m.Pedidos.Any(p => p.DataHoraFim == null))
             .OrderBy(m => m.Pedidos
                 .Where(p => p.DataHoraFim == null)
-                .Select(p => p.DataHoraInicio)
-                .FirstOrDefault())
+                .Min(p => p.DataHoraAtualizacao))
             .Select(m => new MesaComPedidoAbertoDTO {
                 Id = m.Id,
                 Nome = m.Nome,

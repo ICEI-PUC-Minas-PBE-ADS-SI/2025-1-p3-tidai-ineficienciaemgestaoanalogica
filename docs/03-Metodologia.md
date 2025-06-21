@@ -139,7 +139,7 @@ Atualizado em: 17/06/2025
 | :----                          | :----                             | :----:      | :----:     | :----:   | :----:       |
 | Pedro César da Matta Silveira  | Versão Final do Código            | 02/06/2025  | 23/06/2025 | 📝        |   |
 | Thiago Botelho Neves           | Revisão da Documentação           | 02/06/2025  | 23/06/2025 | 📝        |   |
-| Caio Moreira Marques           | Plano de Testes de Usabilidade    | 02/06/2025  | 18/06/2025 | 📝        |   |
+| Caio Moreira Marques           | Plano de Testes de Usabilidade    | 02/06/2025  | 18/06/2025 | ✔️        | 17/06/2025  |
 | Marco Antonio Alves Moreira    | Registro de Testes de Usabilidade | 02/06/2025  | 23/06/2025 | 📝        |   |
 | Davi Telles Xavier             | Apresentação                      | 02/06/2025  | 23/06/2025 | 📝        |   |
 
