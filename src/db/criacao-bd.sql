@@ -42,6 +42,7 @@ CREATE TABLE Pedidos (
   MesaId INT NOT NULL,
   FuncionarioId INT NOT NULL,
   DataHoraInicio DATETIME NOT NULL,
+  DataHoraAtualizacao DATETIME NOT NULL,
   DataHoraFim DATETIME,
   PrecoFinal DECIMAL(10,2) NOT NULL,
   Observacao VARCHAR(255) NOT NULL,
@@ -50,11 +51,11 @@ CREATE TABLE Pedidos (
 );
 
 CREATE TABLE ItensPedido (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
   PedidoId INT NOT NULL,
   ProdutoId INT NOT NULL,
   Quantidade INT NOT NULL,
   PrecoUnitario DECIMAL(10,2) NOT NULL,
-  PRIMARY KEY (ProdutoId, PedidoId),
   FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id) ON DELETE CASCADE,
   FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id) ON DELETE CASCADE
 );
