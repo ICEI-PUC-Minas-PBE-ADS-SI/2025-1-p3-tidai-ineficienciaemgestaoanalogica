@@ -19,9 +19,7 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<ItemPedido>().HasKey(ip => new { ip.ProdutoId, ip.PedidoId });
-        modelBuilder.Entity<ExtraSelecionado>().HasKey(es => new { es.ProdutoId, es.PedidoId, es.ExtraId });
-        modelBuilder.Entity<ExtraSelecionado>().HasOne(es => es.ItemPedido).WithMany(ip => ip.ExtrasSelecionados).HasForeignKey(es => new { es.ProdutoId, es.PedidoId });
+        modelBuilder.Entity<ExtraSelecionado>().HasKey(es => new { es.ItemPedidoId, es.ExtraId });
 
         modelBuilder.Entity<Funcionario>().HasData(
             new Funcionario { Id = 1, Nome = "Administrador", Usuario = "admin", Senha = BCrypt.Net.BCrypt.HashPassword("admin"), Tipo = "Gerente" },

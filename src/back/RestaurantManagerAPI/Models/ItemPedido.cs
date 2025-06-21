@@ -3,7 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 public class ItemPedido
 {
-    [Required]
     [Key]
     public int Id { get; set; }
 
