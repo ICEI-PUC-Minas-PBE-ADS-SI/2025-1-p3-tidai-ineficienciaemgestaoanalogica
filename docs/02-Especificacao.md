@@ -44,65 +44,47 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ### Requisitos Funcionais
 
-| ID      | Descrição do Requisito                                                                 | Prioridade |
-|---------|----------------------------------------------------------------------------------------|------------|
-| RF-001  | O gerente deve ser capaz de gerenciar os produtos.                                     | ALTA       |
-| RF-002  | O gerente deve ser capaz de gerenciar as categorias de produtos.                       | ALTA       |
-| RF-003  | O funcionário deve ser capaz de gerenciar os pedidos.                                  | ALTA       |
-| RF-004  | O gerente deve ser capaz de visualizar relatórios de pedidos por data ou períodos personalizados. | MÉDIA       |
-| RF-005  | O gerente deve ser capaz de gerenciar o acesso dos funcionários no sistema.            | ALTA      |
-| RF-006  | O gerente deve ser capaz de gerenciar as mesas do restaurante                          | ALTA      |
-| RF-007  | O sistema deve permitir a impressão de contas e relatórios.                            | MÉDIA     |
+| ID      | Funcionalidade               | Descrição                                                                                                                         | 
+|---------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| RF-001  | Fazer Login                  | Processo de Autenticação do Usuário para Entrada no Sistema.                                                                      |
+| RF-002  | Gerenciar Pedidos            | Processamento de Visualização, Inclusão, Alteração, Exclusão e Fechamento de Pedidos, incluindo itens, quantidades e observações. |
+| RF-003  | Imprimir Contas              | Geração e Envio para Impressão de uma Conta detalhada de um Pedido Fechado                                                        |
+| RF-004  | Gerenciar Mesas              | Processamento de Inclusão, Alteração, Exclusão e Consulta de Mesas do Restaurante.                                                |
+| RF-005  | Gerenciar Produtos           | Processamento de Inclusão, Alteração, Exclusão e Consulta de Produtos.                                                            |
+| RF-006  | Gerenciar Categorias         | Processamento de Inclusão, Alteração, Exclusão e Consulta de Categorias de Produtos                                               |
+| RF-007  | Gerenciar Funcionários       | Processamento de Inclusão, Alteração, Exclusão e Consulta de Funcionários, incluindo a Definição de Permissões de Acesso.         |
+| RF-008  | Visualizar Relatórios        | Exibição de um Relatório Consolidado de Todos os Pedidos em um Dia ou Período específico                                          |
+| RF-009  | Imprimir Contas e Relatórios | Geração e Envio para Impressão de Relatórios Diários ou por Período em Formato adequado                                           |
 
 ---
 
 ### Requisitos Não Funcionais
 
-| ID        | Descrição do Requisito                                                               | Prioridade |
-|-----------|--------------------------------------------------------------------------------------|------------|
-| RNF-001   | O sistema deve suportar múltiplos acessos simultâneos sem degradação perceptível de desempenho | ALTA       |
-| RNF-002   | O sistema deve possuir uma interface gráfica simples, intuitiva e adequada ao ambiente de uso. | ALTA       |
-| RNF-003   | O sistema deve proteger os dados sensíveis do sistema utilizando criptografia segura. | ALTA       |
-| RNF-004   | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. | ALTA       |
-| RNF-005   | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes. | ALTA      |
-| RNF-006   | O sistema deve manter registros de operações administrativas para auditoria e resolução de problemas. | MÉDIA       |
-| RNF-007   | O sistema deve ser otimizado para rodar em servidores com recursos limitados, garantindo boa performance em ambientes com hardwares modestos. | ALTA      |
+| ID        | Restrição        | Descrição                                                                                                                                          |
+|-----------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| RNF-001   | Desempenho       | O sistema deve suportar múltiplos acessos simultâneos sem degradação perceptível de desempenho                                                     |
+| RNF-002   | Usabilidade      | O sistema deve possuir uma interface gráfica simples, intuitiva e adequada ao ambiente de uso.                                                     |
+| RNF-003   | Segurança        | O sistema deve proteger os dados sensíveis do sistema utilizando criptografia segura.                                                              |
+| RNF-004   | Portabilidade    | O sistema precisa ser responsivo, isto é, deve funcionar adequadamente em aparelhos móveis (como smartphones e tablets) e em computadores de mesa. |
+| RNF-005   | Confiabilidade   | O sistema precisa de um sistema de backup e recuperação de dados automático, para prevenir a perda de dados relevantes.                            |
+| RNF-006   | Manutenibilidade | O sistema deve manter registros de operações administrativas para auditoria e resolução de problemas                                               |
+| RNF-007   | Desempenho       | O sistema deve ser otimizado para rodar em servidores com recursos limitados, garantindo boa performance em ambientes com hardwares modestos.      |
 
 ---
 
 ### Restrições
 
-| ID      | Restrição                                                                               |
-|---------|-----------------------------------------------------------------------------------------|
-| 001     | O sistema deve permitir a edição do menu apenas fora do fluxo ativo de criação/atualização de pedidos para evitar inconsistências. |
-| 002     | O  sistema deve assegurar que a remoção de categorias exclua todos os produtos associados, mediante confirmação explícita do usuário. |
-| 003     | O sistema deve aplicar restrições de acesso conforme permissões configuradas nos usuários. |
-| 004     | O sistema deve permitir apenas criação de pedidos que tenham pelo menos um item registrado. |
-| 005     | A impressão de contas e relatórios deve estar nitegrada diretamente oa sistema, com formato padronizado. |
-| 006     | Atualizações no menu devem ser refletidas imediatamente em todas as telas do sistema. |
+| ID      | Restrição                                                                                                                            |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------|
+| 001     | O sistema deve permitir a edição do menu apenas fora do fluxo ativo de criação/atualização de pedidos para evitar inconsistências.   |
+| 002     | O sistema deve assegurar que a remoção de categorias exclua todos os produtos associados, mediante confirmação explícita do usuário. |
+| 003     | O sistema deve aplicar restrições de acesso conforme permissões configuradas nos usuários.                                           |
+| 004     | O sistema deve permitir apenas criação de pedidos que tenham pelo menos um item registrado.                                          |
+| 005     | A impressão de contas e relatórios deve estar nitegrada diretamente oa sistema, com formato padronizado.                             |
+| 006     | Atualizações no menu devem ser refletidas imediatamente em todas as telas do sistema.                                                |
+
+---
 
 ### Diagrama de caso de uso
 
-#### RF-001
-
-![Gerenciar Produtos](./images/caso-de-uso-gerenciar-produtos.png)
-
-#### RF-002
-
-![Gerenciar Categorias](./images/caso-de-uso-gereciar-categoria.png)
-
-#### RF-003
-
-![Gerenciar Pedidos](./images/caso-de-uso-gerenciar-pedido.png)
-
-#### RF-004
-
-![Visualizar Relatórios](./images/caso-de-uso-visualizar-relatorio.png)
-
-#### RF-005
-
-![Gerenciar Funcionários](./images/caso-de-uso-gerenciar-funcionarios.png)
-
-#### RF-006
-
-![Gerenciar Mesas](./images/caso-de-uso-gerenciar-mesas.png)
+![Diagrama de Casos de Uso](./images/casos-de-uso.png)
