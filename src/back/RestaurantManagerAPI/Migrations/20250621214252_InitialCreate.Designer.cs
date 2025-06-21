@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace RestaurantManagerAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250523034837_SeedProdutos")]
-    partial class SeedProdutos
+    [Migration("20250621214252_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -398,16 +398,13 @@ namespace RestaurantManagerAPI.Migrations
 
             modelBuilder.Entity("ExtraSelecionado", b =>
                 {
-                    b.Property<int>("ProdutoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PedidoId")
+                    b.Property<int>("ItemPedidoId")
                         .HasColumnType("int");
 
                     b.Property<int>("ExtraId")
                         .HasColumnType("int");
 
-                    b.HasKey("ProdutoId", "PedidoId", "ExtraId");
+                    b.HasKey("ItemPedidoId", "ExtraId");
 
                     b.HasIndex("ExtraId");
 
@@ -451,7 +448,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 1,
                             Nome = "Administrador",
-                            Senha = "$2a$11$gpi14./Bidhwo88XRFrRz.Aj8aLWDGb.fFWJDt68Fr0CxqvgLhpoa",
+                            Senha = "$2a$11$iAbhdMlHc8fs2RHhhibHRuAKGiBnUEd0uu1fcJIOSgdaTxrKHGxO6",
                             Tipo = "Gerente",
                             Usuario = "admin"
                         },
@@ -459,7 +456,7 @@ namespace RestaurantManagerAPI.Migrations
                         {
                             Id = 2,
                             Nome = "João da Silva",
-                            Senha = "$2a$11$a0wT6qawrH63G9ULXxxSZ.gIVZoJA4UAKpSPeo4f8GnupxyABcnPe",
+                            Senha = "$2a$11$OILz9Xl2epKsw5XpsRxsPOVDO1y4ZqxmneD6pTXwFn7LVgk3FC0n2",
                             Tipo = "Funcionario",
                             Usuario = "joao"
                         });
@@ -467,8 +464,11 @@ namespace RestaurantManagerAPI.Migrations
 
             modelBuilder.Entity("ItemPedido", b =>
                 {
-                    b.Property<int>("ProdutoId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("PedidoId")
                         .HasColumnType("int");
@@ -476,12 +476,17 @@ namespace RestaurantManagerAPI.Migrations
                     b.Property<decimal>("PrecoUnitario")
                         .HasColumnType("decimal(10,2)");
 
+                    b.Property<int>("ProdutoId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
-                    b.HasKey("ProdutoId", "PedidoId");
+                    b.HasKey("Id");
 
                     b.HasIndex("PedidoId");
+
+                    b.HasIndex("ProdutoId");
 
                     b.ToTable("ItensPedido");
                 });
@@ -571,6 +576,9 @@ namespace RestaurantManagerAPI.Migrations
                         .HasColumnType("int");
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DataHoraAtualizacao")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime?>("DataHoraFim")
                         .HasColumnType("datetime(6)");
@@ -1014,7 +1022,7 @@ namespace RestaurantManagerAPI.Migrations
 
                     b.HasOne("ItemPedido", "ItemPedido")
                         .WithMany("ExtrasSelecionados")
-                        .HasForeignKey("ProdutoId", "PedidoId")
+                        .HasForeignKey("ItemPedidoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

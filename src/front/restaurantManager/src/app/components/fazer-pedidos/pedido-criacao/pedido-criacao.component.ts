@@ -43,7 +43,8 @@ export class PedidoCriacaoComponent {
 
     this.mesaService.getMesas().subscribe(
       (data) => {
-        const mesa = data.find(m => m.id);
+        const mesa = data.find(m => m.id === mesaId);;
+        console.log('Mesa encontrada: ', mesa);
         this.nomeMesa = mesa !== undefined ? mesa.nome : "";
       },
       (error) => {

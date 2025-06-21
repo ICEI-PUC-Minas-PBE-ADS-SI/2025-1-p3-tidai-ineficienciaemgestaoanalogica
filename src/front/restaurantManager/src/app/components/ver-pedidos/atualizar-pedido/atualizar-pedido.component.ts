@@ -43,7 +43,7 @@ export class AtualizarPedidoComponent {
 
     this.mesaService.getMesas().subscribe(
       (data) => {
-        const mesa = data.find(m => m.id);
+        const mesa = data.find(m => m.id === mesaId);
         this.nomeMesa = mesa !== undefined ? mesa.nome : "";
       },
       (error) => {
