@@ -11,13 +11,11 @@
 5. Os clientes pedem a conta, o caixa acessa a lista de pedidos, fecha o pedido e imprime a conta.
 6. Ao final do dia o gerente gera o relatório diário e imprime.
 
+## Diagrama de Classes
+
+![Diagrama de Classes](./images/diagrama-classe.png)
+
 ##  Modelo de dados
-
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam realizar o cadastro de dados e os controles associados aos processos identificados, assim como suas recuperações.
-
-Utilizando a notação do DER (Diagrama Entidade-Relacionamento), elabore um modelo, usando alguma ferramenta, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar também o controle de acesso dos usuários (partes interessadas nos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
-
-Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos.
 
 ### Modelo ER
 
@@ -35,59 +33,96 @@ Script de criação das tabelas do sistema:
 
 ```sql
 
--- criando a tabela de categorias de produtos
-CREATE TABLE Categoria (
-  IdCategoria INT PRIMARY KEY AUTO_INCREMENT,
-  NomeCategoria VARCHAR(100) NOT NULL,
+CREATE DATABASE restaurante
+USE restaurante;
+
+CREATE TABLE Categorias (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL
 );
 
--- criando tabela de produtos
-CREATE TABLE Produto (
-  IdProduto INT PRIMARY KEY AUTO_INCREMENT,
-  NomeProduto VARCHAR(100) NOT NULL,
-  DescricaoProduto VARCHAR(255),
-  PrecoProduto DECIMAL(10,2) NOT NULL,
-  FotoProduto VARCHAR(255),
-  IdCategoria INT,
-  FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria)
+CREATE TABLE Produtos (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  Descricao VARCHAR(255) NOT NULL,
+  Preco DECIMAL(10,2) NOT NULL,
+  Foto VARCHAR(255) NOT NULL,
+  CategoriaId INT NOT NULL,
+  FOREIGN KEY (CategoriaId) REFERENCES Categorias(Id) ON DELETE CASCADE
 );
 
--- criando tabela de funcionários
-CREATE TABLE Funcionario (
-    IdFuncionario INT PRIMARY KEY AUTO_INCREMENT,
-    NomeFuncionario VARCHAR(100) NOT NULL,
-    UsuarioFuncionario VARCHAR(50) UNIQUE NOT NULL,
-    SenhaFuncionario VARCHAR(60) NOT NULL
+CREATE TABLE Extras (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  PrecoAdicional DECIMAL(10,2) NOT NULL,
+  ProdutoId INT NOT NULL,
+  FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id) ON DELETE CASCADE
 );
 
--- criando tabela de mesas do restaurante
-CREATE TABLE Mesa (
-    IdMesa INT PRIMARY KEY AUTO_INCREMENT,
-    NomeMesa VARCHAR(50) NOT NULL
+CREATE TABLE Funcionarios (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  Usuario VARCHAR(50) NOT NULL,
+  Senha VARCHAR(255) NOT NULL,
+  Tipo VARCHAR(100) NOT NULL
 );
 
--- criando tabela dos pedidos realizados
-CREATE TABLE Pedido (
-    IdPedido INT PRIMARY KEY AUTO_INCREMENT,
-    IdMesa INT NOT NULL,
-    IdFuncionario INT NOT NULL,
-    DataHoraInicio DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    DataHoraFim DATETIME,
-    StatusPedido ENUM('Aberto', 'Fechado', 'Cancelado') DEFAULT 'Aberto',
-    FOREIGN KEY (IdMesa) REFERENCES Mesa(IdMesa),
-    FOREIGN KEY (IdFuncionario) REFERENCES Funcionário(IdFuncionario)
+CREATE TABLE Mesas (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(50) NOT NULL
 );
 
--- criando tabela da relação entre pedidos e produtos
-CREATE TABLE Pedido_Produto (
-  IdPedido_Produto INT PRIMARY KEY AUTO_INCREMENT,
-  IdPedido INT NOT NULL,
-  IdProduto INT NOT NULL,
-  Quantidade INT NOT NULL DEFAULT 1,
+CREATE TABLE Pedidos (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  MesaId INT NOT NULL,
+  FuncionarioId INT NOT NULL,
+  DataHoraInicio DATETIME NOT NULL,
+  DataHoraAtualizacao DATETIME NOT NULL,
+  DataHoraFim DATETIME,
+  PrecoFinal DECIMAL(10,2) NOT NULL,
+  Observacao VARCHAR(255) NOT NULL,
+  FOREIGN KEY (MesaId) REFERENCES Mesas(Id) ON DELETE CASCADE,
+  FOREIGN KEY (FuncionarioId) REFERENCES Funcionarios(Id) ON DELETE CASCADE
+);
+
+CREATE TABLE ItensPedido (
+  PedidoId INT NOT NULL,
+  ProdutoId INT NOT NULL,
+  Quantidade INT NOT NULL,
   PrecoUnitario DECIMAL(10,2) NOT NULL,
-  FOREIGN KEY (IdPedido) REFERENCES Pedido(IdPedido),
-  FOREIGN KEY (IdProduto) REFERENCES Produto(IdProduto)
+  PRIMARY KEY (ProdutoId, PedidoId),
+  FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id) ON DELETE CASCADE,
+  FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id) ON DELETE CASCADE
 );
+
+CREATE TABLE ExtrasSelecionados (
+  ProdutoId INT NOT NULL,
+  PedidoId INT NOT NULL,
+  ExtraId INT NOT NULL,
+  PRIMARY KEY (ProdutoId, PedidoId, ExtraId),
+  FOREIGN KEY (ExtraId) REFERENCES Extras(Id) ON DELETE CASCADE,
+  FOREIGN KEY (ProdutoId, PedidoId) REFERENCES ItensPedido(ProdutoId, PedidoId) ON DELETE CASCADE
+);
+
+CREATE TABLE RelatorioPedidos (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  DataHoraInicio DATETIME NOT NULL,
+  DataHoraFim DATETIME NOT NULL,
+  NomeMesa VARCHAR(100),
+  NomeFuncionario VARCHAR(100),
+  PrecoFinal DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE ItensRelatorioPedidos (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  RelatorioPedidoId INT NOT NULL,
+  NomeProduto VARCHAR(100) NOT NULL,
+  Quantidade INT NOT NULL,
+  PrecoUnitario DECIMAL(10,2) NOT NULL,
+  ExtrasSelecionados TEXT NOT NULL,
+  FOREIGN KEY (RelatorioPedidoId) REFERENCES RelatorioPedidos(Id) ON DELETE CASCADE
+);
+
 
 ```
 
@@ -95,39 +130,39 @@ CREATE TABLE Pedido_Produto (
 
 ### Front-end
 
-| Dimensão | Tecnologias | Finalidade |
-| -------- | ----------- | ---------- |
-| Framework Principal | Angular | Desenvolver a lógica do front-end |
-| Framework CSS | Bootstrap | Componentes pré configurados |
-| Gerenciamento de estado | NgRx | Controle do estado da aplicação |
-| Roteamento | Angular Routing | Navegação entre telas |
-| Chamadas API | Fetch API | Comunicação com o Backend |
-| IDE Recomendada | VS Code | Desenvolver com extensões para Angular/TypeScript |
+| Dimensão                | Tecnologias      | Finalidade                                        |
+| ----------------------- | ---------------- | ------------------------------------------------- |
+| Framework Principal     | Angular          | Desenvolver a lógica do front-end                 |
+| Framework CSS           | Bootstrap        | Componentes pré configurados                      |
+| Gerenciamento de estado | NgRx             | Controle do estado da aplicação                   |
+| Roteamento              | Angular Routing  | Navegação entre telas                             |
+| Chamadas API            | Fetch API        | Comunicação com o Backend                         |
+| IDE                     | VS Code / Neovim | Desenvolver com extensões para Angular/TypeScript |
 
 ### Back-end
 
-| Dimensão | Tecnologias | Finalidade |
-| -------- | ----------- | ---------- |
-| Linguagem | C#          | Desenvolver a lógica de comunicação da API |
-| Framework | ASP.NET     | Construção da API |
-| Criptografia | Bcrypt    | Hash de criptografia para a senha do usuário |
-| ORM          | Entity Framework Query | Interface com o banco de dados |
-| IDE recomendado | Visual Studio | Desenvolvimento e teste |
+| Dimensão        | Tecnologias           | Finalidade                                   |
+| --------------- | --------------------- | -------------------------------------------- |
+| Linguagem       | C#                    | Desenvolver a lógica de comunicação da API   |
+| Framework       | ASP.NET               | Construção da API                            |
+| Criptografia    | Bcrypt                | Hash de criptografia para a senha do usuário |
+| ORM             | Entity Framework Core | Interface com o banco de dados               |
+| IDE             | Neovim                | Desenvolvimento e teste                      |
 
 ### Banco de Dados
 
-| Dimensão | Tecnologias | Finalidade |
-| -------- | ----------- | ---------- |
-| Banco Principal | MySQL | Armazenamento e relação |
+| Dimensão        | Tecnologias | Finalidade              |
+| --------------- | ----------- | ----------------------- |
+| Banco Principal | MySQL       | Armazenamento e relação |
 
 ## Hospedagem
 
-| Dimensão | Tecnologias | Finalidade |
-| -------- | ----------- | ---------- |
-| Hospedagem Front-end | Docker Container | Acesso localmente pelo localhost |
-| Hospedagem Back-end | Docker Container | Comunicação com o front-end pela rede local |
-| Hospedagem do Banco de Dados | Docker Container | Hospedar o banco de dados localmente |
-| Instalação | Inno Setup | Script de instalação |
+| Dimensão       | Tecnologias      | Finalidade                                  |
+| -------------- | ---------------- | ------------------------------------------- |
+| Front-end      | Docker Container | Acesso localmente pelo localhost            |
+| Back-end       | Docker Container | Comunicação com o front-end pela rede local |
+| Banco de Dados | Docker Container | Hospedar o banco de dados localmente        |
+| Instalação     | Inno Setup       | Script de instalação                        |
 
 - **Front-end**: Armazenado em um docker container que sobe para a porta 8080, o usuário acessa o localhost:8080 e acessa a página.
 - **Back-end**: Armazenado em um docker container que sobe para a porta 5000.
