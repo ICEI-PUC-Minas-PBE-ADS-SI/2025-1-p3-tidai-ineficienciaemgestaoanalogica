@@ -73,12 +73,10 @@ A execução dos testes demonstrou que o sistema está funcional e atende aos re
 
 ### Pontos de melhoria identificados:
 
-* **Navegação entre telas**: A ausência de um mecanismo de navegação rápida (como um dropdown com as telas principais) dificulta a usabilidade, exigindo mais cliques e tempo do usuário para alternar entre seções do sistema.
 * **Ordenação da lista de pedidos**: Após a atualização de um pedido, ele permanece na mesma posição na lista. Isso pode impactar negativamente a priorização na cozinha, já que não reflete a ordem cronológica de atualização.
 * **Bug no nome da mesa**: O botão inferior que deveria mostrar o nome da mesa selecionada está mostrando sempre o nome da primeira mesa.
 
-### Ações futuras:
+### Ações tomadas após o teste: 
 
-* **Melhoria na navegação**: Será implementado um componente de dropdown para facilitar a navegação entre as telas do sistema, otimizando a experiência do usuário.
-* **Ajuste na ordenação de pedidos**: A classe `Pedido` será modificada no back-end para incluir o campo `DataHoraAtualizacao`. A listagem de pedidos será ordenada com base nesse atributo, garantindo que pedidos mais recentes ou atualizados sejam exibidos em ordem apropriada.
-* **Bug do nome da mesa**: Corrijir o bug que exibe o nome errado da mesa no botão inferior.
+* **Ajuste na ordenação de pedidos**: A classe `Pedido` foi modificada no back-end para incluir o campo `DataHoraAtualizacao`. A listagem de pedidos é ordenada com base nesse atributo, garantindo que pedidos mais recentes ou atualizados sejam exibidos em ordem apropriada.
+* **Bug do nome da mesa**: O bug foi corrigido.
