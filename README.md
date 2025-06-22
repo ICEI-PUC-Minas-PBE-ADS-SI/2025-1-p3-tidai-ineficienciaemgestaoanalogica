@@ -88,7 +88,7 @@ newgrp docker
 
 Acesse a nossa página de releases para encontrar os arquivos:
 
-### [**>> Acessar Página de Releases <<**](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica/releases/latest)
+##### [**Acessar Página de Releases**](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica/releases/latest)
 
 Ou use os links diretos abaixo para baixar a versão mais recente:
 
