@@ -1,4 +1,4 @@
-# Gestão Organizacional de Restaurantes
+# Your Restaurant Manager
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
@@ -35,16 +35,18 @@ Esta seção fornece instruções para configurar e executar o sistema em um amb
    - [Windows](#windows)
    - [Linux (Ubuntu/Debian)](#linux-ubuntudebian)
 3. [Configuração e Execução](#configuracao-e-execucao)
-4. [Acessando a Aplicação](#acessando-a-aplicacao)
-5. [Contas de Demonstração](#contas-de-demostracao)
-6. [Gerenciamento do Sistema](#gerenciamento-do-sistema)
-7. [Possívels Problemas](#possiveis-problemas)
+   - [Instalador](#configuracao-instalador)
+   - [Código-fonte](#configuracao-codigo-fonte)
+5. [Acessando a Aplicação](#acessando-a-aplicacao)
+6. [Contas de Demonstração](#contas-de-demostracao)
+7. [Gerenciamento do Sistema](#gerenciamento-do-sistema)
+8. [Possívels Problemas](#possiveis-problemas)
 
 ---
 
 ### <span id="dependencias">Dependências</span>
 
-- **Git**
+- **Git** (Opcional, para construir pelo código-fonte)
 - **Docker**
 - **Docker Compose**
 
@@ -53,7 +55,7 @@ Esta seção fornece instruções para configurar e executar o sistema em um amb
 ### <span id="instalacao-das-dependencias">Instalação das Dependências</span>
 
 #### <span id="windows">Windows</span>
-1. [Baixe e instale o Git](https://git-scm.com/download/win)
+1. [Baixe e instale o Git](https://git-scm.com/download/win) (Opcional)
 2. [Instale o Docker Desktop](https://www.docker.com/products/docker-desktop/)
 3. Após instalação:
    - Reinicie seu computador
@@ -66,7 +68,7 @@ Esta seção fornece instruções para configurar e executar o sistema em um amb
 Execute os seguintes comandos no terminal:
 
 ```bash
-# Atualiza pacotes e instala Git
+# Atualiza pacotes e instala Git (Opcional)
 sudo apt update && sudo apt upgrade -y
 sudo apt install git -y
 
@@ -82,7 +84,40 @@ newgrp docker
 
 ### <span id="configuracao-e-execucao">Configuração e Execução</span>
 
-Siga estes passos para iniciar a aplicação:
+#### <span id="configuracao-instalador">Opção 1 - Baixe o Instalador para seu Sistema Operacional (Recomendado)</span>
+
+Acesse a nossa página de releases para encontrar os arquivos:
+
+### [**>> Acessar Página de Releases <<**](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica/releases/latest)
+
+Ou use os links diretos abaixo para baixar a versão mais recente:
+
+-   [**Baixar Instalador para Windows (.exe)**](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica/releases/latest/download/YourRestaurantManager-Setup-v1.1.exe)
+-   [**Baixar Pacote para Linux (.zip)**](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p3-tidai-ineficienciaemgestaoanalogica/releases/latest/download/YourRestaurantManager-Setup-v1.1.zip)
+
+#### Execute a Instalação
+
+##### Para Windows
+1.  Garanta que o Docker Desktop esteja em execução.
+2.  Execute o arquivo `.exe` que você baixou.
+3.  Siga os passos do assistente de instalação. Ao final, atalhos serão criados e o sistema estará rodando.
+
+##### Para Linux (Ubuntu/Debian)
+1.  Garanta que o serviço do Docker esteja ativo (`sudo systemctl status docker`).
+2.  Descompacte o arquivo `.zip` que você baixou.
+3.  Abra um terminal na pasta que foi criada.
+4.  Execute os seguintes comandos para dar permissão e iniciar o instalador:
+    ```bash
+    chmod +x install.sh
+    ./install.sh
+    ```
+5. Siga os passos no terminal.
+
+---
+
+#### <span id="configuracao-codigo-fonte">Opção 2 - Construa do Código-fonte</span>
+
+Siga estes passos **no terminal do seu computador** para iniciar a aplicação:
 
 1. **Clone o repositório**:
    ```bash
