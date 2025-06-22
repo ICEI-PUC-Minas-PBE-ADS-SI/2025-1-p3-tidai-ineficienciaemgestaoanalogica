@@ -6,37 +6,37 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 | **Caso de teste**  | **CT-001 – Gerenciamento de Produtos**  |
 |:---: |:---: |
-| Requisito associado | RF-001 - O gerente deve ser capaz de gerenciar produtos. |
+| Requisito associado | RF-005 - Gerenciar Produtos. |
 | Registro de evidência | [Vídeo CT - 001](https://youtu.be/xrL_Q6VFwQs) |
 
 | **Caso de teste**  | **CT-002 – Gerenciamento de Categorias**  |
 |:---: |:---: |
-| Requisito associado | RF-002 - O gerente deve ser capaz de gerenciar as categorias de produtos. |
+| Requisito associado | RF-006 - Gerenciar Categorias |
 | Registro de evidência | [Vídeo CT - 002](https://youtu.be/iGOefTz8MPA) |
 
 | **Caso de teste**  | **CT-003 – Gerenciamento de Pedidos**  |
 |:---: |:---: |
-| Requisito associado | RF-003 - O funcionário deve ser capaz de gerenciar pedidos. |
+| Requisito associado | RF-002 - Gerenicar Pedidos |
 | Registro de evidência | [Vídeo CT - 003](https://youtu.be/z8WxCIbVXaQ) |
 
 | **Caso de teste**  | **CT-004 – Visualização de Relatórios**  |
 |:---: |:---: |
-| Requisito associado | RF-004 - O gerente deve ser capaz de visualizar relatórios de pedidos por data ou períodos personalizados. |
+| Requisito associado | RF-008 - Visualizar Relatórios |
 | Registro de evidência | [Vídeo CT - 004](https://youtu.be/0s2-Pp1rOlE) |
 
 | **Caso de teste**  | **CT-005 – Gerenciamento de Funcionários**  |
 |:---: |:---: |
-| Requisito associado | RF-005 - O gerente deve ser capaz de gerenciar o acesso dos funcionários do sistema. |
+| Requisito associado | RF-007 - Gerenciar Funcionários |
 | Registro de evidência | [Vídeo CT - 005](https://youtu.be/tNw9JPNPSSc) |
 
 | **Caso de teste**  | **CT-006 – Gerenciamento de Mesas**  |
 |:---: |:---: |
-| Requisito associado | RF-006 - O gerente deve ser capaz de gerenciar as mesas do restaurante. |
+| Requisito associado | RF-004 - Gerenciar Mesas |
 | Registro de evidência | [Vídeo CT - 006](https://youtu.be/VLaolNcPUyw) |
 
 | **Caso de teste**  | **CT-007 – Impressão de Contas e Relatórios**  |
 |:---: |:---: |
-| Requisito associado | RF-007 - O sistema deve permitir a impressão de contas e relatórios. |
+| Requisito associado | RF-003 - Imprimir Contas e RF-009 Imprimir Relatórios |
 | Registro de evidência | [Vídeo CT - 007](https://youtu.be/9MG50ol8fKU) |
 
 | **Caso de teste**  | **CT-008 – Responsividade**  |
