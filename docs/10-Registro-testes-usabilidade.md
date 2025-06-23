@@ -62,13 +62,13 @@ Cenário 3: Você é um garçom que quer lançar pedidos de uma mesa, para o reg
 
 | Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 65.4 segundos                  |
-| 2       | -             | 0                    | 00 segundos                  |
-| 3       | -             | 0                    | 00 segundos                  |
-| 4       | -             | 0                    | 00 segundos                  |
-| 5       | -             | 0                    | 00 segundos                  |
+| 1       | SIM             | 5                    | 65.4 segundos                  |
+| 2       | SIM             | 5                    | 38,3 segundos                  |
+| 3       | SIM             | 5                    | 55,0 segundos                  |
+| 4       | -SIM            | 4                    | 71,7 segundos                  |
+| 5       | -SIM            | 5                    | 50,2 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 4,8                | 56,12 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 15,11 segundos |
 
 
@@ -76,13 +76,13 @@ Comentários dos usuários:
 
 1- Essa parte estava bem direta, as imagens dos itens ajudam, consegui lançar tudo certinho.
 
-2-
+2- Muito tranquilo, a estrutura me fez fazer bem rápido, achei muito bom.
 
-3-
+3- Bem fácil de utilizar, achei bem prático o uso das imagens para facilitar o processo. 
 
-4-
+4- Achei bom, porém tive dificuldades na parte de selecionar um extra.
 
-5-
+5- Fácil uso, gostei da praticidade, com mais práticas acredito que seria mais agil na próxima vez.
 
 
 Cenário 4: Você é um atendente de caixa que deseja acessar um pedido e imprimir a conta final do cliente detalhada, com todos os consumo. Acesse a tela de pedidos e tente gerar a nota final do cliente e enviá-la para impressão.
