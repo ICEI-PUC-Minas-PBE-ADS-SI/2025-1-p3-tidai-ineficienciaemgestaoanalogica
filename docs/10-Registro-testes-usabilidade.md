@@ -148,4 +148,4 @@ Além disso, os usuários demonstraram um alto nível de satisfação durante a 
 
 No entanto, observou-se uma diferença significativa entre o tempo médio de conclusão das tarefas pelos usuários e pelo especialista/desenvolvedor. Essa diferença é, em parte, esperada, pois o desenvolvedor já conhece a estrutura da aplicação, a disposição dos elementos e a lógica de navegação. Por exemplo, no cenário cinco, a média dos usuários foi de 35,6 segundos, enquanto o especialista levou apenas 2,65 segundos.
 
-Apesar disso, os comentários dos usuários indicaram alguns pontos de melhoria na usabilidade. De forma geral, o desempenho foi positivo, com poucos relatos de dificuldades pontuais. Isso sugere que a aplicação pode exigir um breve treinamento inicial para que os usuários aproveitem todo o seu potencial de forma eficaz.
+De forma geral, o desempenho foi positivo, com poucos relatos de dificuldades pontuais. Isso sugere que a aplicação pode exigir um breve treinamento inicial para que os usuários aproveitem todo o seu potencial de forma eficaz.
