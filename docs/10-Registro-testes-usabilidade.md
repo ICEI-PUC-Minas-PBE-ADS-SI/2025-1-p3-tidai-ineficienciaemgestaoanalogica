@@ -142,7 +142,7 @@ Comentários dos usuários:
 
 ## Avaliação 
 
-Com base nos resultados obtidos, foi possível verificar que a aplicação web apresentou um desempenho satisfatório quanto à taxa de sucesso nas interações dos usuários, já que todos os cenários propostos foram concluídos com êxito.
+Com base nos resultados obtidos, foi possível verificar que a aplicação apresentou um desempenho satisfatório quanto à taxa de sucesso nas interações dos usuários, já que todos os cenários propostos foram concluídos com êxito.
 
 Além disso, os usuários demonstraram um alto nível de satisfação durante a execução dos cenários, conforme evidenciado pelas médias de avaliação, que variaram entre 4 (bom) e 5 (excelente).
 
