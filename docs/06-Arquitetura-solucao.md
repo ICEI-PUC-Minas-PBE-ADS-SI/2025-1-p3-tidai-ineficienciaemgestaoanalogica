@@ -17,10 +17,6 @@
 
 ##  Modelo de dados
 
-### Modelo ER
-
-![Modelo ER](./images/MODELO-ER.jpg)
-
 ### Esquema relacional
 
 ![Esquema Realacional](./images/ESQUEMA-RELACIONAL.jpg)
