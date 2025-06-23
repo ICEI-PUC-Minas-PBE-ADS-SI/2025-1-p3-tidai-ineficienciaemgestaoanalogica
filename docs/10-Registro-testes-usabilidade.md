@@ -144,7 +144,7 @@ Comentários dos usuários:
 
 Com base nos resultados obtidos, foi possível verificar que a aplicação apresentou um desempenho satisfatório quanto à taxa de sucesso nas interações dos usuários, já que todos os cenários propostos foram concluídos com êxito.
 
-Além disso, os usuários demonstraram um alto nível de satisfação durante a execução dos cenários, conforme evidenciado pelas médias de avaliação, que variaram entre 4 (bom) e 5 (excelente).
+Além disso, os usuários demonstraram um alto nível de satisfação durante a execução dos cenários, conforme evidenciado pelas médias de avaliação, que variaram entre 4 (bom) e 5 (excelente) com uma única exceção, fora da curva, de 3 (regular).
 
 No entanto, observou-se uma diferença significativa entre o tempo médio de conclusão das tarefas pelos usuários e pelo especialista/desenvolvedor. Essa diferença é, em parte, esperada, pois o desenvolvedor já conhece a estrutura da aplicação, a disposição dos elementos e a lógica de navegação. Por exemplo, no cenário cinco, a média dos usuários foi de 35,6 segundos, enquanto o especialista levou apenas 2,65 segundos.
 
