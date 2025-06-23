@@ -19,7 +19,7 @@
 
 ### Esquema relacional
 
-![Esquema Realacional](./images/ESQUEMA-RELACIONAL.jpg)
+![Esquema Relacional](./images/ESQUEMA-RELACIONAL.png)
 
 ---
 
