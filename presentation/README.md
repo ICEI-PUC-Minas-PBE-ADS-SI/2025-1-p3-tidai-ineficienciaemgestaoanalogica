@@ -22,4 +22,4 @@ Coloque aqui o conjunto de slides.
 
 Um vídeo foi gravado demonstrando a utilização da aplicação:
 
-<a href="video-demonstracao.mp4">Vídeo de Demonstração</a>
+[Vídeo de Demonstração](./video-demonstracao.mp4)
