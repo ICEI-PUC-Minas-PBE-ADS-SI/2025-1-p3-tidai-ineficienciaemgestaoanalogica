@@ -142,10 +142,10 @@ Comentários dos usuários:
 
 ## Avaliação 
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta um desempenho satisfatório quanto à taxa de sucesso na interação dos usuários, uma vez que os cenários propostos foram concluídos com êxito.
+Com base nos resultados obtidos, foi possível verificar que a aplicação web apresentou um desempenho satisfatório quanto à taxa de sucesso nas interações dos usuários, já que todos os cenários propostos foram concluídos com êxito.
 
-Além disso, a aplicação também alcançou um elevado nível de satisfação subjetiva dos usuários durante a realização dos cenários propostos. Isso é evidenciado pelas médias das avaliações em cada cenário, que variaram entre 4 (bom) e 5 (excelente).
+Além disso, os usuários demonstraram um alto nível de satisfação durante a execução dos cenários, conforme evidenciado pelas médias de avaliação, que variaram entre 4 (bom) e 5 (excelente).
 
-Em relação ao tempo de conclusão de cada tarefa/cenário, observou-se uma discrepância significativa entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Essa diferença, até certo ponto, é esperada, dado que o desenvolvedor já possui conhecimento prévio de toda a interface da aplicação, do posicionamento dos elementos, da lógica de organização das páginas, etc.
+No entanto, observou-se uma diferença significativa entre o tempo médio de conclusão das tarefas pelos usuários e pelo especialista/desenvolvedor. Essa diferença é, em parte, esperada, pois o desenvolvedor já conhece a estrutura da aplicação, a disposição dos elementos e a lógica de navegação. Por exemplo, no cenário cinco, a média dos usuários foi de 35,6 segundos, enquanto o especialista levou apenas 2,65 segundos.
 
-No entanto, considerando que a diferença foi expressiva (por exemplo, 35,6 segundos — média dos usuários — contra 2,65 segundos — especialista — no cenário cinco), e levando em conta os comentários feitos por alguns usuários, foram identificadas oportunidades para melhorias na usabilidade da aplicação. O resultado foi satisfatório no geral, com poucas pessoas tendo dificuldades em tarefas pontuais do projeto, reforçando que o uso do software pode precisar de um pequeno treinamento prévio para que os usuários consigam fazer uso efetivo.
+Apesar disso, os comentários dos usuários indicaram alguns pontos de melhoria na usabilidade. De forma geral, o desempenho foi positivo, com poucos relatos de dificuldades pontuais. Isso sugere que a aplicação pode exigir um breve treinamento inicial para que os usuários aproveitem todo o seu potencial de forma eficaz.
