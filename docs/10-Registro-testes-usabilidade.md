@@ -30,17 +30,17 @@ Comentários dos usuários:
 
 
 
-Cenário 2: Você é um gerente que deseja adicionar e editar os produtos do cardápio usando o sistema, mantendo o menu sempre atualizado para que tudo ocorra como esperado. Acesse a tela de gerenciamento do sistema e adicione um novo produto da categoria pizzas, vincule ima imagem e adicione dois extras nesse produto (média e grande).  
+Cenário 2: Você é um gerente que deseja adicionar e editar os produtos do cardápio usando o sistema, mantendo o menu sempre atualizado para que tudo ocorra como esperado. Acesse a tela de gerenciamento do sistema e adicione um novo produto da categoria pizzas, vincule uma imagem e adicione dois extras nesse produto (média e grande).  
 
 | Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM (com ajuda) | 3                    | 132,6 segundos                 |
-| 2       | -               | 0                    | 00 segundos                  |
-| 3       | -               | 0                    | 00 segundos                  |
-| 4       | -               | 0                    | 00 segundos                  |
-| 5       | -               | 0                    | 00 segundos                  |
+| 2       | SIM             | 5                    | 69,2 segundos                  |
+| 3       | SIM             | 5                    | 89,3 segundos                  |
+| 4       | SIM             | 5                    | 75,8 segundos                  |
+| 5       | SIM             | 5                    | 91,1 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 4,6                | 91,6 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 25,42 segundos |
 
 
@@ -48,13 +48,13 @@ Comentários dos usuários:
 
 1- Consegui fazer, mas demorei um pouco para achar onde editar e fiquei um tempinho clicando nos lugares errados.
 
-2-
+2- Achei bem tranquilo, a tela de gerenciamento é bem estruturada e fiz com mais facilidade.
 
-3-
+3- Consegui fazer tranquilo, a parte da atualização de cardapio ficou bacana.
 
-4-
+4- Muito funcional, não tive problema em quaisquer parte, muito bom.
 
-5-
+5- Acabei travando na parte de adicionar as imagens mas foi bem tranquilo o restante do processo.
 
 
 
