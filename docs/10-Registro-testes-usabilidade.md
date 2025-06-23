@@ -7,12 +7,12 @@ Cenário 1: Você é um gerente que deseja gerar relatórios de vendas consolida
 | Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 5                    | 61,8 segundos                  |
-| 2       | -             | 0                    | 00 segundos                  |
-| 3       | -             | 0                    | 00 segundos                  |
-| 4       | -             | 0                    | 00 segundos                  |
-| 5       | -             | 0                    | 00 segundos                  |
+| 2       | SIM             | 5                    | 64,5 segundos                  |
+| 3       | SIM             | 5                    | 59,3 segundos                  |
+| 4       | SIM             | 5                    | 56,0 segundos                  |
+| 5       | SIM             | 5                    | 55,7 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 5                | 59,46 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 19,86 segundos |
 
 
@@ -20,13 +20,13 @@ Comentários dos usuários:
 
 1- Achei fácil de entender, os botões estavam bem claros e consegui gerar o relatório rapido.
 
-2-
+2- Muito prático, achei bem fácil de usar.
 
-3-
+3- Consegui usar tranquilamente, achei fácil o uso e gerei o relatório com facilidade.
 
-4-
+4- A funcionalidade em gerar relatórios foi bem intuitiva e ágil
 
-5-
+5- Achei bem organizado e fácil de mexer.
 
 
 
