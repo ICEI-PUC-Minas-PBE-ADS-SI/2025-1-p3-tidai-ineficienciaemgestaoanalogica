@@ -72,7 +72,7 @@ Cenário 3: Você é um garçom que quer lançar pedidos de uma mesa, para o reg
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 15,11 segundos |
 
 
-Comentários dos usuários:
+Comentários dos usuários: 
 
 1- Essa parte estava bem direta, as imagens dos itens ajudam, consegui lançar tudo certinho.
 
