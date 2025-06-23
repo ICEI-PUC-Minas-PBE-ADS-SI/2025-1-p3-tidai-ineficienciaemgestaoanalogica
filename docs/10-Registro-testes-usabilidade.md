@@ -12,7 +12,7 @@ Cenário 1: Você é um gerente que deseja gerar relatórios de vendas consolida
 | 4       | SIM             | 5                    | 56,0 segundos                  |
 | 5       | SIM             | 5                    | 55,7 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 5                | 59,46 segundos                           |
+| **Média**     | 100%           | 5                | 59,5 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 19,86 segundos |
 
 
@@ -68,7 +68,7 @@ Cenário 3: Você é um garçom que quer lançar pedidos de uma mesa, para o reg
 | 4       | -SIM            | 4                    | 71,7 segundos                  |
 | 5       | -SIM            | 5                    | 50,2 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 4,8                | 56,12 segundos                           |
+| **Média**     | 100%           | 4,8                | 56,1 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 15,11 segundos |
 
 
@@ -89,13 +89,13 @@ Cenário 4: Você é um atendente de caixa que deseja acessar um pedido e imprim
 
 | Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 39 segundos                  |
-| 2       | -             | 0                    | 00 segundos                  |
-| 3       | -             | 0                    | 00 segundos                  |
-| 4       | -             | 0                    | 00 segundos                  |
-| 5       | -             | 0                    | 00 segundos                  |
+| 1       | SIM             | 5                    | 39,0 segundos                  |
+| 2       | SIM             | 5                    | 12,4 segundos                  |
+| 3       | SIM             | 5                    | 21,1 segundos                  |
+| 4       | SIM             | 5                    | 19,8 segundos                  |
+| 5       | SIM             | 5                    | 32,3 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 5                | 26,9 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 5,96 segundos |
 
 
@@ -103,13 +103,13 @@ Comentários dos usuários:
 
 1- Mais fácil, Só apertei uma sequência de botões e já imprimiu a conta. Caminho bem direto e prático.
 
-2-
+2- Muito tranquilo, uma ação simples e precisa.
 
-3-
+3- Achei bem suave, prático, não tive dificuldade na hora de realizar a sequência
 
-4-
+4- Super tranquilo, a tela de pedidos e fazer a impressão foram passos bem suaves de realizar.
 
-5-
+5- Fiz com calma e tranquilidade, imprimir a conta foi bem simples
 
 
 
@@ -117,13 +117,13 @@ Cenário 5: Você é um cozinheiro que precisa receber os pedidos com o itens e 
 
 | Usuário | Sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 58 segundos                  |
-| 2       | -             | 0                    | 00 segundos                  |
-| 3       | -             | 0                    | 00 segundos                  |
-| 4       | -             | 0                    | 00 segundos                  |
-| 5       | -             | 0                    | 00 segundos                  |
+| 1       | SIM             | 5                    | 58,0 segundos                  |
+| 2       | SIM             | 5                    | 29,8 segundos                  |
+| 3       | SIM             | 5                    | 23,7 segundos                  |
+| 4       | SIM             | 5                    | 34,2 segundos                  |
+| 5       | SIM             | 5                    | 32,1 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 5                | 35,6 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 2,65 segundos |
 
 
@@ -131,13 +131,13 @@ Comentários dos usuários:
 
 1- Gostei da forma como os pedidos aparecem, mas acho que as observações poderiam estar com uma cor mais forte
 
-2-
+2- Achei bem tranquilo em comparação aos outros, não tive dificuldade em achar os pedidos.
 
-3-
+3- Gostei do design em todos, achei pratico e de facil uso.
 
-4-
+4- Tive muito facilidade, achei legal a parte dos pedidos, não tenho reclamações.
 
-5-
+5- Fiz tudo tranquilamente, acredito que usando mais vezes fica fácil agora que sabemos como funciona.
 
 
 ## Avaliação 
