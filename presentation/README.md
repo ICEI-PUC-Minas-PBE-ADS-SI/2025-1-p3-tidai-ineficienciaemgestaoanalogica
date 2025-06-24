@@ -5,7 +5,7 @@
 
 ## Slides
 
-[Apresentação de Slides]_(./YRM.pdf)
+[Apresentação de Slides](./YRM.pdf)
 
 ## Vídeo
 
