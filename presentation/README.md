@@ -1,8 +1,5 @@
 # Apresentação do projeto
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
-
-
 ## Slides
 
 [Apresentação de Slides](./YRM.pdf)
